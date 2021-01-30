@@ -18,6 +18,8 @@ function Player(world, x, y)
 	self.vel_x_max = 500
 	self.vel_y = 0
 
+	self.knockback = 400
+
 	self.direction = "right"
 
 	
@@ -25,6 +27,8 @@ function Player(world, x, y)
 	self.speed = 800
 	self.groundDrag = 2
 	self.airDrag = 1.5
+
+	self.jumpForce = 700
 
 	self.pressed_jump = false
 	self.remainingJumpsMax = 1
@@ -57,16 +61,17 @@ function Player(world, x, y)
 
 	function self.update(self, dt)
 		self.invincibility_counter = self.invincibility_counter - dt
+		
+
 		self:applyVelocity(dt)
 		self:applyGravity(dt)
 		self:checkGroundCollision(dt)
 		self:checkCeilingCollision(dt)
 
 		if love.keyboard.isDown("w") then
-			local jumpForce = 700
 			if not self.pressed_jump and self:canJump()  then
 				love.audio.play(self.sound_jump)
-				self:jump(jumpForce)
+				self:jump(self.jumpForce)
 			end
 			self.pressed_jump = true
 		else
@@ -116,8 +121,6 @@ function Player(world, x, y)
 			self.pressed_attack = false
 		end
 
-
-		print(self.life)
 		self.drawable:update(dt)
 
 		self:foreachSprite(self.checkCollision)
@@ -136,6 +139,12 @@ function Player(world, x, y)
 				if self.invincibility_counter <= 0 then
 					self.life = self.life - obj.damage
 					self.invincibility_counter = self.invincibility_time
+					local flip = 1
+					if self.direction == "left" then
+						flip = -1
+					end
+					self.vel_x = -flip * self.knockback
+					self.vel_y = -self.knockback/2
 				end
 			end
 		end

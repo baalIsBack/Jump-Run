@@ -7,6 +7,7 @@ function Player_draw(player)
         self.animation_jump_up = Animation(PLAYER_JUMP_UP, Quadtable(16, 16, 3), 10)
         self.animation_jump_down = Animation(PLAYER_JUMP_DOWN, Quadtable(16, 16, 3), 10)
         self.animation_attack = Animation(PLAYER_ATTACK, Quadtable(16, 16, 4), 16)
+        self.animation_damaged = Animation(PLAYER_DAMAGE, Quadtable(16, 16, 3), 16)
         --[[
                 POSSIBLE STATES:
                 idle
@@ -14,6 +15,7 @@ function Player_draw(player)
                 jump_up
                 jump_down
                 attack
+                damaged
         ]]
         self.state = "idle"
 
@@ -38,6 +40,8 @@ function Player_draw(player)
                         self.animation_jump_down:draw()
                 elseif self.state == "attack" then
                         self.animation_attack:draw()
+                elseif self.state == "damaged" then
+                        self.animation_damaged:draw()
                 end
                 love.graphics.pop()
                 if DEBUG then love.graphics.rectangle("line", self.object.x, self.object.y, self.object.w, self.object.h) end
@@ -45,25 +49,29 @@ function Player_draw(player)
                 --love.graphics.draw(self.currentImage, self.currentQuad, self.object.x - (IMG_TILE_WIDTH - self.object.w)/2 + flipImageOffset, self.object.y - (IMG_TILE_HEIGHT - self.object.h), 0, 2 * flipImage, 2)
         end
         function self.update(self, dt)
-                if self.object.attack_counter < 0 then
-                        self.animation_attack.animationCounter = 0
-                        if self.object.world:getTile(self.object.x + 1, self.object.y + self.object.h).solid or self.object.world:getTile(self.object.x + self.object.w - 1, self.object.y + self.object.h).solid then
-                                if 	self.object.vel_x > 0 then
-                                        self.state = "run"
-                                elseif self.object.vel_x < 0 then
-                                        self.state = "run"
+                if self.object.invincibility_counter <= 0 then
+                        if self.object.attack_counter < 0 then
+                                self.animation_attack.animationCounter = 0
+                                if self.object.world:getTile(self.object.x + 1, self.object.y + self.object.h).solid or self.object.world:getTile(self.object.x + self.object.w - 1, self.object.y + self.object.h).solid then
+                                        if 	self.object.vel_x > 0 then
+                                                self.state = "run"
+                                        elseif self.object.vel_x < 0 then
+                                                self.state = "run"
+                                        else
+                                                self.state = "idle"
+                                        end
                                 else
-                                        self.state = "idle"
+                                        if self.object.vel_y < 0 then
+                                                self.state = "jump_up"
+                                        else
+                                                self.state = "jump_down"
+                                        end
                                 end
                         else
-                                if self.object.vel_y < 0 then
-                                        self.state = "jump_up"
-                                else
-                                        self.state = "jump_down"
-                                end
+                                self.state = "attack"
                         end
                 else
-                        self.state = "attack"
+                        self.state = "damaged"
                 end
                 if self.state == "idle" then
                         self.animation_idle:update(dt)
@@ -75,6 +83,8 @@ function Player_draw(player)
                         self.animation_jump_down:update(dt)
                 elseif self.state == "attack" then
                         self.animation_attack:update(dt)
+                elseif self.state == "damaged" then
+                        self.animation_damaged:update(dt)
                 end
         end
 

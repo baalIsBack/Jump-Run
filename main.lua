@@ -44,6 +44,7 @@ function love.load()
 	PLAYER_JUMP_UP = love.graphics.newImage("gfx/metroidvania/herochar_sprites(new)/herochar_jump_up_anim_strip_3.png")
 	PLAYER_JUMP_DOWN = love.graphics.newImage("gfx/metroidvania/herochar_sprites(new)/herochar_jump_down_anim_strip_3.png")
 	PLAYER_ATTACK = love.graphics.newImage("gfx/metroidvania/herochar_sprites(new)/herochar_attack_anim_strip_4(new).png")
+	PLAYER_DAMAGE = love.graphics.newImage("gfx/metroidvania/herochar_sprites(new)/herochar_hit_anim_strip_3.png")
 
 
 
