@@ -22,6 +22,9 @@ function Player(world, x, y)
 
 	self.direction = "right"
 
+	self.pressed_attack = false
+	self.attack_lag = 4/16
+	self.attack_counter = 0
 	
 
 	self.speed = 800
@@ -34,18 +37,17 @@ function Player(world, x, y)
 	self.remainingJumpsMax = 1
 	self.remainingJumps = self.remainingJumpsMax
 
-	self.pressed_attack = false
-	self.attack_lag = 4/16
-	self.attack_cooldown = 0.2
-	self.attack_counter = 0
+	self.weapon = Weapon_MagicBolt(self)
 
-	self.invincibility_time = 0.2
+	self.invincibility_time = 0.4
 	self.invincibility_counter = 0
 
 	self.sound_jump = love.audio.newSource("sfx/player_jump.wav", "static")
 	self.sound_jump:setVolume(0.2)
 	self.sound_death = love.audio.newSource("sfx/goblin_death.wav", "static")
-        self.sound_death:setVolume(0.2)
+    self.sound_death:setVolume(0.2)
+	self.sound_damage = love.audio.newSource("sfx/player_damage.wav", "static")
+    self.sound_damage:setVolume(0.2)
 
 	function self.draw(self)
 		--love.graphics.push()
@@ -57,6 +59,7 @@ function Player(world, x, y)
 		--love.graphics.setColor(1, 1, 1)
 
 		self.drawable:draw()
+		self.weapon:draw()
 	end
 
 	function self.update(self, dt)
@@ -107,21 +110,25 @@ function Player(world, x, y)
 			self:decelerate(dt, self.speed, self.groundDrag, self.airDrag)
 		end
 
-
-		self:checkWallCollision()
-
-		self.attack_counter = self.attack_counter - dt
 		if love.keyboard.isDown("space") then
-			if self.attack_counter <= -self.attack_cooldown and not self.pressed_attack then
+			if self.attack_counter <= -self.weapon.attack_cooldown and not self.pressed_attack then
 				self.attack_counter = self.attack_lag
-				self.world:addSprite(Projectile_Sword(self))
+				self.weapon:attack()
 			end
+			
 			self.pressed_attack = true
 		else
 			self.pressed_attack = false
 		end
+		
+		self.weapon:update(dt)
+		self.attack_counter = self.attack_counter - dt
+
+		self:checkWallCollision()
+
 
 		self.drawable:update(dt)
+
 
 		self:foreachSprite(self.checkCollision)
 	end
@@ -145,6 +152,7 @@ function Player(world, x, y)
 					end
 					self.vel_x = -flip * self.knockback
 					self.vel_y = -self.knockback/2
+					love.audio.play(self.sound_damage)
 				end
 			end
 		end

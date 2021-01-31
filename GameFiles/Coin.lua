@@ -6,7 +6,10 @@ function Coin(x, y)
         self.sound_pickup = love.audio.newSource("sfx/coin.wav", "static")
         self.sound_pickup:setVolume(0.2)
 
+        self.life = 1
+
         self.destroyFunction = function(self)
+                self.world:addSprite(Coin_destroy_animation(self.x, self.y))
                 self.destroy = true
                 love.audio.play(self.sound_pickup)
         end
@@ -34,6 +37,37 @@ function Coin(x, y)
         function self.draw(self)
                 love.graphics.push()
                 love.graphics.translate(self.x, self.y)
+                love.graphics.scale(1/2, 1/2)
+                self.animation:draw()
+                love.graphics.pop()
+        end
+
+        return self
+end
+
+function Coin_destroy_animation(x, y)
+        local self = Sprite()
+
+        self.x = x
+        self.y = y
+        self.w = 1
+        self.h = 1
+
+        self.destroyFunction = function(self)
+                self.destroy = true
+        end
+
+        self.animation = Animation(love.graphics.newImage("gfx/metroidvania/miscellaneous_sprites/coin_pickup_anim_strip_6.png"), Quadtable(8, 32, 6), 24)
+        self.animation.once = true
+
+        function self.update(self, dt)
+                self.animation:update(dt)
+                self.destroy = self.animation.destroy
+        end
+
+        function self.draw(self)
+                love.graphics.push()
+                love.graphics.translate(self.x, self.y - 16)
                 love.graphics.scale(1/2, 1/2)
                 self.animation:draw()
                 love.graphics.pop()

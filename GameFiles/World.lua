@@ -44,7 +44,7 @@ function World()
 			self.chunks[chunk_x] = {}
 		end
 		if not self.chunks[chunk_x][chunk_y] then
-			self.chunks[chunk_x][chunk_y] = Chunk()
+			self.chunks[chunk_x][chunk_y] = Chunk(self, chunk_x * (TILE_WIDTH * TILES_PER_CHUNK_WIDTH), chunk_y * (TILE_HEIGHT * TILES_PER_CHUNK_HEIGHT))
 		end
 	end
 
@@ -53,10 +53,14 @@ function World()
 	return self
 end
 
-function Chunk()
+function Chunk(world, x, y)
 	local self = {}
 
 	self.needsRedraw = false
+
+	self.world = world
+	self.x = x
+	self.y = y
 
 	self.tiles = {}
 	self.sprites = {}
@@ -73,6 +77,10 @@ function Chunk()
 		end
 	end]]
 
+	function self.addSprite(self, sprite)
+		table.insert(self.sprites, sprite)
+	end
+
 	local randomLevelId = math.random(1, 2)
 
 	self.tiles.id = 0
@@ -82,9 +90,7 @@ function Chunk()
 
 	self.canvas = nil
 
-	function self.addSprite(self, sprite)
-		table.insert(self.sprites, sprite)
-	end
+	
 
 	function self.redrawCanvas(self)
 		love.graphics.push()
@@ -146,12 +152,14 @@ function Camera(world, player)
 		love.graphics.translate(SCREEN_WIDTH/2, SCREEN_HEIGHT/2)
 		--love.graphics.scale(2, 2)
 		--love.graphics.rectangle("fill", 0, 0, 3200, 3200)
+
+		local xPos, yPos, currentChunk
 		
 		for x = -1, 1, 1 do
 			for y = -1, 1, 1 do
-				local xPos = self.x + x * (TILE_WIDTH * TILES_PER_CHUNK_WIDTH)
-				local yPos = self.y + y * (TILE_HEIGHT * TILES_PER_CHUNK_HEIGHT)
-				local currentChunk = self.world:getChunk(xPos, yPos)
+				xPos = self.x + x * (TILE_WIDTH * TILES_PER_CHUNK_WIDTH)
+				yPos = self.y + y * (TILE_HEIGHT * TILES_PER_CHUNK_HEIGHT)
+				currentChunk = self.world:getChunk(xPos, yPos)
 				if currentChunk.needsRedraw and self.canvas_timer > 0.3 then
 					currentChunk:redrawCanvas()
 					currentChunk.needsRedraw = false
@@ -160,14 +168,22 @@ function Camera(world, player)
 				love.graphics.draw(currentChunk.canvas, (TILE_WIDTH * TILES_PER_CHUNK_WIDTH) * math.floor(xPos / (TILE_WIDTH * TILES_PER_CHUNK_WIDTH)), (TILE_HEIGHT * TILES_PER_CHUNK_HEIGHT) * math.floor(yPos / (TILE_HEIGHT * TILES_PER_CHUNK_HEIGHT)))
 				
 				
-				local sprite
+			end
+		end
+
+		for i, sprite in ipairs(self.world.sprites) do
+			sprite:draw()
+		end
+
+		local sprite
+		for x = -1, 1, 1 do
+			for y = -1, 1, 1 do
+				xPos = self.x + x * (TILE_WIDTH * TILES_PER_CHUNK_WIDTH)
+				yPos = self.y + y * (TILE_HEIGHT * TILES_PER_CHUNK_HEIGHT)
+				currentChunk = self.world:getChunk(xPos, yPos)
+				
 				for i = #currentChunk.sprites, 1, -1 do
 					sprite = currentChunk.sprites[i]
-					--if sprite.destroy then
-					--	table.remove(currentChunk.sprites, i)
-					--else
-					--	sprite:draw()
-					--end
 					sprite:draw()
 				end
 				if DEBUG then love.graphics.rectangle("line", (TILE_WIDTH * TILES_PER_CHUNK_WIDTH) * math.floor(xPos / (TILE_WIDTH * TILES_PER_CHUNK_WIDTH)), (TILE_HEIGHT * TILES_PER_CHUNK_HEIGHT) * math.floor(yPos / (TILE_HEIGHT * TILES_PER_CHUNK_HEIGHT)), (TILE_WIDTH * TILES_PER_CHUNK_WIDTH), (TILE_HEIGHT * TILES_PER_CHUNK_HEIGHT)) end
@@ -175,9 +191,7 @@ function Camera(world, player)
 		end
 
 
-		for i, sprite in ipairs(self.world.sprites) do
-			sprite:draw()
-		end
+		
 		--self.player:draw()
 	end
 
@@ -185,11 +199,15 @@ function Camera(world, player)
 		self.canvas_timer = self.canvas_timer + dt
 		self.x = self.player.x
 		self.y = self.player.y
+
 		for i, sprite in ipairs(self.world.sprites) do
 			sprite:update(dt)
 		end
 		for x = -1, 1, 1 do
 			for y = -1, 1, 1 do
+				if x ~= 0 and y ~= 0 and math.random(0, 1000) == 1 then
+					self.world:addSprite(Goblin(self.x + math.random(-800, 800), self.y + 0))
+				end
 				local xPos = self.x + x * (TILE_WIDTH * TILES_PER_CHUNK_WIDTH)
 				local yPos = self.y + y * (TILE_HEIGHT * TILES_PER_CHUNK_HEIGHT)
 				local currentChunk = self.world:getChunk(xPos, yPos)

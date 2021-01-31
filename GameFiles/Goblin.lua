@@ -9,6 +9,10 @@ function Goblin(x, y)
         self.destroyFunction = function(self)
                 self.destroy = true
                 love.audio.play(self.sound_death)
+                self.world:addSprite(Goblin_destroy_animation(self.x, self.y))
+                for i = 1, math.random(0, 3), 1 do
+                        self.world:addSprite(Coin(self.x, self.y))
+                end
         end
 
         self.direction = nil
@@ -18,11 +22,16 @@ function Goblin(x, y)
 	self.w = 20
         self.h = 26
 
+        self.team = 2
+
         self.damage = 1
         
         self.life = 1
 
-        self.vel_x = 100
+        self.vel_x = math.random(0, 1) * 100
+        if self.vel_x == 0 then
+                self.vel_x = -100
+        end
         self.vel_y = 0
 
         self.animation = Animation(love.graphics.newImage("gfx/metroidvania/enemies sprites/goblin/goblin_run_anim_strip_6.png"), Quadtable(16, 16, 6), 12)
@@ -63,6 +72,37 @@ function Goblin(x, y)
                 self.animation:draw()
                 love.graphics.pop()
                 if DEBUG then love.graphics.rectangle("line", self.x, self.y, self.w, self.h) end
+        end
+
+        return self
+end
+
+function Goblin_destroy_animation(x, y)
+        local self = Sprite()
+
+        self.x = x
+        self.y = y
+        self.w = 1
+        self.h = 1
+
+        self.destroyFunction = function(self)
+                self.destroy = true
+        end
+
+        self.animation = Animation(love.graphics.newImage("gfx/metroidvania/miscellaneous_sprites/explosion_anim_strip_10.png"), Quadtable(32, 32, 10), 24)
+        self.animation.once = true
+
+        function self.update(self, dt)
+                self.animation:update(dt)
+                self.destroy = self.animation.destroy
+        end
+
+        function self.draw(self)
+                love.graphics.push()
+                love.graphics.translate(self.x, self.y - 8)
+                love.graphics.scale(1/2, 1/2)
+                self.animation:draw()
+                love.graphics.pop()
         end
 
         return self

@@ -6,12 +6,12 @@ function Sprite()
 
         self.x = nil
         self.y = nil
-        self.x_vel = nil
-        self.y_vel = nil
+        self.x_vel = 0
+        self.y_vel = 0
 
         self.team = nil
 
-        self.life = nil
+        self.life = 1
         self.damage = 0
 
         --[[

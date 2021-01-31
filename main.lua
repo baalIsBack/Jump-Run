@@ -1,5 +1,5 @@
 
-
+--[[
 require 'World'
 require 'Player'
 require 'Player_draw'
@@ -9,6 +9,12 @@ require 'BoundingBox'
 require 'Sprite'
 require 'Goblin'
 require 'Projectile_Sword'
+require 'Weapon'
+require 'Weapon_Sword'
+require 'Weapon_Empty'
+]]
+require 'require'
+require.tree('GameFiles')
 
 SCREEN_WIDTH = 1280
 SCREEN_HEIGHT = 720
@@ -28,8 +34,8 @@ DEBUG = false
 function love.keypressed(key, scancode, isrepeat)
 	local mx, my = camera:getMousePosition()
 	if key == "g" and not isrepeat then
-		local goblin = Goblin(mx, my)
-		world:addSprite(goblin)
+		--local goblin = Goblin(mx, my)
+		--world:addSprite(goblin)
 	end
 end
 
@@ -87,15 +93,10 @@ function love.update(dt)
 
 	local mx, my = camera:getMousePosition()
 	if love.mouse.isDown(1) then
-		print(mx, my, 1)
 		world:setTile(mx, my, Tile(true, currentSelection))
 	end
 	if love.mouse.isDown(2) then
 		world:setTile(mx, my, Tile(false, currentSelection))
-	end
-	if love.keyboard.isDown("c") then
-		local c = Coin(mx, my)
-		world:addSprite(c)
 	end
 	if love.keyboard.isDown("f2") then
 		local DEBUG_tmp = DEBUG

@@ -8,6 +8,9 @@ function Animation(img, quadTable, animationSpeed)
         self.animationSpeed = animationSpeed
         self.animationCounter = 0
 
+        self.once = false
+        self.destroy = nil
+
         function self.draw(self)
                 love.graphics.draw(self.img, self.currentQuad, 0, 0, 0, 2, 2)
         end
@@ -15,6 +18,10 @@ function Animation(img, quadTable, animationSpeed)
         function self.update(self, dt)
                 self.animationCounter = self.animationCounter + dt
                 self.currentQuad = self.quadTable[math.floor((self.animationCounter * self.animationSpeed)%(#self.quadTable)) + 1]
+                if math.floor((self.animationCounter * self.animationSpeed) / (#self.quadTable)) >= 1 and self.once then
+                        self.currentQuad = self.quadTable[#self.quadTable]
+                        self.destroy = true
+                end
         end
 
         return self

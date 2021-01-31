@@ -1,4 +1,4 @@
-function Projectile_Sword(source)
+function Projectile_Sword(owner)
         local self = Sprite()
         self.type = "Projectile_Sword"
         self.world = nil
@@ -6,7 +6,7 @@ function Projectile_Sword(source)
 
         self.damage = 1
 
-        self.team = source.team
+        self.team = owner.team
 
         self.sound = love.audio.newSource("sfx/projectile_sword.wav", "static")
         self.sound:setVolume(0.2)
@@ -16,14 +16,14 @@ function Projectile_Sword(source)
                 self.destroy = true
         end
 
-        self.source = source
+        self.owner = owner
 
         
         
         self.w = 32
         self.h = 16
-        self.x = source.x
-        self.y = source.y
+        self.x = owner.x
+        self.y = owner.y
 
         self.hitList = {}
 
@@ -32,13 +32,13 @@ function Projectile_Sword(source)
         function self.updatePosition(self)
                 local flip = 1
                 local flipOffset = 0
-                if self.source.direction == "left" then
+                if self.owner.direction == "left" then
                         flip = -1
                         flipOffset = self.w/2
                         flipSide = -1
                 end
-                self.x = source.x + flip * flipOffset + flip * self.w/2
-                self.y = source.y + (source.h - self.h)/2
+                self.x = owner.x + flip * flipOffset + flip * self.w/2
+                self.y = owner.y + (owner.h - self.h)/2
         end
         self:updatePosition()
 
@@ -53,7 +53,7 @@ function Projectile_Sword(source)
         function self.draw(self)
                 local flipImage = 1
                 local flipImageOffset = 0
-                if self.source.direction == "left" then
+                if self.owner.direction == "left" then
                         flipImage = -1
                         flipImageOffset = 32
                 end
