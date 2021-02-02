@@ -67,7 +67,7 @@ function Projectile_Sword(owner)
 
         function self.checkCollision(self, obj)
 		if CheckCollision(self.x, self.y, self.w, self.h, obj.x, obj.y, obj.w, obj.h) then
-			if obj.team ~= self.team then
+			if obj.team and obj.team ~= self.team then
                                 for i, objHit in ipairs(self.hitList) do
                                         if objHit == obj then
                                                 return

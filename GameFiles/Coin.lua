@@ -29,6 +29,7 @@ function Coin(x, y)
                 self:applyVelocity(dt)
                 self:applyGravity(dt)
                 self:checkGroundCollision(dt)
+                self:checkWallCollision(dt)
 
                 self:decelerate(dt, 500, 3, 1)
                 self.animation:update(dt)

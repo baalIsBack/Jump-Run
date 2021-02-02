@@ -1,1645 +1,1645 @@
 local function Level() 
-        local self = {}
-        self[0] = {}
-        self[0][0] = {solid = true, gfx_id = 3} 
-        self[0][1] = {solid = false, gfx_id = 0} 
-        self[0][2] = {solid = false, gfx_id = 0} 
-        self[0][3] = {solid = false, gfx_id = 0} 
-        self[0][4] = {solid = false, gfx_id = 0} 
-        self[0][5] = {solid = false, gfx_id = 0} 
-        self[0][6] = {solid = false, gfx_id = 0} 
-        self[0][7] = {solid = false, gfx_id = 0} 
-        self[0][8] = {solid = false, gfx_id = 0} 
-        self[0][9] = {solid = false, gfx_id = 0} 
-        self[0][10] = {solid = false, gfx_id = 0} 
-        self[0][11] = {solid = false, gfx_id = 0} 
-        self[0][12] = {solid = false, gfx_id = 0} 
-        self[0][13] = {solid = false, gfx_id = 0} 
-        self[0][14] = {solid = false, gfx_id = 0} 
-        self[0][15] = {solid = false, gfx_id = 0} 
-        self[0][16] = {solid = false, gfx_id = 0} 
-        self[0][17] = {solid = false, gfx_id = 0} 
-        self[0][18] = {solid = false, gfx_id = 0} 
-        self[0][19] = {solid = false, gfx_id = 0} 
-        self[0][20] = {solid = false, gfx_id = 0} 
-        self[0][21] = {solid = false, gfx_id = 0} 
-        self[0][22] = {solid = false, gfx_id = 0} 
-        self[0][23] = {solid = false, gfx_id = 0} 
-        self[0][24] = {solid = false, gfx_id = 0} 
-        self[0][25] = {solid = false, gfx_id = 0} 
-        self[0][26] = {solid = false, gfx_id = 0} 
-        self[0][27] = {solid = false, gfx_id = 0} 
-        self[0][28] = {solid = false, gfx_id = 0} 
-        self[0][29] = {solid = false, gfx_id = 0} 
-        self[0][30] = {solid = false, gfx_id = 0} 
-        self[0][31] = {solid = false, gfx_id = 0} 
-        self[0][32] = {solid = false, gfx_id = 0} 
-        self[0][33] = {solid = false, gfx_id = 0} 
-        self[0][34] = {solid = false, gfx_id = 0} 
-        self[0][35] = {solid = false, gfx_id = 0} 
-        self[0][36] = {solid = false, gfx_id = 0} 
-        self[0][37] = {solid = true, gfx_id = 4} 
-        self[0][38] = {solid = true, gfx_id = 1} 
-        self[0][39] = {solid = true, gfx_id = 1} 
-        self[1] = {}
-        self[1][0] = {solid = false, gfx_id = 0} 
-        self[1][1] = {solid = false, gfx_id = 0} 
-        self[1][2] = {solid = false, gfx_id = 0} 
-        self[1][3] = {solid = false, gfx_id = 0} 
-        self[1][4] = {solid = false, gfx_id = 0} 
-        self[1][5] = {solid = false, gfx_id = 0} 
-        self[1][6] = {solid = false, gfx_id = 0} 
-        self[1][7] = {solid = false, gfx_id = 0} 
-        self[1][8] = {solid = false, gfx_id = 0} 
-        self[1][9] = {solid = false, gfx_id = 0} 
-        self[1][10] = {solid = false, gfx_id = 0} 
-        self[1][11] = {solid = false, gfx_id = 0} 
-        self[1][12] = {solid = false, gfx_id = 0} 
-        self[1][13] = {solid = false, gfx_id = 0} 
-        self[1][14] = {solid = false, gfx_id = 0} 
-        self[1][15] = {solid = false, gfx_id = 0} 
-        self[1][16] = {solid = false, gfx_id = 0} 
-        self[1][17] = {solid = false, gfx_id = 0} 
-        self[1][18] = {solid = false, gfx_id = 0} 
-        self[1][19] = {solid = false, gfx_id = 0} 
-        self[1][20] = {solid = false, gfx_id = 0} 
-        self[1][21] = {solid = false, gfx_id = 0} 
-        self[1][22] = {solid = false, gfx_id = 0} 
-        self[1][23] = {solid = false, gfx_id = 0} 
-        self[1][24] = {solid = false, gfx_id = 0} 
-        self[1][25] = {solid = false, gfx_id = 0} 
-        self[1][26] = {solid = true, gfx_id = 4} 
-        self[1][27] = {solid = true, gfx_id = 36} 
-        self[1][28] = {solid = true, gfx_id = 68} 
-        self[1][29] = {solid = false, gfx_id = 0} 
-        self[1][30] = {solid = false, gfx_id = 0} 
-        self[1][31] = {solid = false, gfx_id = 0} 
-        self[1][32] = {solid = false, gfx_id = 0} 
-        self[1][33] = {solid = false, gfx_id = 0} 
-        self[1][34] = {solid = false, gfx_id = 0} 
-        self[1][35] = {solid = true, gfx_id = 1} 
-        self[1][36] = {solid = true, gfx_id = 1} 
-        self[1][37] = {solid = true, gfx_id = 5} 
-        self[1][38] = {solid = false, gfx_id = 0} 
-        self[1][39] = {solid = false, gfx_id = 0} 
-        self[2] = {}
-        self[2][0] = {solid = false, gfx_id = 0} 
-        self[2][1] = {solid = false, gfx_id = 0} 
-        self[2][2] = {solid = false, gfx_id = 0} 
-        self[2][3] = {solid = false, gfx_id = 0} 
-        self[2][4] = {solid = false, gfx_id = 0} 
-        self[2][5] = {solid = false, gfx_id = 0} 
-        self[2][6] = {solid = false, gfx_id = 0} 
-        self[2][7] = {solid = false, gfx_id = 0} 
-        self[2][8] = {solid = false, gfx_id = 0} 
-        self[2][9] = {solid = false, gfx_id = 0} 
-        self[2][10] = {solid = false, gfx_id = 0} 
-        self[2][11] = {solid = false, gfx_id = 0} 
-        self[2][12] = {solid = false, gfx_id = 0} 
-        self[2][13] = {solid = false, gfx_id = 0} 
-        self[2][14] = {solid = false, gfx_id = 0} 
-        self[2][15] = {solid = false, gfx_id = 0} 
-        self[2][16] = {solid = false, gfx_id = 0} 
-        self[2][17] = {solid = false, gfx_id = 0} 
-        self[2][18] = {solid = false, gfx_id = 0} 
-        self[2][19] = {solid = false, gfx_id = 0} 
-        self[2][20] = {solid = false, gfx_id = 0} 
-        self[2][21] = {solid = false, gfx_id = 0} 
-        self[2][22] = {solid = false, gfx_id = 0} 
-        self[2][23] = {solid = false, gfx_id = 0} 
-        self[2][24] = {solid = false, gfx_id = 0} 
-        self[2][25] = {solid = false, gfx_id = 0} 
-        self[2][26] = {solid = true, gfx_id = 5} 
-        self[2][27] = {solid = true, gfx_id = 37} 
-        self[2][28] = {solid = true, gfx_id = 69} 
-        self[2][29] = {solid = false, gfx_id = 0} 
-        self[2][30] = {solid = false, gfx_id = 0} 
-        self[2][31] = {solid = false, gfx_id = 0} 
-        self[2][32] = {solid = false, gfx_id = 0} 
-        self[2][33] = {solid = false, gfx_id = 0} 
-        self[2][34] = {solid = false, gfx_id = 0} 
-        self[2][35] = {solid = true, gfx_id = 1} 
-        self[2][36] = {solid = false, gfx_id = 0} 
-        self[2][37] = {solid = true, gfx_id = 5} 
-        self[2][38] = {solid = false, gfx_id = 0} 
-        self[2][39] = {solid = true, gfx_id = 3} 
-        self[3] = {}
-        self[3][0] = {solid = false, gfx_id = 0} 
-        self[3][1] = {solid = false, gfx_id = 0} 
-        self[3][2] = {solid = false, gfx_id = 0} 
-        self[3][3] = {solid = false, gfx_id = 0} 
-        self[3][4] = {solid = false, gfx_id = 0} 
-        self[3][5] = {solid = false, gfx_id = 0} 
-        self[3][6] = {solid = false, gfx_id = 0} 
-        self[3][7] = {solid = false, gfx_id = 0} 
-        self[3][8] = {solid = false, gfx_id = 0} 
-        self[3][9] = {solid = false, gfx_id = 0} 
-        self[3][10] = {solid = false, gfx_id = 0} 
-        self[3][11] = {solid = false, gfx_id = 0} 
-        self[3][12] = {solid = false, gfx_id = 0} 
-        self[3][13] = {solid = false, gfx_id = 0} 
-        self[3][14] = {solid = false, gfx_id = 0} 
-        self[3][15] = {solid = false, gfx_id = 0} 
-        self[3][16] = {solid = false, gfx_id = 0} 
-        self[3][17] = {solid = false, gfx_id = 0} 
-        self[3][18] = {solid = false, gfx_id = 0} 
-        self[3][19] = {solid = false, gfx_id = 0} 
-        self[3][20] = {solid = false, gfx_id = 0} 
-        self[3][21] = {solid = false, gfx_id = 0} 
-        self[3][22] = {solid = false, gfx_id = 0} 
-        self[3][23] = {solid = false, gfx_id = 0} 
-        self[3][24] = {solid = false, gfx_id = 0} 
-        self[3][25] = {solid = false, gfx_id = 0} 
-        self[3][26] = {solid = true, gfx_id = 5} 
-        self[3][27] = {solid = true, gfx_id = 37} 
-        self[3][28] = {solid = true, gfx_id = 69} 
-        self[3][29] = {solid = false, gfx_id = 0} 
-        self[3][30] = {solid = false, gfx_id = 0} 
-        self[3][31] = {solid = false, gfx_id = 0} 
-        self[3][32] = {solid = false, gfx_id = 0} 
-        self[3][33] = {solid = false, gfx_id = 0} 
-        self[3][34] = {solid = false, gfx_id = 0} 
-        self[3][35] = {solid = true, gfx_id = 1} 
-        self[3][36] = {solid = false, gfx_id = 0} 
-        self[3][37] = {solid = true, gfx_id = 5} 
-        self[3][38] = {solid = false, gfx_id = 0} 
-        self[3][39] = {solid = true, gfx_id = 3} 
-        self[4] = {}
-        self[4][0] = {solid = false, gfx_id = 0} 
-        self[4][1] = {solid = false, gfx_id = 0} 
-        self[4][2] = {solid = false, gfx_id = 0} 
-        self[4][3] = {solid = false, gfx_id = 0} 
-        self[4][4] = {solid = false, gfx_id = 0} 
-        self[4][5] = {solid = false, gfx_id = 0} 
-        self[4][6] = {solid = false, gfx_id = 0} 
-        self[4][7] = {solid = false, gfx_id = 0} 
-        self[4][8] = {solid = false, gfx_id = 0} 
-        self[4][9] = {solid = false, gfx_id = 0} 
-        self[4][10] = {solid = false, gfx_id = 0} 
-        self[4][11] = {solid = false, gfx_id = 0} 
-        self[4][12] = {solid = false, gfx_id = 0} 
-        self[4][13] = {solid = false, gfx_id = 0} 
-        self[4][14] = {solid = false, gfx_id = 0} 
-        self[4][15] = {solid = false, gfx_id = 0} 
-        self[4][16] = {solid = false, gfx_id = 0} 
-        self[4][17] = {solid = false, gfx_id = 0} 
-        self[4][18] = {solid = false, gfx_id = 0} 
-        self[4][19] = {solid = false, gfx_id = 0} 
-        self[4][20] = {solid = false, gfx_id = 0} 
-        self[4][21] = {solid = false, gfx_id = 0} 
-        self[4][22] = {solid = false, gfx_id = 0} 
-        self[4][23] = {solid = false, gfx_id = 0} 
-        self[4][24] = {solid = false, gfx_id = 0} 
-        self[4][25] = {solid = false, gfx_id = 0} 
-        self[4][26] = {solid = true, gfx_id = 5} 
-        self[4][27] = {solid = true, gfx_id = 37} 
-        self[4][28] = {solid = true, gfx_id = 69} 
-        self[4][29] = {solid = false, gfx_id = 0} 
-        self[4][30] = {solid = false, gfx_id = 0} 
-        self[4][31] = {solid = false, gfx_id = 0} 
-        self[4][32] = {solid = false, gfx_id = 0} 
-        self[4][33] = {solid = false, gfx_id = 0} 
-        self[4][34] = {solid = false, gfx_id = 0} 
-        self[4][35] = {solid = false, gfx_id = 0} 
-        self[4][36] = {solid = false, gfx_id = 0} 
-        self[4][37] = {solid = true, gfx_id = 5} 
-        self[4][38] = {solid = false, gfx_id = 0} 
-        self[4][39] = {solid = true, gfx_id = 3} 
-        self[5] = {}
-        self[5][0] = {solid = false, gfx_id = 0} 
-        self[5][1] = {solid = false, gfx_id = 0} 
-        self[5][2] = {solid = false, gfx_id = 0} 
-        self[5][3] = {solid = false, gfx_id = 0} 
-        self[5][4] = {solid = false, gfx_id = 0} 
-        self[5][5] = {solid = false, gfx_id = 0} 
-        self[5][6] = {solid = false, gfx_id = 0} 
-        self[5][7] = {solid = false, gfx_id = 0} 
-        self[5][8] = {solid = false, gfx_id = 0} 
-        self[5][9] = {solid = false, gfx_id = 0} 
-        self[5][10] = {solid = false, gfx_id = 0} 
-        self[5][11] = {solid = false, gfx_id = 0} 
-        self[5][12] = {solid = false, gfx_id = 0} 
-        self[5][13] = {solid = false, gfx_id = 0} 
-        self[5][14] = {solid = false, gfx_id = 0} 
-        self[5][15] = {solid = false, gfx_id = 0} 
-        self[5][16] = {solid = false, gfx_id = 0} 
-        self[5][17] = {solid = false, gfx_id = 0} 
-        self[5][18] = {solid = false, gfx_id = 0} 
-        self[5][19] = {solid = false, gfx_id = 0} 
-        self[5][20] = {solid = false, gfx_id = 0} 
-        self[5][21] = {solid = false, gfx_id = 0} 
-        self[5][22] = {solid = false, gfx_id = 0} 
-        self[5][23] = {solid = false, gfx_id = 0} 
-        self[5][24] = {solid = false, gfx_id = 0} 
-        self[5][25] = {solid = false, gfx_id = 0} 
-        self[5][26] = {solid = true, gfx_id = 5} 
-        self[5][27] = {solid = true, gfx_id = 37} 
-        self[5][28] = {solid = true, gfx_id = 69} 
-        self[5][29] = {solid = false, gfx_id = 0} 
-        self[5][30] = {solid = false, gfx_id = 0} 
-        self[5][31] = {solid = false, gfx_id = 0} 
-        self[5][32] = {solid = false, gfx_id = 0} 
-        self[5][33] = {solid = false, gfx_id = 0} 
-        self[5][34] = {solid = false, gfx_id = 0} 
-        self[5][35] = {solid = false, gfx_id = 0} 
-        self[5][36] = {solid = false, gfx_id = 0} 
-        self[5][37] = {solid = true, gfx_id = 5} 
-        self[5][38] = {solid = true, gfx_id = 3} 
-        self[5][39] = {solid = true, gfx_id = 3} 
-        self[6] = {}
-        self[6][0] = {solid = false, gfx_id = 0} 
-        self[6][1] = {solid = false, gfx_id = 0} 
-        self[6][2] = {solid = false, gfx_id = 0} 
-        self[6][3] = {solid = false, gfx_id = 0} 
-        self[6][4] = {solid = false, gfx_id = 0} 
-        self[6][5] = {solid = false, gfx_id = 0} 
-        self[6][6] = {solid = false, gfx_id = 0} 
-        self[6][7] = {solid = false, gfx_id = 0} 
-        self[6][8] = {solid = false, gfx_id = 0} 
-        self[6][9] = {solid = false, gfx_id = 0} 
-        self[6][10] = {solid = false, gfx_id = 0} 
-        self[6][11] = {solid = false, gfx_id = 0} 
-        self[6][12] = {solid = false, gfx_id = 0} 
-        self[6][13] = {solid = false, gfx_id = 0} 
-        self[6][14] = {solid = false, gfx_id = 0} 
-        self[6][15] = {solid = false, gfx_id = 0} 
-        self[6][16] = {solid = false, gfx_id = 0} 
-        self[6][17] = {solid = false, gfx_id = 0} 
-        self[6][18] = {solid = false, gfx_id = 0} 
-        self[6][19] = {solid = false, gfx_id = 0} 
-        self[6][20] = {solid = false, gfx_id = 0} 
-        self[6][21] = {solid = false, gfx_id = 0} 
-        self[6][22] = {solid = false, gfx_id = 0} 
-        self[6][23] = {solid = false, gfx_id = 0} 
-        self[6][24] = {solid = false, gfx_id = 0} 
-        self[6][25] = {solid = false, gfx_id = 0} 
-        self[6][26] = {solid = true, gfx_id = 5} 
-        self[6][27] = {solid = true, gfx_id = 37} 
-        self[6][28] = {solid = true, gfx_id = 69} 
-        self[6][29] = {solid = false, gfx_id = 0} 
-        self[6][30] = {solid = false, gfx_id = 0} 
-        self[6][31] = {solid = false, gfx_id = 0} 
-        self[6][32] = {solid = false, gfx_id = 0} 
-        self[6][33] = {solid = false, gfx_id = 0} 
-        self[6][34] = {solid = false, gfx_id = 0} 
-        self[6][35] = {solid = false, gfx_id = 0} 
-        self[6][36] = {solid = false, gfx_id = 0} 
-        self[6][37] = {solid = true, gfx_id = 5} 
-        self[6][38] = {solid = false, gfx_id = 0} 
-        self[6][39] = {solid = true, gfx_id = 3} 
-        self[7] = {}
-        self[7][0] = {solid = false, gfx_id = 0} 
-        self[7][1] = {solid = false, gfx_id = 0} 
-        self[7][2] = {solid = false, gfx_id = 0} 
-        self[7][3] = {solid = false, gfx_id = 0} 
-        self[7][4] = {solid = false, gfx_id = 0} 
-        self[7][5] = {solid = false, gfx_id = 0} 
-        self[7][6] = {solid = false, gfx_id = 0} 
-        self[7][7] = {solid = false, gfx_id = 0} 
-        self[7][8] = {solid = false, gfx_id = 0} 
-        self[7][9] = {solid = false, gfx_id = 0} 
-        self[7][10] = {solid = false, gfx_id = 0} 
-        self[7][11] = {solid = false, gfx_id = 0} 
-        self[7][12] = {solid = false, gfx_id = 0} 
-        self[7][13] = {solid = false, gfx_id = 0} 
-        self[7][14] = {solid = false, gfx_id = 0} 
-        self[7][15] = {solid = false, gfx_id = 0} 
-        self[7][16] = {solid = false, gfx_id = 0} 
-        self[7][17] = {solid = false, gfx_id = 0} 
-        self[7][18] = {solid = false, gfx_id = 0} 
-        self[7][19] = {solid = false, gfx_id = 0} 
-        self[7][20] = {solid = false, gfx_id = 0} 
-        self[7][21] = {solid = false, gfx_id = 0} 
-        self[7][22] = {solid = false, gfx_id = 0} 
-        self[7][23] = {solid = false, gfx_id = 0} 
-        self[7][24] = {solid = false, gfx_id = 0} 
-        self[7][25] = {solid = false, gfx_id = 0} 
-        self[7][26] = {solid = true, gfx_id = 5} 
-        self[7][27] = {solid = true, gfx_id = 37} 
-        self[7][28] = {solid = true, gfx_id = 69} 
-        self[7][29] = {solid = false, gfx_id = 0} 
-        self[7][30] = {solid = false, gfx_id = 0} 
-        self[7][31] = {solid = false, gfx_id = 0} 
-        self[7][32] = {solid = false, gfx_id = 0} 
-        self[7][33] = {solid = true, gfx_id = 4} 
-        self[7][34] = {solid = true, gfx_id = 41} 
-        self[7][35] = {solid = true, gfx_id = 41} 
-        self[7][36] = {solid = true, gfx_id = 41} 
-        self[7][37] = {solid = true, gfx_id = 73} 
-        self[7][38] = {solid = false, gfx_id = 0} 
-        self[7][39] = {solid = true, gfx_id = 3} 
-        self[8] = {}
-        self[8][0] = {solid = false, gfx_id = 0} 
-        self[8][1] = {solid = false, gfx_id = 0} 
-        self[8][2] = {solid = false, gfx_id = 0} 
-        self[8][3] = {solid = false, gfx_id = 0} 
-        self[8][4] = {solid = false, gfx_id = 0} 
-        self[8][5] = {solid = false, gfx_id = 0} 
-        self[8][6] = {solid = false, gfx_id = 0} 
-        self[8][7] = {solid = false, gfx_id = 0} 
-        self[8][8] = {solid = false, gfx_id = 0} 
-        self[8][9] = {solid = false, gfx_id = 0} 
-        self[8][10] = {solid = false, gfx_id = 0} 
-        self[8][11] = {solid = false, gfx_id = 0} 
-        self[8][12] = {solid = false, gfx_id = 0} 
-        self[8][13] = {solid = false, gfx_id = 0} 
-        self[8][14] = {solid = false, gfx_id = 0} 
-        self[8][15] = {solid = false, gfx_id = 0} 
-        self[8][16] = {solid = false, gfx_id = 0} 
-        self[8][17] = {solid = false, gfx_id = 0} 
-        self[8][18] = {solid = false, gfx_id = 0} 
-        self[8][19] = {solid = false, gfx_id = 0} 
-        self[8][20] = {solid = false, gfx_id = 0} 
-        self[8][21] = {solid = false, gfx_id = 0} 
-        self[8][22] = {solid = false, gfx_id = 0} 
-        self[8][23] = {solid = false, gfx_id = 0} 
-        self[8][24] = {solid = false, gfx_id = 0} 
-        self[8][25] = {solid = false, gfx_id = 0} 
-        self[8][26] = {solid = true, gfx_id = 5} 
-        self[8][27] = {solid = true, gfx_id = 37} 
-        self[8][28] = {solid = true, gfx_id = 69} 
-        self[8][29] = {solid = false, gfx_id = 0} 
-        self[8][30] = {solid = false, gfx_id = 0} 
-        self[8][31] = {solid = false, gfx_id = 0} 
-        self[8][32] = {solid = false, gfx_id = 0} 
-        self[8][33] = {solid = true, gfx_id = 5} 
-        self[8][34] = {solid = false, gfx_id = 0} 
-        self[8][35] = {solid = false, gfx_id = 0} 
-        self[8][36] = {solid = false, gfx_id = 0} 
-        self[8][37] = {solid = false, gfx_id = 0} 
-        self[8][38] = {solid = false, gfx_id = 0} 
-        self[8][39] = {solid = true, gfx_id = 3} 
-        self[9] = {}
-        self[9][0] = {solid = false, gfx_id = 0} 
-        self[9][1] = {solid = false, gfx_id = 0} 
-        self[9][2] = {solid = false, gfx_id = 0} 
-        self[9][3] = {solid = false, gfx_id = 0} 
-        self[9][4] = {solid = false, gfx_id = 0} 
-        self[9][5] = {solid = false, gfx_id = 0} 
-        self[9][6] = {solid = false, gfx_id = 0} 
-        self[9][7] = {solid = false, gfx_id = 0} 
-        self[9][8] = {solid = false, gfx_id = 0} 
-        self[9][9] = {solid = false, gfx_id = 0} 
-        self[9][10] = {solid = false, gfx_id = 0} 
-        self[9][11] = {solid = false, gfx_id = 0} 
-        self[9][12] = {solid = false, gfx_id = 0} 
-        self[9][13] = {solid = false, gfx_id = 0} 
-        self[9][14] = {solid = false, gfx_id = 0} 
-        self[9][15] = {solid = false, gfx_id = 0} 
-        self[9][16] = {solid = false, gfx_id = 0} 
-        self[9][17] = {solid = false, gfx_id = 0} 
-        self[9][18] = {solid = false, gfx_id = 0} 
-        self[9][19] = {solid = false, gfx_id = 0} 
-        self[9][20] = {solid = false, gfx_id = 0} 
-        self[9][21] = {solid = false, gfx_id = 0} 
-        self[9][22] = {solid = false, gfx_id = 0} 
-        self[9][23] = {solid = false, gfx_id = 0} 
-        self[9][24] = {solid = false, gfx_id = 0} 
-        self[9][25] = {solid = false, gfx_id = 0} 
-        self[9][26] = {solid = true, gfx_id = 5} 
-        self[9][27] = {solid = true, gfx_id = 37} 
-        self[9][28] = {solid = true, gfx_id = 69} 
-        self[9][29] = {solid = false, gfx_id = 0} 
-        self[9][30] = {solid = false, gfx_id = 0} 
-        self[9][31] = {solid = false, gfx_id = 0} 
-        self[9][32] = {solid = false, gfx_id = 0} 
-        self[9][33] = {solid = true, gfx_id = 5} 
-        self[9][34] = {solid = false, gfx_id = 0} 
-        self[9][35] = {solid = false, gfx_id = 0} 
-        self[9][36] = {solid = false, gfx_id = 0} 
-        self[9][37] = {solid = false, gfx_id = 0} 
-        self[9][38] = {solid = false, gfx_id = 0} 
-        self[9][39] = {solid = true, gfx_id = 3} 
-        self[10] = {}
-        self[10][0] = {solid = false, gfx_id = 0} 
-        self[10][1] = {solid = false, gfx_id = 0} 
-        self[10][2] = {solid = false, gfx_id = 0} 
-        self[10][3] = {solid = false, gfx_id = 0} 
-        self[10][4] = {solid = false, gfx_id = 0} 
-        self[10][5] = {solid = false, gfx_id = 0} 
-        self[10][6] = {solid = false, gfx_id = 0} 
-        self[10][7] = {solid = false, gfx_id = 0} 
-        self[10][8] = {solid = false, gfx_id = 0} 
-        self[10][9] = {solid = false, gfx_id = 0} 
-        self[10][10] = {solid = false, gfx_id = 0} 
-        self[10][11] = {solid = false, gfx_id = 0} 
-        self[10][12] = {solid = false, gfx_id = 0} 
-        self[10][13] = {solid = false, gfx_id = 0} 
-        self[10][14] = {solid = false, gfx_id = 0} 
-        self[10][15] = {solid = false, gfx_id = 0} 
-        self[10][16] = {solid = false, gfx_id = 0} 
-        self[10][17] = {solid = false, gfx_id = 0} 
-        self[10][18] = {solid = false, gfx_id = 0} 
-        self[10][19] = {solid = false, gfx_id = 0} 
-        self[10][20] = {solid = false, gfx_id = 0} 
-        self[10][21] = {solid = false, gfx_id = 0} 
-        self[10][22] = {solid = false, gfx_id = 0} 
-        self[10][23] = {solid = false, gfx_id = 0} 
-        self[10][24] = {solid = false, gfx_id = 0} 
-        self[10][25] = {solid = false, gfx_id = 0} 
-        self[10][26] = {solid = true, gfx_id = 5} 
-        self[10][27] = {solid = true, gfx_id = 37} 
-        self[10][28] = {solid = true, gfx_id = 69} 
-        self[10][29] = {solid = false, gfx_id = 0} 
-        self[10][30] = {solid = false, gfx_id = 0} 
-        self[10][31] = {solid = false, gfx_id = 0} 
-        self[10][32] = {solid = false, gfx_id = 0} 
-        self[10][33] = {solid = true, gfx_id = 5} 
-        self[10][34] = {solid = false, gfx_id = 0} 
-        self[10][35] = {solid = false, gfx_id = 0} 
-        self[10][36] = {solid = false, gfx_id = 0} 
-        self[10][37] = {solid = true, gfx_id = 3} 
-        self[10][38] = {solid = false, gfx_id = 0} 
-        self[10][39] = {solid = true, gfx_id = 3} 
-        self[11] = {}
-        self[11][0] = {solid = false, gfx_id = 0} 
-        self[11][1] = {solid = false, gfx_id = 0} 
-        self[11][2] = {solid = false, gfx_id = 0} 
-        self[11][3] = {solid = false, gfx_id = 0} 
-        self[11][4] = {solid = false, gfx_id = 0} 
-        self[11][5] = {solid = false, gfx_id = 0} 
-        self[11][6] = {solid = false, gfx_id = 0} 
-        self[11][7] = {solid = false, gfx_id = 0} 
-        self[11][8] = {solid = false, gfx_id = 0} 
-        self[11][9] = {solid = false, gfx_id = 0} 
-        self[11][10] = {solid = false, gfx_id = 0} 
-        self[11][11] = {solid = false, gfx_id = 0} 
-        self[11][12] = {solid = false, gfx_id = 0} 
-        self[11][13] = {solid = false, gfx_id = 0} 
-        self[11][14] = {solid = false, gfx_id = 0} 
-        self[11][15] = {solid = false, gfx_id = 0} 
-        self[11][16] = {solid = false, gfx_id = 0} 
-        self[11][17] = {solid = false, gfx_id = 0} 
-        self[11][18] = {solid = false, gfx_id = 0} 
-        self[11][19] = {solid = false, gfx_id = 0} 
-        self[11][20] = {solid = false, gfx_id = 0} 
-        self[11][21] = {solid = false, gfx_id = 0} 
-        self[11][22] = {solid = false, gfx_id = 0} 
-        self[11][23] = {solid = false, gfx_id = 0} 
-        self[11][24] = {solid = false, gfx_id = 0} 
-        self[11][25] = {solid = false, gfx_id = 0} 
-        self[11][26] = {solid = true, gfx_id = 5} 
-        self[11][27] = {solid = true, gfx_id = 37} 
-        self[11][28] = {solid = true, gfx_id = 69} 
-        self[11][29] = {solid = false, gfx_id = 0} 
-        self[11][30] = {solid = false, gfx_id = 0} 
-        self[11][31] = {solid = false, gfx_id = 0} 
-        self[11][32] = {solid = false, gfx_id = 0} 
-        self[11][33] = {solid = true, gfx_id = 5} 
-        self[11][34] = {solid = false, gfx_id = 0} 
-        self[11][35] = {solid = false, gfx_id = 0} 
-        self[11][36] = {solid = false, gfx_id = 0} 
-        self[11][37] = {solid = false, gfx_id = 0} 
-        self[11][38] = {solid = false, gfx_id = 0} 
-        self[11][39] = {solid = true, gfx_id = 3} 
-        self[12] = {}
-        self[12][0] = {solid = false, gfx_id = 0} 
-        self[12][1] = {solid = false, gfx_id = 0} 
-        self[12][2] = {solid = false, gfx_id = 0} 
-        self[12][3] = {solid = false, gfx_id = 0} 
-        self[12][4] = {solid = false, gfx_id = 0} 
-        self[12][5] = {solid = false, gfx_id = 0} 
-        self[12][6] = {solid = false, gfx_id = 0} 
-        self[12][7] = {solid = false, gfx_id = 0} 
-        self[12][8] = {solid = false, gfx_id = 0} 
-        self[12][9] = {solid = false, gfx_id = 0} 
-        self[12][10] = {solid = false, gfx_id = 0} 
-        self[12][11] = {solid = false, gfx_id = 0} 
-        self[12][12] = {solid = false, gfx_id = 0} 
-        self[12][13] = {solid = false, gfx_id = 0} 
-        self[12][14] = {solid = false, gfx_id = 0} 
-        self[12][15] = {solid = false, gfx_id = 0} 
-        self[12][16] = {solid = false, gfx_id = 0} 
-        self[12][17] = {solid = false, gfx_id = 0} 
-        self[12][18] = {solid = false, gfx_id = 0} 
-        self[12][19] = {solid = false, gfx_id = 0} 
-        self[12][20] = {solid = false, gfx_id = 0} 
-        self[12][21] = {solid = false, gfx_id = 0} 
-        self[12][22] = {solid = false, gfx_id = 0} 
-        self[12][23] = {solid = false, gfx_id = 0} 
-        self[12][24] = {solid = false, gfx_id = 0} 
-        self[12][25] = {solid = false, gfx_id = 0} 
-        self[12][26] = {solid = true, gfx_id = 5} 
-        self[12][27] = {solid = true, gfx_id = 37} 
-        self[12][28] = {solid = true, gfx_id = 69} 
-        self[12][29] = {solid = false, gfx_id = 0} 
-        self[12][30] = {solid = false, gfx_id = 0} 
-        self[12][31] = {solid = false, gfx_id = 0} 
-        self[12][32] = {solid = false, gfx_id = 0} 
-        self[12][33] = {solid = true, gfx_id = 5} 
-        self[12][34] = {solid = false, gfx_id = 0} 
-        self[12][35] = {solid = false, gfx_id = 0} 
-        self[12][36] = {solid = false, gfx_id = 0} 
-        self[12][37] = {solid = false, gfx_id = 0} 
-        self[12][38] = {solid = false, gfx_id = 0} 
-        self[12][39] = {solid = true, gfx_id = 3} 
-        self[13] = {}
-        self[13][0] = {solid = false, gfx_id = 0} 
-        self[13][1] = {solid = false, gfx_id = 0} 
-        self[13][2] = {solid = false, gfx_id = 0} 
-        self[13][3] = {solid = false, gfx_id = 0} 
-        self[13][4] = {solid = false, gfx_id = 0} 
-        self[13][5] = {solid = false, gfx_id = 0} 
-        self[13][6] = {solid = false, gfx_id = 0} 
-        self[13][7] = {solid = false, gfx_id = 0} 
-        self[13][8] = {solid = false, gfx_id = 0} 
-        self[13][9] = {solid = false, gfx_id = 0} 
-        self[13][10] = {solid = false, gfx_id = 0} 
-        self[13][11] = {solid = false, gfx_id = 0} 
-        self[13][12] = {solid = false, gfx_id = 0} 
-        self[13][13] = {solid = false, gfx_id = 0} 
-        self[13][14] = {solid = false, gfx_id = 0} 
-        self[13][15] = {solid = false, gfx_id = 0} 
-        self[13][16] = {solid = false, gfx_id = 0} 
-        self[13][17] = {solid = false, gfx_id = 0} 
-        self[13][18] = {solid = false, gfx_id = 0} 
-        self[13][19] = {solid = false, gfx_id = 0} 
-        self[13][20] = {solid = false, gfx_id = 0} 
-        self[13][21] = {solid = false, gfx_id = 0} 
-        self[13][22] = {solid = false, gfx_id = 0} 
-        self[13][23] = {solid = false, gfx_id = 0} 
-        self[13][24] = {solid = false, gfx_id = 0} 
-        self[13][25] = {solid = false, gfx_id = 0} 
-        self[13][26] = {solid = true, gfx_id = 5} 
-        self[13][27] = {solid = true, gfx_id = 37} 
-        self[13][28] = {solid = true, gfx_id = 69} 
-        self[13][29] = {solid = false, gfx_id = 0} 
-        self[13][30] = {solid = false, gfx_id = 0} 
-        self[13][31] = {solid = false, gfx_id = 0} 
-        self[13][32] = {solid = false, gfx_id = 0} 
-        self[13][33] = {solid = true, gfx_id = 5} 
-        self[13][34] = {solid = false, gfx_id = 0} 
-        self[13][35] = {solid = false, gfx_id = 0} 
-        self[13][36] = {solid = false, gfx_id = 0} 
-        self[13][37] = {solid = false, gfx_id = 0} 
-        self[13][38] = {solid = false, gfx_id = 0} 
-        self[13][39] = {solid = true, gfx_id = 3} 
-        self[14] = {}
-        self[14][0] = {solid = false, gfx_id = 0} 
-        self[14][1] = {solid = false, gfx_id = 0} 
-        self[14][2] = {solid = false, gfx_id = 0} 
-        self[14][3] = {solid = false, gfx_id = 0} 
-        self[14][4] = {solid = false, gfx_id = 0} 
-        self[14][5] = {solid = false, gfx_id = 0} 
-        self[14][6] = {solid = false, gfx_id = 0} 
-        self[14][7] = {solid = false, gfx_id = 0} 
-        self[14][8] = {solid = false, gfx_id = 0} 
-        self[14][9] = {solid = false, gfx_id = 0} 
-        self[14][10] = {solid = false, gfx_id = 0} 
-        self[14][11] = {solid = false, gfx_id = 0} 
-        self[14][12] = {solid = false, gfx_id = 0} 
-        self[14][13] = {solid = false, gfx_id = 0} 
-        self[14][14] = {solid = false, gfx_id = 0} 
-        self[14][15] = {solid = false, gfx_id = 0} 
-        self[14][16] = {solid = false, gfx_id = 0} 
-        self[14][17] = {solid = false, gfx_id = 0} 
-        self[14][18] = {solid = false, gfx_id = 0} 
-        self[14][19] = {solid = false, gfx_id = 0} 
-        self[14][20] = {solid = false, gfx_id = 0} 
-        self[14][21] = {solid = false, gfx_id = 0} 
-        self[14][22] = {solid = false, gfx_id = 0} 
-        self[14][23] = {solid = false, gfx_id = 0} 
-        self[14][24] = {solid = false, gfx_id = 0} 
-        self[14][25] = {solid = false, gfx_id = 0} 
-        self[14][26] = {solid = true, gfx_id = 5} 
-        self[14][27] = {solid = true, gfx_id = 37} 
-        self[14][28] = {solid = true, gfx_id = 69} 
-        self[14][29] = {solid = false, gfx_id = 0} 
-        self[14][30] = {solid = false, gfx_id = 0} 
-        self[14][31] = {solid = false, gfx_id = 0} 
-        self[14][32] = {solid = false, gfx_id = 0} 
-        self[14][33] = {solid = true, gfx_id = 5} 
-        self[14][34] = {solid = false, gfx_id = 0} 
-        self[14][35] = {solid = false, gfx_id = 0} 
-        self[14][36] = {solid = false, gfx_id = 0} 
-        self[14][37] = {solid = false, gfx_id = 0} 
-        self[14][38] = {solid = false, gfx_id = 0} 
-        self[14][39] = {solid = true, gfx_id = 3} 
-        self[15] = {}
-        self[15][0] = {solid = false, gfx_id = 0} 
-        self[15][1] = {solid = false, gfx_id = 0} 
-        self[15][2] = {solid = false, gfx_id = 0} 
-        self[15][3] = {solid = false, gfx_id = 0} 
-        self[15][4] = {solid = false, gfx_id = 0} 
-        self[15][5] = {solid = false, gfx_id = 0} 
-        self[15][6] = {solid = false, gfx_id = 0} 
-        self[15][7] = {solid = false, gfx_id = 0} 
-        self[15][8] = {solid = false, gfx_id = 0} 
-        self[15][9] = {solid = false, gfx_id = 0} 
-        self[15][10] = {solid = false, gfx_id = 0} 
-        self[15][11] = {solid = false, gfx_id = 0} 
-        self[15][12] = {solid = false, gfx_id = 0} 
-        self[15][13] = {solid = false, gfx_id = 0} 
-        self[15][14] = {solid = false, gfx_id = 0} 
-        self[15][15] = {solid = false, gfx_id = 0} 
-        self[15][16] = {solid = false, gfx_id = 0} 
-        self[15][17] = {solid = false, gfx_id = 0} 
-        self[15][18] = {solid = false, gfx_id = 0} 
-        self[15][19] = {solid = false, gfx_id = 0} 
-        self[15][20] = {solid = false, gfx_id = 0} 
-        self[15][21] = {solid = false, gfx_id = 0} 
-        self[15][22] = {solid = false, gfx_id = 0} 
-        self[15][23] = {solid = false, gfx_id = 0} 
-        self[15][24] = {solid = false, gfx_id = 0} 
-        self[15][25] = {solid = false, gfx_id = 0} 
-        self[15][26] = {solid = true, gfx_id = 5} 
-        self[15][27] = {solid = true, gfx_id = 37} 
-        self[15][28] = {solid = true, gfx_id = 69} 
-        self[15][29] = {solid = false, gfx_id = 0} 
-        self[15][30] = {solid = false, gfx_id = 0} 
-        self[15][31] = {solid = false, gfx_id = 0} 
-        self[15][32] = {solid = false, gfx_id = 0} 
-        self[15][33] = {solid = true, gfx_id = 5} 
-        self[15][34] = {solid = true, gfx_id = 1} 
-        self[15][35] = {solid = true, gfx_id = 1} 
-        self[15][36] = {solid = true, gfx_id = 1} 
-        self[15][37] = {solid = true, gfx_id = 1} 
-        self[15][38] = {solid = false, gfx_id = 0} 
-        self[15][39] = {solid = true, gfx_id = 3} 
-        self[16] = {}
-        self[16][0] = {solid = false, gfx_id = 0} 
-        self[16][1] = {solid = false, gfx_id = 0} 
-        self[16][2] = {solid = false, gfx_id = 0} 
-        self[16][3] = {solid = false, gfx_id = 0} 
-        self[16][4] = {solid = false, gfx_id = 0} 
-        self[16][5] = {solid = false, gfx_id = 0} 
-        self[16][6] = {solid = false, gfx_id = 0} 
-        self[16][7] = {solid = false, gfx_id = 0} 
-        self[16][8] = {solid = false, gfx_id = 0} 
-        self[16][9] = {solid = false, gfx_id = 0} 
-        self[16][10] = {solid = false, gfx_id = 0} 
-        self[16][11] = {solid = false, gfx_id = 0} 
-        self[16][12] = {solid = false, gfx_id = 0} 
-        self[16][13] = {solid = false, gfx_id = 0} 
-        self[16][14] = {solid = false, gfx_id = 0} 
-        self[16][15] = {solid = false, gfx_id = 0} 
-        self[16][16] = {solid = false, gfx_id = 0} 
-        self[16][17] = {solid = false, gfx_id = 0} 
-        self[16][18] = {solid = false, gfx_id = 0} 
-        self[16][19] = {solid = false, gfx_id = 0} 
-        self[16][20] = {solid = false, gfx_id = 0} 
-        self[16][21] = {solid = false, gfx_id = 0} 
-        self[16][22] = {solid = false, gfx_id = 0} 
-        self[16][23] = {solid = false, gfx_id = 0} 
-        self[16][24] = {solid = false, gfx_id = 0} 
-        self[16][25] = {solid = false, gfx_id = 0} 
-        self[16][26] = {solid = true, gfx_id = 5} 
-        self[16][27] = {solid = true, gfx_id = 37} 
-        self[16][28] = {solid = true, gfx_id = 69} 
-        self[16][29] = {solid = false, gfx_id = 0} 
-        self[16][30] = {solid = false, gfx_id = 0} 
-        self[16][31] = {solid = false, gfx_id = 0} 
-        self[16][32] = {solid = false, gfx_id = 125} 
-        self[16][33] = {solid = true, gfx_id = 5} 
-        self[16][34] = {solid = true, gfx_id = 1} 
-        self[16][35] = {solid = true, gfx_id = 1} 
-        self[16][36] = {solid = true, gfx_id = 1} 
-        self[16][37] = {solid = true, gfx_id = 1} 
-        self[16][38] = {solid = true, gfx_id = 1} 
-        self[16][39] = {solid = true, gfx_id = 1} 
-        self[17] = {}
-        self[17][0] = {solid = false, gfx_id = 0} 
-        self[17][1] = {solid = false, gfx_id = 0} 
-        self[17][2] = {solid = false, gfx_id = 0} 
-        self[17][3] = {solid = false, gfx_id = 0} 
-        self[17][4] = {solid = false, gfx_id = 0} 
-        self[17][5] = {solid = false, gfx_id = 0} 
-        self[17][6] = {solid = false, gfx_id = 0} 
-        self[17][7] = {solid = false, gfx_id = 0} 
-        self[17][8] = {solid = false, gfx_id = 0} 
-        self[17][9] = {solid = false, gfx_id = 0} 
-        self[17][10] = {solid = false, gfx_id = 0} 
-        self[17][11] = {solid = false, gfx_id = 0} 
-        self[17][12] = {solid = false, gfx_id = 0} 
-        self[17][13] = {solid = false, gfx_id = 0} 
-        self[17][14] = {solid = false, gfx_id = 0} 
-        self[17][15] = {solid = false, gfx_id = 0} 
-        self[17][16] = {solid = false, gfx_id = 0} 
-        self[17][17] = {solid = false, gfx_id = 0} 
-        self[17][18] = {solid = false, gfx_id = 0} 
-        self[17][19] = {solid = false, gfx_id = 0} 
-        self[17][20] = {solid = false, gfx_id = 0} 
-        self[17][21] = {solid = false, gfx_id = 0} 
-        self[17][22] = {solid = false, gfx_id = 0} 
-        self[17][23] = {solid = false, gfx_id = 0} 
-        self[17][24] = {solid = false, gfx_id = 0} 
-        self[17][25] = {solid = false, gfx_id = 0} 
-        self[17][26] = {solid = true, gfx_id = 5} 
-        self[17][27] = {solid = true, gfx_id = 37} 
-        self[17][28] = {solid = true, gfx_id = 69} 
-        self[17][29] = {solid = false, gfx_id = 0} 
-        self[17][30] = {solid = false, gfx_id = 0} 
-        self[17][31] = {solid = false, gfx_id = 0} 
-        self[17][32] = {solid = false, gfx_id = 125} 
-        self[17][33] = {solid = true, gfx_id = 5} 
-        self[17][34] = {solid = true, gfx_id = 1} 
-        self[17][35] = {solid = true, gfx_id = 1} 
-        self[17][36] = {solid = true, gfx_id = 1} 
-        self[17][37] = {solid = true, gfx_id = 1} 
-        self[17][38] = {solid = true, gfx_id = 1} 
-        self[17][39] = {solid = true, gfx_id = 3} 
-        self[18] = {}
-        self[18][0] = {solid = false, gfx_id = 0} 
-        self[18][1] = {solid = false, gfx_id = 0} 
-        self[18][2] = {solid = false, gfx_id = 0} 
-        self[18][3] = {solid = false, gfx_id = 0} 
-        self[18][4] = {solid = false, gfx_id = 0} 
-        self[18][5] = {solid = false, gfx_id = 0} 
-        self[18][6] = {solid = false, gfx_id = 0} 
-        self[18][7] = {solid = false, gfx_id = 0} 
-        self[18][8] = {solid = false, gfx_id = 0} 
-        self[18][9] = {solid = false, gfx_id = 0} 
-        self[18][10] = {solid = false, gfx_id = 0} 
-        self[18][11] = {solid = false, gfx_id = 0} 
-        self[18][12] = {solid = false, gfx_id = 0} 
-        self[18][13] = {solid = false, gfx_id = 0} 
-        self[18][14] = {solid = false, gfx_id = 0} 
-        self[18][15] = {solid = false, gfx_id = 0} 
-        self[18][16] = {solid = false, gfx_id = 0} 
-        self[18][17] = {solid = false, gfx_id = 0} 
-        self[18][18] = {solid = false, gfx_id = 0} 
-        self[18][19] = {solid = false, gfx_id = 0} 
-        self[18][20] = {solid = false, gfx_id = 0} 
-        self[18][21] = {solid = false, gfx_id = 0} 
-        self[18][22] = {solid = false, gfx_id = 0} 
-        self[18][23] = {solid = false, gfx_id = 0} 
-        self[18][24] = {solid = false, gfx_id = 0} 
-        self[18][25] = {solid = false, gfx_id = 0} 
-        self[18][26] = {solid = true, gfx_id = 5} 
-        self[18][27] = {solid = true, gfx_id = 37} 
-        self[18][28] = {solid = true, gfx_id = 69} 
-        self[18][29] = {solid = false, gfx_id = 0} 
-        self[18][30] = {solid = false, gfx_id = 0} 
-        self[18][31] = {solid = false, gfx_id = 0} 
-        self[18][32] = {solid = false, gfx_id = 125} 
-        self[18][33] = {solid = true, gfx_id = 5} 
-        self[18][34] = {solid = true, gfx_id = 1} 
-        self[18][35] = {solid = true, gfx_id = 1} 
-        self[18][36] = {solid = true, gfx_id = 1} 
-        self[18][37] = {solid = true, gfx_id = 1} 
-        self[18][38] = {solid = true, gfx_id = 1} 
-        self[18][39] = {solid = true, gfx_id = 3} 
-        self[19] = {}
-        self[19][0] = {solid = false, gfx_id = 0} 
-        self[19][1] = {solid = false, gfx_id = 0} 
-        self[19][2] = {solid = false, gfx_id = 0} 
-        self[19][3] = {solid = false, gfx_id = 0} 
-        self[19][4] = {solid = false, gfx_id = 0} 
-        self[19][5] = {solid = false, gfx_id = 0} 
-        self[19][6] = {solid = false, gfx_id = 0} 
-        self[19][7] = {solid = false, gfx_id = 0} 
-        self[19][8] = {solid = false, gfx_id = 0} 
-        self[19][9] = {solid = false, gfx_id = 0} 
-        self[19][10] = {solid = false, gfx_id = 0} 
-        self[19][11] = {solid = false, gfx_id = 0} 
-        self[19][12] = {solid = false, gfx_id = 0} 
-        self[19][13] = {solid = false, gfx_id = 0} 
-        self[19][14] = {solid = false, gfx_id = 0} 
-        self[19][15] = {solid = false, gfx_id = 0} 
-        self[19][16] = {solid = false, gfx_id = 0} 
-        self[19][17] = {solid = false, gfx_id = 0} 
-        self[19][18] = {solid = false, gfx_id = 0} 
-        self[19][19] = {solid = false, gfx_id = 0} 
-        self[19][20] = {solid = false, gfx_id = 0} 
-        self[19][21] = {solid = false, gfx_id = 0} 
-        self[19][22] = {solid = false, gfx_id = 0} 
-        self[19][23] = {solid = false, gfx_id = 0} 
-        self[19][24] = {solid = false, gfx_id = 0} 
-        self[19][25] = {solid = false, gfx_id = 0} 
-        self[19][26] = {solid = true, gfx_id = 5} 
-        self[19][27] = {solid = true, gfx_id = 37} 
-        self[19][28] = {solid = true, gfx_id = 69} 
-        self[19][29] = {solid = false, gfx_id = 0} 
-        self[19][30] = {solid = false, gfx_id = 0} 
-        self[19][31] = {solid = false, gfx_id = 0} 
-        self[19][32] = {solid = false, gfx_id = 0} 
-        self[19][33] = {solid = true, gfx_id = 5} 
-        self[19][34] = {solid = true, gfx_id = 1} 
-        self[19][35] = {solid = true, gfx_id = 1} 
-        self[19][36] = {solid = true, gfx_id = 1} 
-        self[19][37] = {solid = true, gfx_id = 1} 
-        self[19][38] = {solid = true, gfx_id = 1} 
-        self[19][39] = {solid = true, gfx_id = 3} 
-        self[20] = {}
-        self[20][0] = {solid = false, gfx_id = 0} 
-        self[20][1] = {solid = false, gfx_id = 0} 
-        self[20][2] = {solid = false, gfx_id = 0} 
-        self[20][3] = {solid = false, gfx_id = 0} 
-        self[20][4] = {solid = false, gfx_id = 0} 
-        self[20][5] = {solid = false, gfx_id = 0} 
-        self[20][6] = {solid = false, gfx_id = 0} 
-        self[20][7] = {solid = false, gfx_id = 0} 
-        self[20][8] = {solid = false, gfx_id = 0} 
-        self[20][9] = {solid = false, gfx_id = 0} 
-        self[20][10] = {solid = false, gfx_id = 0} 
-        self[20][11] = {solid = false, gfx_id = 0} 
-        self[20][12] = {solid = false, gfx_id = 0} 
-        self[20][13] = {solid = false, gfx_id = 0} 
-        self[20][14] = {solid = false, gfx_id = 0} 
-        self[20][15] = {solid = false, gfx_id = 0} 
-        self[20][16] = {solid = false, gfx_id = 0} 
-        self[20][17] = {solid = false, gfx_id = 0} 
-        self[20][18] = {solid = false, gfx_id = 0} 
-        self[20][19] = {solid = false, gfx_id = 0} 
-        self[20][20] = {solid = false, gfx_id = 0} 
-        self[20][21] = {solid = false, gfx_id = 0} 
-        self[20][22] = {solid = false, gfx_id = 0} 
-        self[20][23] = {solid = false, gfx_id = 0} 
-        self[20][24] = {solid = false, gfx_id = 0} 
-        self[20][25] = {solid = false, gfx_id = 0} 
-        self[20][26] = {solid = true, gfx_id = 5} 
-        self[20][27] = {solid = true, gfx_id = 37} 
-        self[20][28] = {solid = true, gfx_id = 69} 
-        self[20][29] = {solid = false, gfx_id = 0} 
-        self[20][30] = {solid = false, gfx_id = 0} 
-        self[20][31] = {solid = false, gfx_id = 0} 
-        self[20][32] = {solid = false, gfx_id = 0} 
-        self[20][33] = {solid = true, gfx_id = 5} 
-        self[20][34] = {solid = false, gfx_id = 0} 
-        self[20][35] = {solid = true, gfx_id = 1} 
-        self[20][36] = {solid = true, gfx_id = 1} 
-        self[20][37] = {solid = true, gfx_id = 1} 
-        self[20][38] = {solid = true, gfx_id = 1} 
-        self[20][39] = {solid = true, gfx_id = 3} 
-        self[21] = {}
-        self[21][0] = {solid = false, gfx_id = 0} 
-        self[21][1] = {solid = false, gfx_id = 0} 
-        self[21][2] = {solid = false, gfx_id = 0} 
-        self[21][3] = {solid = false, gfx_id = 0} 
-        self[21][4] = {solid = false, gfx_id = 0} 
-        self[21][5] = {solid = false, gfx_id = 0} 
-        self[21][6] = {solid = false, gfx_id = 0} 
-        self[21][7] = {solid = false, gfx_id = 0} 
-        self[21][8] = {solid = false, gfx_id = 0} 
-        self[21][9] = {solid = false, gfx_id = 0} 
-        self[21][10] = {solid = false, gfx_id = 0} 
-        self[21][11] = {solid = false, gfx_id = 0} 
-        self[21][12] = {solid = false, gfx_id = 0} 
-        self[21][13] = {solid = false, gfx_id = 0} 
-        self[21][14] = {solid = false, gfx_id = 0} 
-        self[21][15] = {solid = false, gfx_id = 0} 
-        self[21][16] = {solid = false, gfx_id = 0} 
-        self[21][17] = {solid = false, gfx_id = 0} 
-        self[21][18] = {solid = false, gfx_id = 0} 
-        self[21][19] = {solid = false, gfx_id = 0} 
-        self[21][20] = {solid = false, gfx_id = 0} 
-        self[21][21] = {solid = false, gfx_id = 0} 
-        self[21][22] = {solid = false, gfx_id = 0} 
-        self[21][23] = {solid = false, gfx_id = 0} 
-        self[21][24] = {solid = false, gfx_id = 0} 
-        self[21][25] = {solid = false, gfx_id = 0} 
-        self[21][26] = {solid = true, gfx_id = 5} 
-        self[21][27] = {solid = true, gfx_id = 37} 
-        self[21][28] = {solid = true, gfx_id = 69} 
-        self[21][29] = {solid = false, gfx_id = 0} 
-        self[21][30] = {solid = false, gfx_id = 0} 
-        self[21][31] = {solid = false, gfx_id = 0} 
-        self[21][32] = {solid = false, gfx_id = 0} 
-        self[21][33] = {solid = true, gfx_id = 5} 
-        self[21][34] = {solid = false, gfx_id = 0} 
-        self[21][35] = {solid = false, gfx_id = 0} 
-        self[21][36] = {solid = false, gfx_id = 0} 
-        self[21][37] = {solid = true, gfx_id = 1} 
-        self[21][38] = {solid = true, gfx_id = 1} 
-        self[21][39] = {solid = true, gfx_id = 3} 
-        self[22] = {}
-        self[22][0] = {solid = false, gfx_id = 0} 
-        self[22][1] = {solid = false, gfx_id = 0} 
-        self[22][2] = {solid = false, gfx_id = 0} 
-        self[22][3] = {solid = false, gfx_id = 0} 
-        self[22][4] = {solid = false, gfx_id = 0} 
-        self[22][5] = {solid = false, gfx_id = 0} 
-        self[22][6] = {solid = false, gfx_id = 0} 
-        self[22][7] = {solid = false, gfx_id = 0} 
-        self[22][8] = {solid = false, gfx_id = 0} 
-        self[22][9] = {solid = false, gfx_id = 0} 
-        self[22][10] = {solid = false, gfx_id = 0} 
-        self[22][11] = {solid = false, gfx_id = 0} 
-        self[22][12] = {solid = false, gfx_id = 0} 
-        self[22][13] = {solid = false, gfx_id = 0} 
-        self[22][14] = {solid = false, gfx_id = 0} 
-        self[22][15] = {solid = false, gfx_id = 0} 
-        self[22][16] = {solid = false, gfx_id = 0} 
-        self[22][17] = {solid = false, gfx_id = 0} 
-        self[22][18] = {solid = false, gfx_id = 0} 
-        self[22][19] = {solid = false, gfx_id = 0} 
-        self[22][20] = {solid = false, gfx_id = 0} 
-        self[22][21] = {solid = false, gfx_id = 0} 
-        self[22][22] = {solid = false, gfx_id = 0} 
-        self[22][23] = {solid = false, gfx_id = 0} 
-        self[22][24] = {solid = false, gfx_id = 0} 
-        self[22][25] = {solid = false, gfx_id = 0} 
-        self[22][26] = {solid = true, gfx_id = 5} 
-        self[22][27] = {solid = true, gfx_id = 37} 
-        self[22][28] = {solid = true, gfx_id = 69} 
-        self[22][29] = {solid = false, gfx_id = 0} 
-        self[22][30] = {solid = false, gfx_id = 0} 
-        self[22][31] = {solid = false, gfx_id = 0} 
-        self[22][32] = {solid = false, gfx_id = 0} 
-        self[22][33] = {solid = true, gfx_id = 5} 
-        self[22][34] = {solid = false, gfx_id = 0} 
-        self[22][35] = {solid = false, gfx_id = 0} 
-        self[22][36] = {solid = false, gfx_id = 0} 
-        self[22][37] = {solid = false, gfx_id = 0} 
-        self[22][38] = {solid = false, gfx_id = 0} 
-        self[22][39] = {solid = true, gfx_id = 3} 
-        self[23] = {}
-        self[23][0] = {solid = false, gfx_id = 0} 
-        self[23][1] = {solid = false, gfx_id = 0} 
-        self[23][2] = {solid = false, gfx_id = 0} 
-        self[23][3] = {solid = false, gfx_id = 0} 
-        self[23][4] = {solid = false, gfx_id = 0} 
-        self[23][5] = {solid = false, gfx_id = 0} 
-        self[23][6] = {solid = false, gfx_id = 0} 
-        self[23][7] = {solid = false, gfx_id = 0} 
-        self[23][8] = {solid = false, gfx_id = 0} 
-        self[23][9] = {solid = false, gfx_id = 0} 
-        self[23][10] = {solid = false, gfx_id = 0} 
-        self[23][11] = {solid = false, gfx_id = 0} 
-        self[23][12] = {solid = false, gfx_id = 0} 
-        self[23][13] = {solid = false, gfx_id = 0} 
-        self[23][14] = {solid = false, gfx_id = 0} 
-        self[23][15] = {solid = false, gfx_id = 0} 
-        self[23][16] = {solid = false, gfx_id = 0} 
-        self[23][17] = {solid = false, gfx_id = 0} 
-        self[23][18] = {solid = false, gfx_id = 0} 
-        self[23][19] = {solid = false, gfx_id = 0} 
-        self[23][20] = {solid = false, gfx_id = 0} 
-        self[23][21] = {solid = false, gfx_id = 0} 
-        self[23][22] = {solid = false, gfx_id = 0} 
-        self[23][23] = {solid = false, gfx_id = 0} 
-        self[23][24] = {solid = false, gfx_id = 0} 
-        self[23][25] = {solid = false, gfx_id = 0} 
-        self[23][26] = {solid = true, gfx_id = 5} 
-        self[23][27] = {solid = true, gfx_id = 37} 
-        self[23][28] = {solid = true, gfx_id = 69} 
-        self[23][29] = {solid = false, gfx_id = 0} 
-        self[23][30] = {solid = false, gfx_id = 0} 
-        self[23][31] = {solid = false, gfx_id = 0} 
-        self[23][32] = {solid = false, gfx_id = 0} 
-        self[23][33] = {solid = true, gfx_id = 5} 
-        self[23][34] = {solid = false, gfx_id = 0} 
-        self[23][35] = {solid = false, gfx_id = 0} 
-        self[23][36] = {solid = false, gfx_id = 0} 
-        self[23][37] = {solid = false, gfx_id = 0} 
-        self[23][38] = {solid = false, gfx_id = 0} 
-        self[23][39] = {solid = true, gfx_id = 3} 
-        self[24] = {}
-        self[24][0] = {solid = false, gfx_id = 0} 
-        self[24][1] = {solid = false, gfx_id = 0} 
-        self[24][2] = {solid = false, gfx_id = 0} 
-        self[24][3] = {solid = false, gfx_id = 0} 
-        self[24][4] = {solid = false, gfx_id = 0} 
-        self[24][5] = {solid = false, gfx_id = 0} 
-        self[24][6] = {solid = false, gfx_id = 0} 
-        self[24][7] = {solid = false, gfx_id = 0} 
-        self[24][8] = {solid = false, gfx_id = 0} 
-        self[24][9] = {solid = false, gfx_id = 0} 
-        self[24][10] = {solid = false, gfx_id = 0} 
-        self[24][11] = {solid = false, gfx_id = 0} 
-        self[24][12] = {solid = false, gfx_id = 0} 
-        self[24][13] = {solid = false, gfx_id = 0} 
-        self[24][14] = {solid = false, gfx_id = 0} 
-        self[24][15] = {solid = false, gfx_id = 0} 
-        self[24][16] = {solid = false, gfx_id = 0} 
-        self[24][17] = {solid = false, gfx_id = 0} 
-        self[24][18] = {solid = false, gfx_id = 0} 
-        self[24][19] = {solid = false, gfx_id = 0} 
-        self[24][20] = {solid = false, gfx_id = 0} 
-        self[24][21] = {solid = false, gfx_id = 0} 
-        self[24][22] = {solid = false, gfx_id = 0} 
-        self[24][23] = {solid = false, gfx_id = 0} 
-        self[24][24] = {solid = false, gfx_id = 0} 
-        self[24][25] = {solid = false, gfx_id = 0} 
-        self[24][26] = {solid = true, gfx_id = 5} 
-        self[24][27] = {solid = true, gfx_id = 37} 
-        self[24][28] = {solid = true, gfx_id = 69} 
-        self[24][29] = {solid = false, gfx_id = 0} 
-        self[24][30] = {solid = false, gfx_id = 0} 
-        self[24][31] = {solid = false, gfx_id = 0} 
-        self[24][32] = {solid = false, gfx_id = 0} 
-        self[24][33] = {solid = true, gfx_id = 5} 
-        self[24][34] = {solid = false, gfx_id = 0} 
-        self[24][35] = {solid = false, gfx_id = 0} 
-        self[24][36] = {solid = false, gfx_id = 0} 
-        self[24][37] = {solid = false, gfx_id = 0} 
-        self[24][38] = {solid = false, gfx_id = 0} 
-        self[24][39] = {solid = true, gfx_id = 3} 
-        self[25] = {}
-        self[25][0] = {solid = false, gfx_id = 0} 
-        self[25][1] = {solid = false, gfx_id = 0} 
-        self[25][2] = {solid = false, gfx_id = 0} 
-        self[25][3] = {solid = false, gfx_id = 0} 
-        self[25][4] = {solid = false, gfx_id = 0} 
-        self[25][5] = {solid = false, gfx_id = 0} 
-        self[25][6] = {solid = false, gfx_id = 0} 
-        self[25][7] = {solid = false, gfx_id = 0} 
-        self[25][8] = {solid = false, gfx_id = 0} 
-        self[25][9] = {solid = false, gfx_id = 0} 
-        self[25][10] = {solid = false, gfx_id = 0} 
-        self[25][11] = {solid = false, gfx_id = 0} 
-        self[25][12] = {solid = false, gfx_id = 0} 
-        self[25][13] = {solid = false, gfx_id = 0} 
-        self[25][14] = {solid = false, gfx_id = 0} 
-        self[25][15] = {solid = false, gfx_id = 0} 
-        self[25][16] = {solid = false, gfx_id = 0} 
-        self[25][17] = {solid = false, gfx_id = 0} 
-        self[25][18] = {solid = false, gfx_id = 0} 
-        self[25][19] = {solid = false, gfx_id = 0} 
-        self[25][20] = {solid = false, gfx_id = 0} 
-        self[25][21] = {solid = false, gfx_id = 0} 
-        self[25][22] = {solid = false, gfx_id = 0} 
-        self[25][23] = {solid = false, gfx_id = 0} 
-        self[25][24] = {solid = false, gfx_id = 0} 
-        self[25][25] = {solid = false, gfx_id = 0} 
-        self[25][26] = {solid = true, gfx_id = 5} 
-        self[25][27] = {solid = true, gfx_id = 37} 
-        self[25][28] = {solid = true, gfx_id = 69} 
-        self[25][29] = {solid = false, gfx_id = 0} 
-        self[25][30] = {solid = false, gfx_id = 0} 
-        self[25][31] = {solid = false, gfx_id = 0} 
-        self[25][32] = {solid = false, gfx_id = 0} 
-        self[25][33] = {solid = true, gfx_id = 5} 
-        self[25][34] = {solid = false, gfx_id = 0} 
-        self[25][35] = {solid = false, gfx_id = 0} 
-        self[25][36] = {solid = false, gfx_id = 0} 
-        self[25][37] = {solid = false, gfx_id = 0} 
-        self[25][38] = {solid = false, gfx_id = 0} 
-        self[25][39] = {solid = true, gfx_id = 3} 
-        self[26] = {}
-        self[26][0] = {solid = false, gfx_id = 0} 
-        self[26][1] = {solid = false, gfx_id = 0} 
-        self[26][2] = {solid = false, gfx_id = 0} 
-        self[26][3] = {solid = false, gfx_id = 0} 
-        self[26][4] = {solid = false, gfx_id = 0} 
-        self[26][5] = {solid = false, gfx_id = 0} 
-        self[26][6] = {solid = false, gfx_id = 0} 
-        self[26][7] = {solid = false, gfx_id = 0} 
-        self[26][8] = {solid = false, gfx_id = 0} 
-        self[26][9] = {solid = false, gfx_id = 0} 
-        self[26][10] = {solid = false, gfx_id = 0} 
-        self[26][11] = {solid = false, gfx_id = 0} 
-        self[26][12] = {solid = false, gfx_id = 0} 
-        self[26][13] = {solid = false, gfx_id = 0} 
-        self[26][14] = {solid = false, gfx_id = 0} 
-        self[26][15] = {solid = false, gfx_id = 0} 
-        self[26][16] = {solid = false, gfx_id = 0} 
-        self[26][17] = {solid = false, gfx_id = 0} 
-        self[26][18] = {solid = false, gfx_id = 0} 
-        self[26][19] = {solid = false, gfx_id = 0} 
-        self[26][20] = {solid = false, gfx_id = 0} 
-        self[26][21] = {solid = false, gfx_id = 0} 
-        self[26][22] = {solid = false, gfx_id = 0} 
-        self[26][23] = {solid = false, gfx_id = 0} 
-        self[26][24] = {solid = false, gfx_id = 0} 
-        self[26][25] = {solid = false, gfx_id = 0} 
-        self[26][26] = {solid = true, gfx_id = 5} 
-        self[26][27] = {solid = true, gfx_id = 37} 
-        self[26][28] = {solid = true, gfx_id = 69} 
-        self[26][29] = {solid = false, gfx_id = 0} 
-        self[26][30] = {solid = false, gfx_id = 0} 
-        self[26][31] = {solid = false, gfx_id = 0} 
-        self[26][32] = {solid = false, gfx_id = 0} 
-        self[26][33] = {solid = true, gfx_id = 5} 
-        self[26][34] = {solid = false, gfx_id = 0} 
-        self[26][35] = {solid = false, gfx_id = 0} 
-        self[26][36] = {solid = false, gfx_id = 0} 
-        self[26][37] = {solid = false, gfx_id = 0} 
-        self[26][38] = {solid = false, gfx_id = 0} 
-        self[26][39] = {solid = true, gfx_id = 3} 
-        self[27] = {}
-        self[27][0] = {solid = false, gfx_id = 0} 
-        self[27][1] = {solid = false, gfx_id = 0} 
-        self[27][2] = {solid = false, gfx_id = 0} 
-        self[27][3] = {solid = false, gfx_id = 0} 
-        self[27][4] = {solid = false, gfx_id = 0} 
-        self[27][5] = {solid = false, gfx_id = 0} 
-        self[27][6] = {solid = false, gfx_id = 0} 
-        self[27][7] = {solid = false, gfx_id = 0} 
-        self[27][8] = {solid = false, gfx_id = 0} 
-        self[27][9] = {solid = false, gfx_id = 0} 
-        self[27][10] = {solid = false, gfx_id = 0} 
-        self[27][11] = {solid = false, gfx_id = 0} 
-        self[27][12] = {solid = false, gfx_id = 0} 
-        self[27][13] = {solid = false, gfx_id = 0} 
-        self[27][14] = {solid = false, gfx_id = 0} 
-        self[27][15] = {solid = false, gfx_id = 0} 
-        self[27][16] = {solid = false, gfx_id = 0} 
-        self[27][17] = {solid = false, gfx_id = 0} 
-        self[27][18] = {solid = false, gfx_id = 0} 
-        self[27][19] = {solid = false, gfx_id = 0} 
-        self[27][20] = {solid = false, gfx_id = 0} 
-        self[27][21] = {solid = false, gfx_id = 0} 
-        self[27][22] = {solid = false, gfx_id = 0} 
-        self[27][23] = {solid = false, gfx_id = 0} 
-        self[27][24] = {solid = false, gfx_id = 0} 
-        self[27][25] = {solid = false, gfx_id = 0} 
-        self[27][26] = {solid = true, gfx_id = 5} 
-        self[27][27] = {solid = true, gfx_id = 37} 
-        self[27][28] = {solid = true, gfx_id = 69} 
-        self[27][29] = {solid = false, gfx_id = 0} 
-        self[27][30] = {solid = false, gfx_id = 0} 
-        self[27][31] = {solid = false, gfx_id = 0} 
-        self[27][32] = {solid = false, gfx_id = 0} 
-        self[27][33] = {solid = true, gfx_id = 5} 
-        self[27][34] = {solid = false, gfx_id = 0} 
-        self[27][35] = {solid = false, gfx_id = 0} 
-        self[27][36] = {solid = false, gfx_id = 0} 
-        self[27][37] = {solid = false, gfx_id = 0} 
-        self[27][38] = {solid = false, gfx_id = 0} 
-        self[27][39] = {solid = true, gfx_id = 3} 
-        self[28] = {}
-        self[28][0] = {solid = false, gfx_id = 0} 
-        self[28][1] = {solid = false, gfx_id = 0} 
-        self[28][2] = {solid = false, gfx_id = 0} 
-        self[28][3] = {solid = false, gfx_id = 0} 
-        self[28][4] = {solid = false, gfx_id = 0} 
-        self[28][5] = {solid = false, gfx_id = 0} 
-        self[28][6] = {solid = false, gfx_id = 0} 
-        self[28][7] = {solid = false, gfx_id = 0} 
-        self[28][8] = {solid = false, gfx_id = 0} 
-        self[28][9] = {solid = false, gfx_id = 0} 
-        self[28][10] = {solid = false, gfx_id = 0} 
-        self[28][11] = {solid = false, gfx_id = 0} 
-        self[28][12] = {solid = false, gfx_id = 0} 
-        self[28][13] = {solid = false, gfx_id = 0} 
-        self[28][14] = {solid = false, gfx_id = 0} 
-        self[28][15] = {solid = false, gfx_id = 0} 
-        self[28][16] = {solid = false, gfx_id = 0} 
-        self[28][17] = {solid = false, gfx_id = 0} 
-        self[28][18] = {solid = false, gfx_id = 0} 
-        self[28][19] = {solid = false, gfx_id = 0} 
-        self[28][20] = {solid = false, gfx_id = 0} 
-        self[28][21] = {solid = false, gfx_id = 0} 
-        self[28][22] = {solid = false, gfx_id = 0} 
-        self[28][23] = {solid = false, gfx_id = 0} 
-        self[28][24] = {solid = false, gfx_id = 0} 
-        self[28][25] = {solid = false, gfx_id = 0} 
-        self[28][26] = {solid = true, gfx_id = 5} 
-        self[28][27] = {solid = true, gfx_id = 37} 
-        self[28][28] = {solid = true, gfx_id = 69} 
-        self[28][29] = {solid = false, gfx_id = 0} 
-        self[28][30] = {solid = false, gfx_id = 0} 
-        self[28][31] = {solid = false, gfx_id = 0} 
-        self[28][32] = {solid = false, gfx_id = 0} 
-        self[28][33] = {solid = true, gfx_id = 5} 
-        self[28][34] = {solid = false, gfx_id = 0} 
-        self[28][35] = {solid = false, gfx_id = 0} 
-        self[28][36] = {solid = false, gfx_id = 0} 
-        self[28][37] = {solid = false, gfx_id = 0} 
-        self[28][38] = {solid = false, gfx_id = 0} 
-        self[28][39] = {solid = true, gfx_id = 3} 
-        self[29] = {}
-        self[29][0] = {solid = false, gfx_id = 0} 
-        self[29][1] = {solid = false, gfx_id = 0} 
-        self[29][2] = {solid = false, gfx_id = 0} 
-        self[29][3] = {solid = false, gfx_id = 0} 
-        self[29][4] = {solid = false, gfx_id = 0} 
-        self[29][5] = {solid = false, gfx_id = 0} 
-        self[29][6] = {solid = false, gfx_id = 0} 
-        self[29][7] = {solid = false, gfx_id = 0} 
-        self[29][8] = {solid = false, gfx_id = 0} 
-        self[29][9] = {solid = false, gfx_id = 0} 
-        self[29][10] = {solid = false, gfx_id = 0} 
-        self[29][11] = {solid = false, gfx_id = 0} 
-        self[29][12] = {solid = false, gfx_id = 0} 
-        self[29][13] = {solid = false, gfx_id = 0} 
-        self[29][14] = {solid = false, gfx_id = 0} 
-        self[29][15] = {solid = false, gfx_id = 0} 
-        self[29][16] = {solid = false, gfx_id = 0} 
-        self[29][17] = {solid = false, gfx_id = 0} 
-        self[29][18] = {solid = false, gfx_id = 0} 
-        self[29][19] = {solid = false, gfx_id = 0} 
-        self[29][20] = {solid = false, gfx_id = 0} 
-        self[29][21] = {solid = false, gfx_id = 0} 
-        self[29][22] = {solid = false, gfx_id = 0} 
-        self[29][23] = {solid = false, gfx_id = 0} 
-        self[29][24] = {solid = false, gfx_id = 0} 
-        self[29][25] = {solid = false, gfx_id = 0} 
-        self[29][26] = {solid = true, gfx_id = 5} 
-        self[29][27] = {solid = true, gfx_id = 37} 
-        self[29][28] = {solid = true, gfx_id = 69} 
-        self[29][29] = {solid = false, gfx_id = 0} 
-        self[29][30] = {solid = false, gfx_id = 0} 
-        self[29][31] = {solid = false, gfx_id = 0} 
-        self[29][32] = {solid = false, gfx_id = 0} 
-        self[29][33] = {solid = true, gfx_id = 5} 
-        self[29][34] = {solid = false, gfx_id = 0} 
-        self[29][35] = {solid = false, gfx_id = 0} 
-        self[29][36] = {solid = false, gfx_id = 0} 
-        self[29][37] = {solid = false, gfx_id = 0} 
-        self[29][38] = {solid = false, gfx_id = 0} 
-        self[29][39] = {solid = true, gfx_id = 3} 
-        self[30] = {}
-        self[30][0] = {solid = false, gfx_id = 0} 
-        self[30][1] = {solid = false, gfx_id = 0} 
-        self[30][2] = {solid = false, gfx_id = 0} 
-        self[30][3] = {solid = false, gfx_id = 0} 
-        self[30][4] = {solid = false, gfx_id = 0} 
-        self[30][5] = {solid = false, gfx_id = 0} 
-        self[30][6] = {solid = false, gfx_id = 0} 
-        self[30][7] = {solid = false, gfx_id = 0} 
-        self[30][8] = {solid = false, gfx_id = 0} 
-        self[30][9] = {solid = false, gfx_id = 0} 
-        self[30][10] = {solid = false, gfx_id = 0} 
-        self[30][11] = {solid = false, gfx_id = 0} 
-        self[30][12] = {solid = false, gfx_id = 0} 
-        self[30][13] = {solid = false, gfx_id = 0} 
-        self[30][14] = {solid = false, gfx_id = 0} 
-        self[30][15] = {solid = false, gfx_id = 0} 
-        self[30][16] = {solid = false, gfx_id = 0} 
-        self[30][17] = {solid = false, gfx_id = 0} 
-        self[30][18] = {solid = false, gfx_id = 0} 
-        self[30][19] = {solid = false, gfx_id = 0} 
-        self[30][20] = {solid = false, gfx_id = 0} 
-        self[30][21] = {solid = false, gfx_id = 0} 
-        self[30][22] = {solid = false, gfx_id = 0} 
-        self[30][23] = {solid = false, gfx_id = 0} 
-        self[30][24] = {solid = false, gfx_id = 0} 
-        self[30][25] = {solid = false, gfx_id = 0} 
-        self[30][26] = {solid = true, gfx_id = 5} 
-        self[30][27] = {solid = true, gfx_id = 37} 
-        self[30][28] = {solid = true, gfx_id = 69} 
-        self[30][29] = {solid = false, gfx_id = 0} 
-        self[30][30] = {solid = false, gfx_id = 0} 
-        self[30][31] = {solid = true, gfx_id = 100} 
-        self[30][32] = {solid = true, gfx_id = 132} 
-        self[30][33] = {solid = true, gfx_id = 5} 
-        self[30][34] = {solid = false, gfx_id = 0} 
-        self[30][35] = {solid = false, gfx_id = 0} 
-        self[30][36] = {solid = false, gfx_id = 0} 
-        self[30][37] = {solid = false, gfx_id = 0} 
-        self[30][38] = {solid = false, gfx_id = 0} 
-        self[30][39] = {solid = true, gfx_id = 3} 
-        self[31] = {}
-        self[31][0] = {solid = false, gfx_id = 0} 
-        self[31][1] = {solid = false, gfx_id = 0} 
-        self[31][2] = {solid = false, gfx_id = 0} 
-        self[31][3] = {solid = false, gfx_id = 0} 
-        self[31][4] = {solid = false, gfx_id = 0} 
-        self[31][5] = {solid = false, gfx_id = 0} 
-        self[31][6] = {solid = false, gfx_id = 0} 
-        self[31][7] = {solid = false, gfx_id = 0} 
-        self[31][8] = {solid = false, gfx_id = 0} 
-        self[31][9] = {solid = false, gfx_id = 0} 
-        self[31][10] = {solid = false, gfx_id = 0} 
-        self[31][11] = {solid = false, gfx_id = 0} 
-        self[31][12] = {solid = false, gfx_id = 0} 
-        self[31][13] = {solid = false, gfx_id = 0} 
-        self[31][14] = {solid = false, gfx_id = 0} 
-        self[31][15] = {solid = false, gfx_id = 0} 
-        self[31][16] = {solid = false, gfx_id = 0} 
-        self[31][17] = {solid = false, gfx_id = 0} 
-        self[31][18] = {solid = false, gfx_id = 0} 
-        self[31][19] = {solid = false, gfx_id = 0} 
-        self[31][20] = {solid = false, gfx_id = 0} 
-        self[31][21] = {solid = false, gfx_id = 0} 
-        self[31][22] = {solid = false, gfx_id = 0} 
-        self[31][23] = {solid = false, gfx_id = 0} 
-        self[31][24] = {solid = false, gfx_id = 0} 
-        self[31][25] = {solid = false, gfx_id = 0} 
-        self[31][26] = {solid = true, gfx_id = 5} 
-        self[31][27] = {solid = true, gfx_id = 37} 
-        self[31][28] = {solid = true, gfx_id = 69} 
-        self[31][29] = {solid = false, gfx_id = 0} 
-        self[31][30] = {solid = false, gfx_id = 0} 
-        self[31][31] = {solid = true, gfx_id = 102} 
-        self[31][32] = {solid = true, gfx_id = 134} 
-        self[31][33] = {solid = true, gfx_id = 5} 
-        self[31][34] = {solid = false, gfx_id = 0} 
-        self[31][35] = {solid = true, gfx_id = 94} 
-        self[31][36] = {solid = true, gfx_id = 94} 
-        self[31][37] = {solid = false, gfx_id = 0} 
-        self[31][38] = {solid = false, gfx_id = 0} 
-        self[31][39] = {solid = true, gfx_id = 3} 
-        self[32] = {}
-        self[32][0] = {solid = false, gfx_id = 0} 
-        self[32][1] = {solid = false, gfx_id = 0} 
-        self[32][2] = {solid = false, gfx_id = 0} 
-        self[32][3] = {solid = false, gfx_id = 0} 
-        self[32][4] = {solid = false, gfx_id = 0} 
-        self[32][5] = {solid = false, gfx_id = 0} 
-        self[32][6] = {solid = false, gfx_id = 0} 
-        self[32][7] = {solid = false, gfx_id = 0} 
-        self[32][8] = {solid = false, gfx_id = 0} 
-        self[32][9] = {solid = false, gfx_id = 0} 
-        self[32][10] = {solid = false, gfx_id = 0} 
-        self[32][11] = {solid = false, gfx_id = 0} 
-        self[32][12] = {solid = false, gfx_id = 0} 
-        self[32][13] = {solid = false, gfx_id = 0} 
-        self[32][14] = {solid = false, gfx_id = 0} 
-        self[32][15] = {solid = false, gfx_id = 0} 
-        self[32][16] = {solid = false, gfx_id = 0} 
-        self[32][17] = {solid = false, gfx_id = 0} 
-        self[32][18] = {solid = false, gfx_id = 0} 
-        self[32][19] = {solid = false, gfx_id = 0} 
-        self[32][20] = {solid = false, gfx_id = 0} 
-        self[32][21] = {solid = false, gfx_id = 0} 
-        self[32][22] = {solid = false, gfx_id = 0} 
-        self[32][23] = {solid = false, gfx_id = 0} 
-        self[32][24] = {solid = false, gfx_id = 0} 
-        self[32][25] = {solid = false, gfx_id = 0} 
-        self[32][26] = {solid = true, gfx_id = 5} 
-        self[32][27] = {solid = true, gfx_id = 37} 
-        self[32][28] = {solid = true, gfx_id = 69} 
-        self[32][29] = {solid = false, gfx_id = 0} 
-        self[32][30] = {solid = false, gfx_id = 0} 
-        self[32][31] = {solid = false, gfx_id = 0} 
-        self[32][32] = {solid = false, gfx_id = 0} 
-        self[32][33] = {solid = true, gfx_id = 5} 
-        self[32][34] = {solid = false, gfx_id = 0} 
-        self[32][35] = {solid = true, gfx_id = 94} 
-        self[32][36] = {solid = false, gfx_id = 0} 
-        self[32][37] = {solid = false, gfx_id = 0} 
-        self[32][38] = {solid = false, gfx_id = 0} 
-        self[32][39] = {solid = true, gfx_id = 3} 
-        self[33] = {}
-        self[33][0] = {solid = false, gfx_id = 0} 
-        self[33][1] = {solid = false, gfx_id = 0} 
-        self[33][2] = {solid = false, gfx_id = 0} 
-        self[33][3] = {solid = false, gfx_id = 0} 
-        self[33][4] = {solid = false, gfx_id = 0} 
-        self[33][5] = {solid = false, gfx_id = 0} 
-        self[33][6] = {solid = false, gfx_id = 0} 
-        self[33][7] = {solid = false, gfx_id = 0} 
-        self[33][8] = {solid = false, gfx_id = 0} 
-        self[33][9] = {solid = false, gfx_id = 0} 
-        self[33][10] = {solid = false, gfx_id = 0} 
-        self[33][11] = {solid = false, gfx_id = 0} 
-        self[33][12] = {solid = false, gfx_id = 0} 
-        self[33][13] = {solid = false, gfx_id = 0} 
-        self[33][14] = {solid = false, gfx_id = 0} 
-        self[33][15] = {solid = false, gfx_id = 0} 
-        self[33][16] = {solid = false, gfx_id = 0} 
-        self[33][17] = {solid = false, gfx_id = 0} 
-        self[33][18] = {solid = false, gfx_id = 0} 
-        self[33][19] = {solid = false, gfx_id = 0} 
-        self[33][20] = {solid = false, gfx_id = 0} 
-        self[33][21] = {solid = false, gfx_id = 0} 
-        self[33][22] = {solid = false, gfx_id = 0} 
-        self[33][23] = {solid = false, gfx_id = 0} 
-        self[33][24] = {solid = false, gfx_id = 0} 
-        self[33][25] = {solid = false, gfx_id = 0} 
-        self[33][26] = {solid = true, gfx_id = 5} 
-        self[33][27] = {solid = true, gfx_id = 37} 
-        self[33][28] = {solid = true, gfx_id = 69} 
-        self[33][29] = {solid = false, gfx_id = 0} 
-        self[33][30] = {solid = false, gfx_id = 0} 
-        self[33][31] = {solid = false, gfx_id = 0} 
-        self[33][32] = {solid = false, gfx_id = 0} 
-        self[33][33] = {solid = true, gfx_id = 5} 
-        self[33][34] = {solid = false, gfx_id = 0} 
-        self[33][35] = {solid = true, gfx_id = 94} 
-        self[33][36] = {solid = false, gfx_id = 0} 
-        self[33][37] = {solid = false, gfx_id = 0} 
-        self[33][38] = {solid = false, gfx_id = 0} 
-        self[33][39] = {solid = true, gfx_id = 3} 
-        self[34] = {}
-        self[34][0] = {solid = false, gfx_id = 0} 
-        self[34][1] = {solid = false, gfx_id = 0} 
-        self[34][2] = {solid = false, gfx_id = 0} 
-        self[34][3] = {solid = false, gfx_id = 0} 
-        self[34][4] = {solid = false, gfx_id = 0} 
-        self[34][5] = {solid = false, gfx_id = 0} 
-        self[34][6] = {solid = false, gfx_id = 0} 
-        self[34][7] = {solid = false, gfx_id = 0} 
-        self[34][8] = {solid = false, gfx_id = 0} 
-        self[34][9] = {solid = false, gfx_id = 0} 
-        self[34][10] = {solid = false, gfx_id = 0} 
-        self[34][11] = {solid = false, gfx_id = 0} 
-        self[34][12] = {solid = false, gfx_id = 0} 
-        self[34][13] = {solid = false, gfx_id = 0} 
-        self[34][14] = {solid = false, gfx_id = 0} 
-        self[34][15] = {solid = false, gfx_id = 0} 
-        self[34][16] = {solid = false, gfx_id = 0} 
-        self[34][17] = {solid = false, gfx_id = 0} 
-        self[34][18] = {solid = false, gfx_id = 0} 
-        self[34][19] = {solid = false, gfx_id = 0} 
-        self[34][20] = {solid = false, gfx_id = 0} 
-        self[34][21] = {solid = false, gfx_id = 0} 
-        self[34][22] = {solid = false, gfx_id = 0} 
-        self[34][23] = {solid = false, gfx_id = 0} 
-        self[34][24] = {solid = false, gfx_id = 0} 
-        self[34][25] = {solid = false, gfx_id = 0} 
-        self[34][26] = {solid = true, gfx_id = 5} 
-        self[34][27] = {solid = true, gfx_id = 37} 
-        self[34][28] = {solid = true, gfx_id = 69} 
-        self[34][29] = {solid = false, gfx_id = 0} 
-        self[34][30] = {solid = false, gfx_id = 0} 
-        self[34][31] = {solid = false, gfx_id = 0} 
-        self[34][32] = {solid = false, gfx_id = 0} 
-        self[34][33] = {solid = true, gfx_id = 5} 
-        self[34][34] = {solid = false, gfx_id = 0} 
-        self[34][35] = {solid = true, gfx_id = 94} 
-        self[34][36] = {solid = false, gfx_id = 0} 
-        self[34][37] = {solid = false, gfx_id = 0} 
-        self[34][38] = {solid = false, gfx_id = 0} 
-        self[34][39] = {solid = true, gfx_id = 3} 
-        self[35] = {}
-        self[35][0] = {solid = false, gfx_id = 0} 
-        self[35][1] = {solid = false, gfx_id = 0} 
-        self[35][2] = {solid = false, gfx_id = 0} 
-        self[35][3] = {solid = false, gfx_id = 0} 
-        self[35][4] = {solid = false, gfx_id = 0} 
-        self[35][5] = {solid = false, gfx_id = 0} 
-        self[35][6] = {solid = false, gfx_id = 0} 
-        self[35][7] = {solid = false, gfx_id = 0} 
-        self[35][8] = {solid = false, gfx_id = 0} 
-        self[35][9] = {solid = false, gfx_id = 0} 
-        self[35][10] = {solid = false, gfx_id = 0} 
-        self[35][11] = {solid = false, gfx_id = 0} 
-        self[35][12] = {solid = false, gfx_id = 0} 
-        self[35][13] = {solid = false, gfx_id = 0} 
-        self[35][14] = {solid = false, gfx_id = 0} 
-        self[35][15] = {solid = false, gfx_id = 0} 
-        self[35][16] = {solid = false, gfx_id = 0} 
-        self[35][17] = {solid = false, gfx_id = 0} 
-        self[35][18] = {solid = false, gfx_id = 0} 
-        self[35][19] = {solid = false, gfx_id = 0} 
-        self[35][20] = {solid = false, gfx_id = 0} 
-        self[35][21] = {solid = false, gfx_id = 0} 
-        self[35][22] = {solid = false, gfx_id = 0} 
-        self[35][23] = {solid = false, gfx_id = 0} 
-        self[35][24] = {solid = false, gfx_id = 0} 
-        self[35][25] = {solid = false, gfx_id = 0} 
-        self[35][26] = {solid = true, gfx_id = 5} 
-        self[35][27] = {solid = true, gfx_id = 37} 
-        self[35][28] = {solid = true, gfx_id = 69} 
-        self[35][29] = {solid = false, gfx_id = 0} 
-        self[35][30] = {solid = false, gfx_id = 0} 
-        self[35][31] = {solid = false, gfx_id = 0} 
-        self[35][32] = {solid = false, gfx_id = 0} 
-        self[35][33] = {solid = true, gfx_id = 5} 
-        self[35][34] = {solid = false, gfx_id = 0} 
-        self[35][35] = {solid = true, gfx_id = 94} 
-        self[35][36] = {solid = true, gfx_id = 94} 
-        self[35][37] = {solid = false, gfx_id = 0} 
-        self[35][38] = {solid = false, gfx_id = 0} 
-        self[35][39] = {solid = true, gfx_id = 3} 
-        self[36] = {}
-        self[36][0] = {solid = false, gfx_id = 0} 
-        self[36][1] = {solid = false, gfx_id = 0} 
-        self[36][2] = {solid = false, gfx_id = 0} 
-        self[36][3] = {solid = false, gfx_id = 0} 
-        self[36][4] = {solid = false, gfx_id = 0} 
-        self[36][5] = {solid = false, gfx_id = 0} 
-        self[36][6] = {solid = false, gfx_id = 0} 
-        self[36][7] = {solid = false, gfx_id = 0} 
-        self[36][8] = {solid = false, gfx_id = 0} 
-        self[36][9] = {solid = false, gfx_id = 0} 
-        self[36][10] = {solid = false, gfx_id = 0} 
-        self[36][11] = {solid = false, gfx_id = 0} 
-        self[36][12] = {solid = false, gfx_id = 0} 
-        self[36][13] = {solid = false, gfx_id = 0} 
-        self[36][14] = {solid = false, gfx_id = 0} 
-        self[36][15] = {solid = false, gfx_id = 0} 
-        self[36][16] = {solid = false, gfx_id = 0} 
-        self[36][17] = {solid = false, gfx_id = 0} 
-        self[36][18] = {solid = false, gfx_id = 0} 
-        self[36][19] = {solid = false, gfx_id = 0} 
-        self[36][20] = {solid = false, gfx_id = 0} 
-        self[36][21] = {solid = false, gfx_id = 0} 
-        self[36][22] = {solid = false, gfx_id = 0} 
-        self[36][23] = {solid = false, gfx_id = 0} 
-        self[36][24] = {solid = false, gfx_id = 0} 
-        self[36][25] = {solid = false, gfx_id = 0} 
-        self[36][26] = {solid = true, gfx_id = 5} 
-        self[36][27] = {solid = true, gfx_id = 37} 
-        self[36][28] = {solid = true, gfx_id = 69} 
-        self[36][29] = {solid = false, gfx_id = 0} 
-        self[36][30] = {solid = false, gfx_id = 0} 
-        self[36][31] = {solid = false, gfx_id = 0} 
-        self[36][32] = {solid = false, gfx_id = 0} 
-        self[36][33] = {solid = true, gfx_id = 5} 
-        self[36][34] = {solid = false, gfx_id = 0} 
-        self[36][35] = {solid = false, gfx_id = 0} 
-        self[36][36] = {solid = false, gfx_id = 0} 
-        self[36][37] = {solid = false, gfx_id = 0} 
-        self[36][38] = {solid = false, gfx_id = 0} 
-        self[36][39] = {solid = true, gfx_id = 3} 
-        self[37] = {}
-        self[37][0] = {solid = false, gfx_id = 0} 
-        self[37][1] = {solid = false, gfx_id = 0} 
-        self[37][2] = {solid = false, gfx_id = 0} 
-        self[37][3] = {solid = false, gfx_id = 0} 
-        self[37][4] = {solid = false, gfx_id = 0} 
-        self[37][5] = {solid = false, gfx_id = 0} 
-        self[37][6] = {solid = false, gfx_id = 0} 
-        self[37][7] = {solid = false, gfx_id = 0} 
-        self[37][8] = {solid = false, gfx_id = 0} 
-        self[37][9] = {solid = false, gfx_id = 0} 
-        self[37][10] = {solid = false, gfx_id = 0} 
-        self[37][11] = {solid = false, gfx_id = 0} 
-        self[37][12] = {solid = false, gfx_id = 0} 
-        self[37][13] = {solid = false, gfx_id = 0} 
-        self[37][14] = {solid = false, gfx_id = 0} 
-        self[37][15] = {solid = false, gfx_id = 0} 
-        self[37][16] = {solid = false, gfx_id = 0} 
-        self[37][17] = {solid = false, gfx_id = 0} 
-        self[37][18] = {solid = false, gfx_id = 0} 
-        self[37][19] = {solid = false, gfx_id = 0} 
-        self[37][20] = {solid = false, gfx_id = 0} 
-        self[37][21] = {solid = false, gfx_id = 0} 
-        self[37][22] = {solid = false, gfx_id = 0} 
-        self[37][23] = {solid = false, gfx_id = 0} 
-        self[37][24] = {solid = false, gfx_id = 0} 
-        self[37][25] = {solid = false, gfx_id = 0} 
-        self[37][26] = {solid = true, gfx_id = 5} 
-        self[37][27] = {solid = true, gfx_id = 37} 
-        self[37][28] = {solid = true, gfx_id = 69} 
-        self[37][29] = {solid = false, gfx_id = 0} 
-        self[37][30] = {solid = false, gfx_id = 0} 
-        self[37][31] = {solid = false, gfx_id = 0} 
-        self[37][32] = {solid = false, gfx_id = 0} 
-        self[37][33] = {solid = true, gfx_id = 5} 
-        self[37][34] = {solid = false, gfx_id = 0} 
-        self[37][35] = {solid = false, gfx_id = 0} 
-        self[37][36] = {solid = false, gfx_id = 0} 
-        self[37][37] = {solid = false, gfx_id = 0} 
-        self[37][38] = {solid = false, gfx_id = 0} 
-        self[37][39] = {solid = true, gfx_id = 3} 
-        self[38] = {}
-        self[38][0] = {solid = false, gfx_id = 0} 
-        self[38][1] = {solid = false, gfx_id = 0} 
-        self[38][2] = {solid = false, gfx_id = 0} 
-        self[38][3] = {solid = false, gfx_id = 0} 
-        self[38][4] = {solid = false, gfx_id = 0} 
-        self[38][5] = {solid = false, gfx_id = 0} 
-        self[38][6] = {solid = false, gfx_id = 0} 
-        self[38][7] = {solid = false, gfx_id = 0} 
-        self[38][8] = {solid = false, gfx_id = 0} 
-        self[38][9] = {solid = false, gfx_id = 0} 
-        self[38][10] = {solid = false, gfx_id = 0} 
-        self[38][11] = {solid = false, gfx_id = 0} 
-        self[38][12] = {solid = false, gfx_id = 0} 
-        self[38][13] = {solid = false, gfx_id = 0} 
-        self[38][14] = {solid = false, gfx_id = 0} 
-        self[38][15] = {solid = false, gfx_id = 0} 
-        self[38][16] = {solid = false, gfx_id = 0} 
-        self[38][17] = {solid = false, gfx_id = 0} 
-        self[38][18] = {solid = false, gfx_id = 0} 
-        self[38][19] = {solid = false, gfx_id = 0} 
-        self[38][20] = {solid = false, gfx_id = 0} 
-        self[38][21] = {solid = false, gfx_id = 0} 
-        self[38][22] = {solid = false, gfx_id = 0} 
-        self[38][23] = {solid = false, gfx_id = 0} 
-        self[38][24] = {solid = false, gfx_id = 0} 
-        self[38][25] = {solid = false, gfx_id = 0} 
-        self[38][26] = {solid = true, gfx_id = 6} 
-        self[38][27] = {solid = true, gfx_id = 38} 
-        self[38][28] = {solid = true, gfx_id = 70} 
-        self[38][29] = {solid = false, gfx_id = 0} 
-        self[38][30] = {solid = false, gfx_id = 0} 
-        self[38][31] = {solid = false, gfx_id = 0} 
-        self[38][32] = {solid = false, gfx_id = 0} 
-        self[38][33] = {solid = true, gfx_id = 6} 
-        self[38][34] = {solid = true, gfx_id = 38} 
-        self[38][35] = {solid = true, gfx_id = 38} 
-        self[38][36] = {solid = true, gfx_id = 38} 
-        self[38][37] = {solid = true, gfx_id = 38} 
-        self[38][38] = {solid = true, gfx_id = 70} 
-        self[38][39] = {solid = true, gfx_id = 3} 
-        self[39] = {}
-        self[39][0] = {solid = false, gfx_id = 0} 
-        self[39][1] = {solid = false, gfx_id = 0} 
-        self[39][2] = {solid = false, gfx_id = 0} 
-        self[39][3] = {solid = false, gfx_id = 0} 
-        self[39][4] = {solid = false, gfx_id = 0} 
-        self[39][5] = {solid = false, gfx_id = 0} 
-        self[39][6] = {solid = false, gfx_id = 0} 
-        self[39][7] = {solid = false, gfx_id = 0} 
-        self[39][8] = {solid = false, gfx_id = 0} 
-        self[39][9] = {solid = false, gfx_id = 0} 
-        self[39][10] = {solid = false, gfx_id = 0} 
-        self[39][11] = {solid = false, gfx_id = 0} 
-        self[39][12] = {solid = false, gfx_id = 0} 
-        self[39][13] = {solid = false, gfx_id = 0} 
-        self[39][14] = {solid = false, gfx_id = 0} 
-        self[39][15] = {solid = false, gfx_id = 0} 
-        self[39][16] = {solid = false, gfx_id = 0} 
-        self[39][17] = {solid = false, gfx_id = 0} 
-        self[39][18] = {solid = false, gfx_id = 0} 
-        self[39][19] = {solid = false, gfx_id = 0} 
-        self[39][20] = {solid = false, gfx_id = 0} 
-        self[39][21] = {solid = false, gfx_id = 0} 
-        self[39][22] = {solid = false, gfx_id = 0} 
-        self[39][23] = {solid = false, gfx_id = 0} 
-        self[39][24] = {solid = false, gfx_id = 0} 
-        self[39][25] = {solid = false, gfx_id = 0} 
-        self[39][26] = {solid = false, gfx_id = 0} 
-        self[39][27] = {solid = false, gfx_id = 0} 
-        self[39][28] = {solid = false, gfx_id = 0} 
-        self[39][29] = {solid = false, gfx_id = 0} 
-        self[39][30] = {solid = false, gfx_id = 0} 
-        self[39][31] = {solid = false, gfx_id = 0} 
-        self[39][32] = {solid = false, gfx_id = 0} 
-        self[39][33] = {solid = false, gfx_id = 0} 
-        self[39][34] = {solid = false, gfx_id = 0} 
-        self[39][35] = {solid = false, gfx_id = 0} 
-        self[39][36] = {solid = false, gfx_id = 0} 
-        self[39][37] = {solid = false, gfx_id = 0} 
-        self[39][38] = {solid = false, gfx_id = 0} 
-        self[39][39] = {solid = true, gfx_id = 3} 
-        return self
-        end
-        return Level
+local self = {}
+self[0] = {}
+self[0][0] = {solid = true, gfx_id = 3} 
+self[0][1] = {solid = false, gfx_id = 0} 
+self[0][2] = {solid = false, gfx_id = 0} 
+self[0][3] = {solid = false, gfx_id = 0} 
+self[0][4] = {solid = false, gfx_id = 0} 
+self[0][5] = {solid = false, gfx_id = 0} 
+self[0][6] = {solid = false, gfx_id = 0} 
+self[0][7] = {solid = false, gfx_id = 0} 
+self[0][8] = {solid = false, gfx_id = 0} 
+self[0][9] = {solid = false, gfx_id = 0} 
+self[0][10] = {solid = false, gfx_id = 0} 
+self[0][11] = {solid = false, gfx_id = 0} 
+self[0][12] = {solid = false, gfx_id = 0} 
+self[0][13] = {solid = false, gfx_id = 0} 
+self[0][14] = {solid = false, gfx_id = 0} 
+self[0][15] = {solid = false, gfx_id = 0} 
+self[0][16] = {solid = false, gfx_id = 0} 
+self[0][17] = {solid = false, gfx_id = 0} 
+self[0][18] = {solid = false, gfx_id = 0} 
+self[0][19] = {solid = false, gfx_id = 0} 
+self[0][20] = {solid = false, gfx_id = 0} 
+self[0][21] = {solid = false, gfx_id = 0} 
+self[0][22] = {solid = false, gfx_id = 0} 
+self[0][23] = {solid = false, gfx_id = 0} 
+self[0][24] = {solid = false, gfx_id = 0} 
+self[0][25] = {solid = false, gfx_id = 0} 
+self[0][26] = {solid = false, gfx_id = 0} 
+self[0][27] = {solid = false, gfx_id = 0} 
+self[0][28] = {solid = false, gfx_id = 0} 
+self[0][29] = {solid = false, gfx_id = 0} 
+self[0][30] = {solid = false, gfx_id = 0} 
+self[0][31] = {solid = false, gfx_id = 0} 
+self[0][32] = {solid = false, gfx_id = 0} 
+self[0][33] = {solid = false, gfx_id = 0} 
+self[0][34] = {solid = false, gfx_id = 0} 
+self[0][35] = {solid = false, gfx_id = 0} 
+self[0][36] = {solid = false, gfx_id = 0} 
+self[0][37] = {solid = false, gfx_id = 0} 
+self[0][38] = {solid = false, gfx_id = 0} 
+self[0][39] = {solid = false, gfx_id = 0} 
+self[1] = {}
+self[1][0] = {solid = false, gfx_id = 0} 
+self[1][1] = {solid = false, gfx_id = 0} 
+self[1][2] = {solid = false, gfx_id = 0} 
+self[1][3] = {solid = false, gfx_id = 0} 
+self[1][4] = {solid = false, gfx_id = 0} 
+self[1][5] = {solid = false, gfx_id = 0} 
+self[1][6] = {solid = false, gfx_id = 0} 
+self[1][7] = {solid = false, gfx_id = 0} 
+self[1][8] = {solid = false, gfx_id = 0} 
+self[1][9] = {solid = false, gfx_id = 0} 
+self[1][10] = {solid = false, gfx_id = 0} 
+self[1][11] = {solid = false, gfx_id = 0} 
+self[1][12] = {solid = false, gfx_id = 0} 
+self[1][13] = {solid = false, gfx_id = 0} 
+self[1][14] = {solid = false, gfx_id = 0} 
+self[1][15] = {solid = false, gfx_id = 0} 
+self[1][16] = {solid = false, gfx_id = 0} 
+self[1][17] = {solid = false, gfx_id = 0} 
+self[1][18] = {solid = false, gfx_id = 0} 
+self[1][19] = {solid = false, gfx_id = 0} 
+self[1][20] = {solid = false, gfx_id = 0} 
+self[1][21] = {solid = false, gfx_id = 0} 
+self[1][22] = {solid = false, gfx_id = 0} 
+self[1][23] = {solid = false, gfx_id = 0} 
+self[1][24] = {solid = false, gfx_id = 0} 
+self[1][25] = {solid = false, gfx_id = 0} 
+self[1][26] = {solid = true, gfx_id = 4} 
+self[1][27] = {solid = true, gfx_id = 36} 
+self[1][28] = {solid = true, gfx_id = 68} 
+self[1][29] = {solid = false, gfx_id = 0} 
+self[1][30] = {solid = false, gfx_id = 0} 
+self[1][31] = {solid = false, gfx_id = 0} 
+self[1][32] = {solid = false, gfx_id = 0} 
+self[1][33] = {solid = false, gfx_id = 0} 
+self[1][34] = {solid = false, gfx_id = 0} 
+self[1][35] = {solid = false, gfx_id = 0} 
+self[1][36] = {solid = false, gfx_id = 0} 
+self[1][37] = {solid = false, gfx_id = 0} 
+self[1][38] = {solid = false, gfx_id = 0} 
+self[1][39] = {solid = false, gfx_id = 0} 
+self[2] = {}
+self[2][0] = {solid = false, gfx_id = 0} 
+self[2][1] = {solid = false, gfx_id = 0} 
+self[2][2] = {solid = false, gfx_id = 0} 
+self[2][3] = {solid = false, gfx_id = 0} 
+self[2][4] = {solid = false, gfx_id = 0} 
+self[2][5] = {solid = false, gfx_id = 0} 
+self[2][6] = {solid = false, gfx_id = 0} 
+self[2][7] = {solid = false, gfx_id = 0} 
+self[2][8] = {solid = false, gfx_id = 0} 
+self[2][9] = {solid = false, gfx_id = 0} 
+self[2][10] = {solid = false, gfx_id = 0} 
+self[2][11] = {solid = false, gfx_id = 0} 
+self[2][12] = {solid = false, gfx_id = 0} 
+self[2][13] = {solid = false, gfx_id = 0} 
+self[2][14] = {solid = false, gfx_id = 0} 
+self[2][15] = {solid = false, gfx_id = 0} 
+self[2][16] = {solid = false, gfx_id = 0} 
+self[2][17] = {solid = false, gfx_id = 0} 
+self[2][18] = {solid = false, gfx_id = 0} 
+self[2][19] = {solid = false, gfx_id = 0} 
+self[2][20] = {solid = false, gfx_id = 0} 
+self[2][21] = {solid = false, gfx_id = 0} 
+self[2][22] = {solid = false, gfx_id = 0} 
+self[2][23] = {solid = false, gfx_id = 0} 
+self[2][24] = {solid = false, gfx_id = 0} 
+self[2][25] = {solid = false, gfx_id = 0} 
+self[2][26] = {solid = true, gfx_id = 5} 
+self[2][27] = {solid = true, gfx_id = 37} 
+self[2][28] = {solid = true, gfx_id = 69} 
+self[2][29] = {solid = false, gfx_id = 0} 
+self[2][30] = {solid = false, gfx_id = 0} 
+self[2][31] = {solid = false, gfx_id = 0} 
+self[2][32] = {solid = false, gfx_id = 0} 
+self[2][33] = {solid = false, gfx_id = 0} 
+self[2][34] = {solid = false, gfx_id = 0} 
+self[2][35] = {solid = false, gfx_id = 0} 
+self[2][36] = {solid = false, gfx_id = 0} 
+self[2][37] = {solid = false, gfx_id = 0} 
+self[2][38] = {solid = false, gfx_id = 0} 
+self[2][39] = {solid = false, gfx_id = 0} 
+self[3] = {}
+self[3][0] = {solid = false, gfx_id = 0} 
+self[3][1] = {solid = false, gfx_id = 0} 
+self[3][2] = {solid = false, gfx_id = 0} 
+self[3][3] = {solid = false, gfx_id = 0} 
+self[3][4] = {solid = false, gfx_id = 0} 
+self[3][5] = {solid = false, gfx_id = 0} 
+self[3][6] = {solid = false, gfx_id = 0} 
+self[3][7] = {solid = false, gfx_id = 0} 
+self[3][8] = {solid = false, gfx_id = 0} 
+self[3][9] = {solid = false, gfx_id = 0} 
+self[3][10] = {solid = false, gfx_id = 0} 
+self[3][11] = {solid = false, gfx_id = 0} 
+self[3][12] = {solid = false, gfx_id = 0} 
+self[3][13] = {solid = false, gfx_id = 0} 
+self[3][14] = {solid = false, gfx_id = 0} 
+self[3][15] = {solid = false, gfx_id = 0} 
+self[3][16] = {solid = false, gfx_id = 0} 
+self[3][17] = {solid = false, gfx_id = 0} 
+self[3][18] = {solid = false, gfx_id = 0} 
+self[3][19] = {solid = false, gfx_id = 0} 
+self[3][20] = {solid = false, gfx_id = 0} 
+self[3][21] = {solid = false, gfx_id = 0} 
+self[3][22] = {solid = false, gfx_id = 0} 
+self[3][23] = {solid = false, gfx_id = 0} 
+self[3][24] = {solid = false, gfx_id = 0} 
+self[3][25] = {solid = false, gfx_id = 0} 
+self[3][26] = {solid = true, gfx_id = 5} 
+self[3][27] = {solid = true, gfx_id = 37} 
+self[3][28] = {solid = true, gfx_id = 69} 
+self[3][29] = {solid = false, gfx_id = 0} 
+self[3][30] = {solid = false, gfx_id = 0} 
+self[3][31] = {solid = false, gfx_id = 0} 
+self[3][32] = {solid = false, gfx_id = 0} 
+self[3][33] = {solid = false, gfx_id = 0} 
+self[3][34] = {solid = false, gfx_id = 0} 
+self[3][35] = {solid = false, gfx_id = 0} 
+self[3][36] = {solid = false, gfx_id = 0} 
+self[3][37] = {solid = false, gfx_id = 0} 
+self[3][38] = {solid = false, gfx_id = 0} 
+self[3][39] = {solid = false, gfx_id = 0} 
+self[4] = {}
+self[4][0] = {solid = false, gfx_id = 0} 
+self[4][1] = {solid = false, gfx_id = 0} 
+self[4][2] = {solid = false, gfx_id = 0} 
+self[4][3] = {solid = false, gfx_id = 0} 
+self[4][4] = {solid = false, gfx_id = 0} 
+self[4][5] = {solid = false, gfx_id = 0} 
+self[4][6] = {solid = false, gfx_id = 0} 
+self[4][7] = {solid = false, gfx_id = 0} 
+self[4][8] = {solid = false, gfx_id = 0} 
+self[4][9] = {solid = false, gfx_id = 0} 
+self[4][10] = {solid = false, gfx_id = 0} 
+self[4][11] = {solid = false, gfx_id = 0} 
+self[4][12] = {solid = false, gfx_id = 0} 
+self[4][13] = {solid = false, gfx_id = 0} 
+self[4][14] = {solid = false, gfx_id = 0} 
+self[4][15] = {solid = false, gfx_id = 0} 
+self[4][16] = {solid = false, gfx_id = 0} 
+self[4][17] = {solid = false, gfx_id = 0} 
+self[4][18] = {solid = false, gfx_id = 0} 
+self[4][19] = {solid = false, gfx_id = 0} 
+self[4][20] = {solid = false, gfx_id = 0} 
+self[4][21] = {solid = false, gfx_id = 0} 
+self[4][22] = {solid = false, gfx_id = 0} 
+self[4][23] = {solid = false, gfx_id = 0} 
+self[4][24] = {solid = false, gfx_id = 0} 
+self[4][25] = {solid = false, gfx_id = 0} 
+self[4][26] = {solid = true, gfx_id = 5} 
+self[4][27] = {solid = true, gfx_id = 37} 
+self[4][28] = {solid = true, gfx_id = 69} 
+self[4][29] = {solid = false, gfx_id = 0} 
+self[4][30] = {solid = false, gfx_id = 0} 
+self[4][31] = {solid = false, gfx_id = 0} 
+self[4][32] = {solid = false, gfx_id = 0} 
+self[4][33] = {solid = false, gfx_id = 0} 
+self[4][34] = {solid = false, gfx_id = 0} 
+self[4][35] = {solid = false, gfx_id = 0} 
+self[4][36] = {solid = false, gfx_id = 0} 
+self[4][37] = {solid = false, gfx_id = 0} 
+self[4][38] = {solid = false, gfx_id = 0} 
+self[4][39] = {solid = false, gfx_id = 0} 
+self[5] = {}
+self[5][0] = {solid = false, gfx_id = 0} 
+self[5][1] = {solid = false, gfx_id = 0} 
+self[5][2] = {solid = false, gfx_id = 0} 
+self[5][3] = {solid = false, gfx_id = 0} 
+self[5][4] = {solid = false, gfx_id = 0} 
+self[5][5] = {solid = false, gfx_id = 0} 
+self[5][6] = {solid = false, gfx_id = 0} 
+self[5][7] = {solid = false, gfx_id = 0} 
+self[5][8] = {solid = false, gfx_id = 0} 
+self[5][9] = {solid = false, gfx_id = 0} 
+self[5][10] = {solid = false, gfx_id = 0} 
+self[5][11] = {solid = false, gfx_id = 0} 
+self[5][12] = {solid = false, gfx_id = 0} 
+self[5][13] = {solid = false, gfx_id = 0} 
+self[5][14] = {solid = false, gfx_id = 0} 
+self[5][15] = {solid = false, gfx_id = 0} 
+self[5][16] = {solid = false, gfx_id = 0} 
+self[5][17] = {solid = false, gfx_id = 0} 
+self[5][18] = {solid = false, gfx_id = 0} 
+self[5][19] = {solid = false, gfx_id = 0} 
+self[5][20] = {solid = false, gfx_id = 0} 
+self[5][21] = {solid = false, gfx_id = 0} 
+self[5][22] = {solid = false, gfx_id = 0} 
+self[5][23] = {solid = false, gfx_id = 0} 
+self[5][24] = {solid = false, gfx_id = 0} 
+self[5][25] = {solid = false, gfx_id = 0} 
+self[5][26] = {solid = true, gfx_id = 5} 
+self[5][27] = {solid = true, gfx_id = 37} 
+self[5][28] = {solid = true, gfx_id = 69} 
+self[5][29] = {solid = false, gfx_id = 0} 
+self[5][30] = {solid = false, gfx_id = 0} 
+self[5][31] = {solid = false, gfx_id = 0} 
+self[5][32] = {solid = false, gfx_id = 0} 
+self[5][33] = {solid = false, gfx_id = 0} 
+self[5][34] = {solid = false, gfx_id = 0} 
+self[5][35] = {solid = false, gfx_id = 0} 
+self[5][36] = {solid = false, gfx_id = 0} 
+self[5][37] = {solid = false, gfx_id = 0} 
+self[5][38] = {solid = false, gfx_id = 0} 
+self[5][39] = {solid = false, gfx_id = 0} 
+self[6] = {}
+self[6][0] = {solid = false, gfx_id = 0} 
+self[6][1] = {solid = false, gfx_id = 0} 
+self[6][2] = {solid = false, gfx_id = 0} 
+self[6][3] = {solid = false, gfx_id = 0} 
+self[6][4] = {solid = false, gfx_id = 0} 
+self[6][5] = {solid = false, gfx_id = 0} 
+self[6][6] = {solid = false, gfx_id = 0} 
+self[6][7] = {solid = false, gfx_id = 0} 
+self[6][8] = {solid = false, gfx_id = 0} 
+self[6][9] = {solid = false, gfx_id = 0} 
+self[6][10] = {solid = false, gfx_id = 0} 
+self[6][11] = {solid = false, gfx_id = 0} 
+self[6][12] = {solid = false, gfx_id = 0} 
+self[6][13] = {solid = false, gfx_id = 0} 
+self[6][14] = {solid = false, gfx_id = 0} 
+self[6][15] = {solid = false, gfx_id = 0} 
+self[6][16] = {solid = false, gfx_id = 0} 
+self[6][17] = {solid = false, gfx_id = 0} 
+self[6][18] = {solid = false, gfx_id = 0} 
+self[6][19] = {solid = false, gfx_id = 0} 
+self[6][20] = {solid = false, gfx_id = 0} 
+self[6][21] = {solid = false, gfx_id = 0} 
+self[6][22] = {solid = false, gfx_id = 0} 
+self[6][23] = {solid = false, gfx_id = 0} 
+self[6][24] = {solid = false, gfx_id = 0} 
+self[6][25] = {solid = false, gfx_id = 0} 
+self[6][26] = {solid = true, gfx_id = 5} 
+self[6][27] = {solid = true, gfx_id = 37} 
+self[6][28] = {solid = true, gfx_id = 69} 
+self[6][29] = {solid = false, gfx_id = 0} 
+self[6][30] = {solid = false, gfx_id = 0} 
+self[6][31] = {solid = false, gfx_id = 0} 
+self[6][32] = {solid = false, gfx_id = 0} 
+self[6][33] = {solid = false, gfx_id = 0} 
+self[6][34] = {solid = false, gfx_id = 0} 
+self[6][35] = {solid = false, gfx_id = 0} 
+self[6][36] = {solid = false, gfx_id = 0} 
+self[6][37] = {solid = false, gfx_id = 0} 
+self[6][38] = {solid = false, gfx_id = 0} 
+self[6][39] = {solid = false, gfx_id = 0} 
+self[7] = {}
+self[7][0] = {solid = false, gfx_id = 0} 
+self[7][1] = {solid = false, gfx_id = 0} 
+self[7][2] = {solid = false, gfx_id = 0} 
+self[7][3] = {solid = false, gfx_id = 0} 
+self[7][4] = {solid = false, gfx_id = 0} 
+self[7][5] = {solid = false, gfx_id = 0} 
+self[7][6] = {solid = false, gfx_id = 0} 
+self[7][7] = {solid = false, gfx_id = 0} 
+self[7][8] = {solid = false, gfx_id = 0} 
+self[7][9] = {solid = false, gfx_id = 0} 
+self[7][10] = {solid = false, gfx_id = 0} 
+self[7][11] = {solid = false, gfx_id = 0} 
+self[7][12] = {solid = false, gfx_id = 0} 
+self[7][13] = {solid = false, gfx_id = 0} 
+self[7][14] = {solid = false, gfx_id = 0} 
+self[7][15] = {solid = false, gfx_id = 0} 
+self[7][16] = {solid = false, gfx_id = 0} 
+self[7][17] = {solid = false, gfx_id = 0} 
+self[7][18] = {solid = false, gfx_id = 0} 
+self[7][19] = {solid = false, gfx_id = 0} 
+self[7][20] = {solid = false, gfx_id = 0} 
+self[7][21] = {solid = false, gfx_id = 0} 
+self[7][22] = {solid = false, gfx_id = 0} 
+self[7][23] = {solid = false, gfx_id = 0} 
+self[7][24] = {solid = false, gfx_id = 0} 
+self[7][25] = {solid = false, gfx_id = 0} 
+self[7][26] = {solid = true, gfx_id = 5} 
+self[7][27] = {solid = true, gfx_id = 37} 
+self[7][28] = {solid = true, gfx_id = 69} 
+self[7][29] = {solid = false, gfx_id = 0} 
+self[7][30] = {solid = false, gfx_id = 0} 
+self[7][31] = {solid = false, gfx_id = 0} 
+self[7][32] = {solid = false, gfx_id = 0} 
+self[7][33] = {solid = false, gfx_id = 0} 
+self[7][34] = {solid = false, gfx_id = 0} 
+self[7][35] = {solid = false, gfx_id = 0} 
+self[7][36] = {solid = false, gfx_id = 0} 
+self[7][37] = {solid = false, gfx_id = 0} 
+self[7][38] = {solid = false, gfx_id = 0} 
+self[7][39] = {solid = false, gfx_id = 0} 
+self[8] = {}
+self[8][0] = {solid = false, gfx_id = 0} 
+self[8][1] = {solid = false, gfx_id = 0} 
+self[8][2] = {solid = false, gfx_id = 0} 
+self[8][3] = {solid = false, gfx_id = 0} 
+self[8][4] = {solid = false, gfx_id = 0} 
+self[8][5] = {solid = false, gfx_id = 0} 
+self[8][6] = {solid = false, gfx_id = 0} 
+self[8][7] = {solid = false, gfx_id = 0} 
+self[8][8] = {solid = false, gfx_id = 0} 
+self[8][9] = {solid = false, gfx_id = 0} 
+self[8][10] = {solid = false, gfx_id = 0} 
+self[8][11] = {solid = false, gfx_id = 0} 
+self[8][12] = {solid = false, gfx_id = 0} 
+self[8][13] = {solid = false, gfx_id = 0} 
+self[8][14] = {solid = false, gfx_id = 0} 
+self[8][15] = {solid = false, gfx_id = 0} 
+self[8][16] = {solid = false, gfx_id = 0} 
+self[8][17] = {solid = false, gfx_id = 0} 
+self[8][18] = {solid = false, gfx_id = 0} 
+self[8][19] = {solid = false, gfx_id = 0} 
+self[8][20] = {solid = false, gfx_id = 0} 
+self[8][21] = {solid = false, gfx_id = 0} 
+self[8][22] = {solid = false, gfx_id = 0} 
+self[8][23] = {solid = false, gfx_id = 0} 
+self[8][24] = {solid = false, gfx_id = 0} 
+self[8][25] = {solid = false, gfx_id = 0} 
+self[8][26] = {solid = true, gfx_id = 5} 
+self[8][27] = {solid = true, gfx_id = 37} 
+self[8][28] = {solid = true, gfx_id = 69} 
+self[8][29] = {solid = false, gfx_id = 0} 
+self[8][30] = {solid = false, gfx_id = 0} 
+self[8][31] = {solid = false, gfx_id = 0} 
+self[8][32] = {solid = false, gfx_id = 0} 
+self[8][33] = {solid = false, gfx_id = 0} 
+self[8][34] = {solid = false, gfx_id = 0} 
+self[8][35] = {solid = false, gfx_id = 0} 
+self[8][36] = {solid = false, gfx_id = 0} 
+self[8][37] = {solid = false, gfx_id = 0} 
+self[8][38] = {solid = false, gfx_id = 0} 
+self[8][39] = {solid = false, gfx_id = 0} 
+self[9] = {}
+self[9][0] = {solid = false, gfx_id = 0} 
+self[9][1] = {solid = false, gfx_id = 0} 
+self[9][2] = {solid = false, gfx_id = 0} 
+self[9][3] = {solid = false, gfx_id = 0} 
+self[9][4] = {solid = false, gfx_id = 0} 
+self[9][5] = {solid = false, gfx_id = 0} 
+self[9][6] = {solid = false, gfx_id = 0} 
+self[9][7] = {solid = false, gfx_id = 0} 
+self[9][8] = {solid = false, gfx_id = 0} 
+self[9][9] = {solid = false, gfx_id = 0} 
+self[9][10] = {solid = false, gfx_id = 0} 
+self[9][11] = {solid = false, gfx_id = 0} 
+self[9][12] = {solid = false, gfx_id = 0} 
+self[9][13] = {solid = false, gfx_id = 0} 
+self[9][14] = {solid = false, gfx_id = 0} 
+self[9][15] = {solid = false, gfx_id = 0} 
+self[9][16] = {solid = false, gfx_id = 0} 
+self[9][17] = {solid = false, gfx_id = 0} 
+self[9][18] = {solid = false, gfx_id = 0} 
+self[9][19] = {solid = false, gfx_id = 0} 
+self[9][20] = {solid = false, gfx_id = 0} 
+self[9][21] = {solid = false, gfx_id = 0} 
+self[9][22] = {solid = false, gfx_id = 0} 
+self[9][23] = {solid = false, gfx_id = 0} 
+self[9][24] = {solid = false, gfx_id = 0} 
+self[9][25] = {solid = false, gfx_id = 0} 
+self[9][26] = {solid = true, gfx_id = 5} 
+self[9][27] = {solid = true, gfx_id = 37} 
+self[9][28] = {solid = true, gfx_id = 69} 
+self[9][29] = {solid = false, gfx_id = 0} 
+self[9][30] = {solid = false, gfx_id = 0} 
+self[9][31] = {solid = false, gfx_id = 0} 
+self[9][32] = {solid = false, gfx_id = 0} 
+self[9][33] = {solid = false, gfx_id = 0} 
+self[9][34] = {solid = false, gfx_id = 0} 
+self[9][35] = {solid = false, gfx_id = 0} 
+self[9][36] = {solid = false, gfx_id = 0} 
+self[9][37] = {solid = false, gfx_id = 0} 
+self[9][38] = {solid = false, gfx_id = 0} 
+self[9][39] = {solid = false, gfx_id = 0} 
+self[10] = {}
+self[10][0] = {solid = false, gfx_id = 0} 
+self[10][1] = {solid = false, gfx_id = 0} 
+self[10][2] = {solid = false, gfx_id = 0} 
+self[10][3] = {solid = false, gfx_id = 0} 
+self[10][4] = {solid = false, gfx_id = 0} 
+self[10][5] = {solid = false, gfx_id = 0} 
+self[10][6] = {solid = false, gfx_id = 0} 
+self[10][7] = {solid = false, gfx_id = 0} 
+self[10][8] = {solid = false, gfx_id = 0} 
+self[10][9] = {solid = false, gfx_id = 0} 
+self[10][10] = {solid = false, gfx_id = 0} 
+self[10][11] = {solid = false, gfx_id = 0} 
+self[10][12] = {solid = false, gfx_id = 0} 
+self[10][13] = {solid = false, gfx_id = 0} 
+self[10][14] = {solid = false, gfx_id = 0} 
+self[10][15] = {solid = false, gfx_id = 0} 
+self[10][16] = {solid = false, gfx_id = 0} 
+self[10][17] = {solid = false, gfx_id = 0} 
+self[10][18] = {solid = false, gfx_id = 0} 
+self[10][19] = {solid = false, gfx_id = 0} 
+self[10][20] = {solid = false, gfx_id = 0} 
+self[10][21] = {solid = false, gfx_id = 0} 
+self[10][22] = {solid = false, gfx_id = 0} 
+self[10][23] = {solid = false, gfx_id = 0} 
+self[10][24] = {solid = false, gfx_id = 0} 
+self[10][25] = {solid = false, gfx_id = 0} 
+self[10][26] = {solid = true, gfx_id = 5} 
+self[10][27] = {solid = true, gfx_id = 37} 
+self[10][28] = {solid = true, gfx_id = 69} 
+self[10][29] = {solid = false, gfx_id = 0} 
+self[10][30] = {solid = false, gfx_id = 0} 
+self[10][31] = {solid = false, gfx_id = 0} 
+self[10][32] = {solid = false, gfx_id = 0} 
+self[10][33] = {solid = false, gfx_id = 0} 
+self[10][34] = {solid = false, gfx_id = 0} 
+self[10][35] = {solid = false, gfx_id = 0} 
+self[10][36] = {solid = false, gfx_id = 0} 
+self[10][37] = {solid = false, gfx_id = 0} 
+self[10][38] = {solid = false, gfx_id = 0} 
+self[10][39] = {solid = false, gfx_id = 0} 
+self[11] = {}
+self[11][0] = {solid = false, gfx_id = 0} 
+self[11][1] = {solid = false, gfx_id = 0} 
+self[11][2] = {solid = false, gfx_id = 0} 
+self[11][3] = {solid = false, gfx_id = 0} 
+self[11][4] = {solid = false, gfx_id = 0} 
+self[11][5] = {solid = false, gfx_id = 0} 
+self[11][6] = {solid = false, gfx_id = 0} 
+self[11][7] = {solid = false, gfx_id = 0} 
+self[11][8] = {solid = false, gfx_id = 0} 
+self[11][9] = {solid = false, gfx_id = 0} 
+self[11][10] = {solid = false, gfx_id = 0} 
+self[11][11] = {solid = false, gfx_id = 0} 
+self[11][12] = {solid = false, gfx_id = 0} 
+self[11][13] = {solid = false, gfx_id = 0} 
+self[11][14] = {solid = false, gfx_id = 0} 
+self[11][15] = {solid = false, gfx_id = 0} 
+self[11][16] = {solid = false, gfx_id = 0} 
+self[11][17] = {solid = false, gfx_id = 0} 
+self[11][18] = {solid = false, gfx_id = 0} 
+self[11][19] = {solid = false, gfx_id = 0} 
+self[11][20] = {solid = false, gfx_id = 0} 
+self[11][21] = {solid = false, gfx_id = 0} 
+self[11][22] = {solid = false, gfx_id = 0} 
+self[11][23] = {solid = false, gfx_id = 0} 
+self[11][24] = {solid = false, gfx_id = 0} 
+self[11][25] = {solid = false, gfx_id = 0} 
+self[11][26] = {solid = true, gfx_id = 5} 
+self[11][27] = {solid = true, gfx_id = 37} 
+self[11][28] = {solid = true, gfx_id = 69} 
+self[11][29] = {solid = false, gfx_id = 0} 
+self[11][30] = {solid = false, gfx_id = 0} 
+self[11][31] = {solid = false, gfx_id = 0} 
+self[11][32] = {solid = false, gfx_id = 0} 
+self[11][33] = {solid = false, gfx_id = 0} 
+self[11][34] = {solid = false, gfx_id = 0} 
+self[11][35] = {solid = false, gfx_id = 0} 
+self[11][36] = {solid = false, gfx_id = 0} 
+self[11][37] = {solid = false, gfx_id = 0} 
+self[11][38] = {solid = false, gfx_id = 0} 
+self[11][39] = {solid = false, gfx_id = 0} 
+self[12] = {}
+self[12][0] = {solid = false, gfx_id = 0} 
+self[12][1] = {solid = false, gfx_id = 0} 
+self[12][2] = {solid = false, gfx_id = 0} 
+self[12][3] = {solid = false, gfx_id = 0} 
+self[12][4] = {solid = false, gfx_id = 0} 
+self[12][5] = {solid = false, gfx_id = 0} 
+self[12][6] = {solid = false, gfx_id = 0} 
+self[12][7] = {solid = false, gfx_id = 0} 
+self[12][8] = {solid = false, gfx_id = 0} 
+self[12][9] = {solid = false, gfx_id = 0} 
+self[12][10] = {solid = false, gfx_id = 0} 
+self[12][11] = {solid = false, gfx_id = 0} 
+self[12][12] = {solid = false, gfx_id = 0} 
+self[12][13] = {solid = false, gfx_id = 0} 
+self[12][14] = {solid = false, gfx_id = 0} 
+self[12][15] = {solid = false, gfx_id = 0} 
+self[12][16] = {solid = false, gfx_id = 0} 
+self[12][17] = {solid = false, gfx_id = 0} 
+self[12][18] = {solid = false, gfx_id = 0} 
+self[12][19] = {solid = false, gfx_id = 0} 
+self[12][20] = {solid = false, gfx_id = 0} 
+self[12][21] = {solid = false, gfx_id = 0} 
+self[12][22] = {solid = false, gfx_id = 0} 
+self[12][23] = {solid = false, gfx_id = 0} 
+self[12][24] = {solid = false, gfx_id = 0} 
+self[12][25] = {solid = false, gfx_id = 0} 
+self[12][26] = {solid = true, gfx_id = 5} 
+self[12][27] = {solid = true, gfx_id = 37} 
+self[12][28] = {solid = true, gfx_id = 69} 
+self[12][29] = {solid = false, gfx_id = 0} 
+self[12][30] = {solid = false, gfx_id = 0} 
+self[12][31] = {solid = false, gfx_id = 0} 
+self[12][32] = {solid = false, gfx_id = 0} 
+self[12][33] = {solid = false, gfx_id = 0} 
+self[12][34] = {solid = false, gfx_id = 0} 
+self[12][35] = {solid = false, gfx_id = 0} 
+self[12][36] = {solid = false, gfx_id = 0} 
+self[12][37] = {solid = false, gfx_id = 0} 
+self[12][38] = {solid = false, gfx_id = 0} 
+self[12][39] = {solid = false, gfx_id = 0} 
+self[13] = {}
+self[13][0] = {solid = false, gfx_id = 0} 
+self[13][1] = {solid = false, gfx_id = 0} 
+self[13][2] = {solid = false, gfx_id = 0} 
+self[13][3] = {solid = false, gfx_id = 0} 
+self[13][4] = {solid = false, gfx_id = 0} 
+self[13][5] = {solid = false, gfx_id = 0} 
+self[13][6] = {solid = false, gfx_id = 0} 
+self[13][7] = {solid = false, gfx_id = 0} 
+self[13][8] = {solid = false, gfx_id = 0} 
+self[13][9] = {solid = false, gfx_id = 0} 
+self[13][10] = {solid = false, gfx_id = 0} 
+self[13][11] = {solid = false, gfx_id = 0} 
+self[13][12] = {solid = false, gfx_id = 0} 
+self[13][13] = {solid = false, gfx_id = 0} 
+self[13][14] = {solid = false, gfx_id = 0} 
+self[13][15] = {solid = false, gfx_id = 0} 
+self[13][16] = {solid = false, gfx_id = 0} 
+self[13][17] = {solid = false, gfx_id = 0} 
+self[13][18] = {solid = false, gfx_id = 0} 
+self[13][19] = {solid = false, gfx_id = 0} 
+self[13][20] = {solid = false, gfx_id = 0} 
+self[13][21] = {solid = false, gfx_id = 0} 
+self[13][22] = {solid = false, gfx_id = 0} 
+self[13][23] = {solid = false, gfx_id = 0} 
+self[13][24] = {solid = false, gfx_id = 0} 
+self[13][25] = {solid = false, gfx_id = 0} 
+self[13][26] = {solid = true, gfx_id = 5} 
+self[13][27] = {solid = true, gfx_id = 37} 
+self[13][28] = {solid = true, gfx_id = 69} 
+self[13][29] = {solid = false, gfx_id = 0} 
+self[13][30] = {solid = false, gfx_id = 0} 
+self[13][31] = {solid = false, gfx_id = 0} 
+self[13][32] = {solid = true, gfx_id = 2} 
+self[13][33] = {solid = false, gfx_id = 0} 
+self[13][34] = {solid = false, gfx_id = 0} 
+self[13][35] = {solid = false, gfx_id = 0} 
+self[13][36] = {solid = false, gfx_id = 0} 
+self[13][37] = {solid = false, gfx_id = 0} 
+self[13][38] = {solid = false, gfx_id = 0} 
+self[13][39] = {solid = false, gfx_id = 0} 
+self[14] = {}
+self[14][0] = {solid = false, gfx_id = 0} 
+self[14][1] = {solid = false, gfx_id = 0} 
+self[14][2] = {solid = false, gfx_id = 0} 
+self[14][3] = {solid = false, gfx_id = 0} 
+self[14][4] = {solid = false, gfx_id = 0} 
+self[14][5] = {solid = false, gfx_id = 0} 
+self[14][6] = {solid = false, gfx_id = 0} 
+self[14][7] = {solid = false, gfx_id = 0} 
+self[14][8] = {solid = false, gfx_id = 0} 
+self[14][9] = {solid = false, gfx_id = 0} 
+self[14][10] = {solid = false, gfx_id = 0} 
+self[14][11] = {solid = false, gfx_id = 0} 
+self[14][12] = {solid = false, gfx_id = 0} 
+self[14][13] = {solid = false, gfx_id = 0} 
+self[14][14] = {solid = false, gfx_id = 0} 
+self[14][15] = {solid = false, gfx_id = 0} 
+self[14][16] = {solid = false, gfx_id = 0} 
+self[14][17] = {solid = false, gfx_id = 0} 
+self[14][18] = {solid = false, gfx_id = 0} 
+self[14][19] = {solid = false, gfx_id = 0} 
+self[14][20] = {solid = false, gfx_id = 0} 
+self[14][21] = {solid = false, gfx_id = 0} 
+self[14][22] = {solid = false, gfx_id = 0} 
+self[14][23] = {solid = false, gfx_id = 0} 
+self[14][24] = {solid = false, gfx_id = 0} 
+self[14][25] = {solid = false, gfx_id = 0} 
+self[14][26] = {solid = true, gfx_id = 5} 
+self[14][27] = {solid = true, gfx_id = 37} 
+self[14][28] = {solid = true, gfx_id = 69} 
+self[14][29] = {solid = false, gfx_id = 0} 
+self[14][30] = {solid = false, gfx_id = 0} 
+self[14][31] = {solid = false, gfx_id = 0} 
+self[14][32] = {solid = false, gfx_id = 0} 
+self[14][33] = {solid = false, gfx_id = 0} 
+self[14][34] = {solid = false, gfx_id = 0} 
+self[14][35] = {solid = false, gfx_id = 0} 
+self[14][36] = {solid = false, gfx_id = 0} 
+self[14][37] = {solid = false, gfx_id = 0} 
+self[14][38] = {solid = false, gfx_id = 0} 
+self[14][39] = {solid = false, gfx_id = 0} 
+self[15] = {}
+self[15][0] = {solid = false, gfx_id = 0} 
+self[15][1] = {solid = false, gfx_id = 0} 
+self[15][2] = {solid = false, gfx_id = 0} 
+self[15][3] = {solid = false, gfx_id = 0} 
+self[15][4] = {solid = false, gfx_id = 0} 
+self[15][5] = {solid = false, gfx_id = 0} 
+self[15][6] = {solid = false, gfx_id = 0} 
+self[15][7] = {solid = false, gfx_id = 0} 
+self[15][8] = {solid = false, gfx_id = 0} 
+self[15][9] = {solid = false, gfx_id = 0} 
+self[15][10] = {solid = false, gfx_id = 0} 
+self[15][11] = {solid = false, gfx_id = 0} 
+self[15][12] = {solid = false, gfx_id = 0} 
+self[15][13] = {solid = false, gfx_id = 0} 
+self[15][14] = {solid = false, gfx_id = 0} 
+self[15][15] = {solid = false, gfx_id = 0} 
+self[15][16] = {solid = false, gfx_id = 0} 
+self[15][17] = {solid = false, gfx_id = 0} 
+self[15][18] = {solid = false, gfx_id = 0} 
+self[15][19] = {solid = false, gfx_id = 0} 
+self[15][20] = {solid = false, gfx_id = 0} 
+self[15][21] = {solid = false, gfx_id = 0} 
+self[15][22] = {solid = false, gfx_id = 0} 
+self[15][23] = {solid = false, gfx_id = 0} 
+self[15][24] = {solid = false, gfx_id = 0} 
+self[15][25] = {solid = false, gfx_id = 0} 
+self[15][26] = {solid = true, gfx_id = 5} 
+self[15][27] = {solid = true, gfx_id = 37} 
+self[15][28] = {solid = true, gfx_id = 69} 
+self[15][29] = {solid = false, gfx_id = 0} 
+self[15][30] = {solid = false, gfx_id = 0} 
+self[15][31] = {solid = false, gfx_id = 0} 
+self[15][32] = {solid = false, gfx_id = 0} 
+self[15][33] = {solid = false, gfx_id = 0} 
+self[15][34] = {solid = false, gfx_id = 0} 
+self[15][35] = {solid = false, gfx_id = 0} 
+self[15][36] = {solid = false, gfx_id = 0} 
+self[15][37] = {solid = false, gfx_id = 0} 
+self[15][38] = {solid = false, gfx_id = 0} 
+self[15][39] = {solid = false, gfx_id = 0} 
+self[16] = {}
+self[16][0] = {solid = false, gfx_id = 0} 
+self[16][1] = {solid = false, gfx_id = 0} 
+self[16][2] = {solid = false, gfx_id = 0} 
+self[16][3] = {solid = false, gfx_id = 0} 
+self[16][4] = {solid = false, gfx_id = 0} 
+self[16][5] = {solid = false, gfx_id = 0} 
+self[16][6] = {solid = false, gfx_id = 0} 
+self[16][7] = {solid = false, gfx_id = 0} 
+self[16][8] = {solid = false, gfx_id = 0} 
+self[16][9] = {solid = false, gfx_id = 0} 
+self[16][10] = {solid = false, gfx_id = 0} 
+self[16][11] = {solid = false, gfx_id = 0} 
+self[16][12] = {solid = false, gfx_id = 0} 
+self[16][13] = {solid = false, gfx_id = 0} 
+self[16][14] = {solid = false, gfx_id = 0} 
+self[16][15] = {solid = false, gfx_id = 0} 
+self[16][16] = {solid = false, gfx_id = 0} 
+self[16][17] = {solid = false, gfx_id = 0} 
+self[16][18] = {solid = false, gfx_id = 0} 
+self[16][19] = {solid = false, gfx_id = 0} 
+self[16][20] = {solid = false, gfx_id = 0} 
+self[16][21] = {solid = false, gfx_id = 0} 
+self[16][22] = {solid = false, gfx_id = 0} 
+self[16][23] = {solid = false, gfx_id = 0} 
+self[16][24] = {solid = false, gfx_id = 0} 
+self[16][25] = {solid = false, gfx_id = 0} 
+self[16][26] = {solid = true, gfx_id = 5} 
+self[16][27] = {solid = true, gfx_id = 37} 
+self[16][28] = {solid = true, gfx_id = 69} 
+self[16][29] = {solid = false, gfx_id = 0} 
+self[16][30] = {solid = false, gfx_id = 0} 
+self[16][31] = {solid = false, gfx_id = 0} 
+self[16][32] = {solid = false, gfx_id = 125} 
+self[16][33] = {solid = false, gfx_id = 0} 
+self[16][34] = {solid = false, gfx_id = 0} 
+self[16][35] = {solid = false, gfx_id = 0} 
+self[16][36] = {solid = false, gfx_id = 0} 
+self[16][37] = {solid = false, gfx_id = 0} 
+self[16][38] = {solid = false, gfx_id = 0} 
+self[16][39] = {solid = false, gfx_id = 0} 
+self[17] = {}
+self[17][0] = {solid = false, gfx_id = 0} 
+self[17][1] = {solid = false, gfx_id = 0} 
+self[17][2] = {solid = false, gfx_id = 0} 
+self[17][3] = {solid = false, gfx_id = 0} 
+self[17][4] = {solid = false, gfx_id = 0} 
+self[17][5] = {solid = false, gfx_id = 0} 
+self[17][6] = {solid = false, gfx_id = 0} 
+self[17][7] = {solid = false, gfx_id = 0} 
+self[17][8] = {solid = false, gfx_id = 0} 
+self[17][9] = {solid = false, gfx_id = 0} 
+self[17][10] = {solid = false, gfx_id = 0} 
+self[17][11] = {solid = false, gfx_id = 0} 
+self[17][12] = {solid = false, gfx_id = 0} 
+self[17][13] = {solid = false, gfx_id = 0} 
+self[17][14] = {solid = false, gfx_id = 0} 
+self[17][15] = {solid = false, gfx_id = 0} 
+self[17][16] = {solid = false, gfx_id = 0} 
+self[17][17] = {solid = false, gfx_id = 0} 
+self[17][18] = {solid = false, gfx_id = 0} 
+self[17][19] = {solid = false, gfx_id = 0} 
+self[17][20] = {solid = false, gfx_id = 0} 
+self[17][21] = {solid = false, gfx_id = 0} 
+self[17][22] = {solid = false, gfx_id = 0} 
+self[17][23] = {solid = false, gfx_id = 0} 
+self[17][24] = {solid = false, gfx_id = 0} 
+self[17][25] = {solid = false, gfx_id = 0} 
+self[17][26] = {solid = true, gfx_id = 5} 
+self[17][27] = {solid = true, gfx_id = 37} 
+self[17][28] = {solid = true, gfx_id = 69} 
+self[17][29] = {solid = false, gfx_id = 0} 
+self[17][30] = {solid = false, gfx_id = 0} 
+self[17][31] = {solid = false, gfx_id = 0} 
+self[17][32] = {solid = false, gfx_id = 125} 
+self[17][33] = {solid = false, gfx_id = 0} 
+self[17][34] = {solid = false, gfx_id = 0} 
+self[17][35] = {solid = false, gfx_id = 0} 
+self[17][36] = {solid = false, gfx_id = 0} 
+self[17][37] = {solid = false, gfx_id = 0} 
+self[17][38] = {solid = false, gfx_id = 0} 
+self[17][39] = {solid = false, gfx_id = 0} 
+self[18] = {}
+self[18][0] = {solid = false, gfx_id = 0} 
+self[18][1] = {solid = false, gfx_id = 0} 
+self[18][2] = {solid = false, gfx_id = 0} 
+self[18][3] = {solid = false, gfx_id = 0} 
+self[18][4] = {solid = false, gfx_id = 0} 
+self[18][5] = {solid = false, gfx_id = 0} 
+self[18][6] = {solid = false, gfx_id = 0} 
+self[18][7] = {solid = false, gfx_id = 0} 
+self[18][8] = {solid = false, gfx_id = 0} 
+self[18][9] = {solid = false, gfx_id = 0} 
+self[18][10] = {solid = false, gfx_id = 0} 
+self[18][11] = {solid = false, gfx_id = 0} 
+self[18][12] = {solid = false, gfx_id = 0} 
+self[18][13] = {solid = false, gfx_id = 0} 
+self[18][14] = {solid = false, gfx_id = 0} 
+self[18][15] = {solid = false, gfx_id = 0} 
+self[18][16] = {solid = false, gfx_id = 0} 
+self[18][17] = {solid = false, gfx_id = 0} 
+self[18][18] = {solid = false, gfx_id = 0} 
+self[18][19] = {solid = false, gfx_id = 0} 
+self[18][20] = {solid = false, gfx_id = 0} 
+self[18][21] = {solid = false, gfx_id = 0} 
+self[18][22] = {solid = false, gfx_id = 0} 
+self[18][23] = {solid = false, gfx_id = 0} 
+self[18][24] = {solid = false, gfx_id = 0} 
+self[18][25] = {solid = false, gfx_id = 0} 
+self[18][26] = {solid = true, gfx_id = 5} 
+self[18][27] = {solid = true, gfx_id = 37} 
+self[18][28] = {solid = true, gfx_id = 69} 
+self[18][29] = {solid = false, gfx_id = 0} 
+self[18][30] = {solid = false, gfx_id = 0} 
+self[18][31] = {solid = false, gfx_id = 0} 
+self[18][32] = {solid = false, gfx_id = 125} 
+self[18][33] = {solid = false, gfx_id = 0} 
+self[18][34] = {solid = false, gfx_id = 0} 
+self[18][35] = {solid = false, gfx_id = 0} 
+self[18][36] = {solid = false, gfx_id = 0} 
+self[18][37] = {solid = false, gfx_id = 0} 
+self[18][38] = {solid = false, gfx_id = 0} 
+self[18][39] = {solid = false, gfx_id = 0} 
+self[19] = {}
+self[19][0] = {solid = false, gfx_id = 0} 
+self[19][1] = {solid = false, gfx_id = 0} 
+self[19][2] = {solid = false, gfx_id = 0} 
+self[19][3] = {solid = false, gfx_id = 0} 
+self[19][4] = {solid = false, gfx_id = 0} 
+self[19][5] = {solid = false, gfx_id = 0} 
+self[19][6] = {solid = false, gfx_id = 0} 
+self[19][7] = {solid = false, gfx_id = 0} 
+self[19][8] = {solid = false, gfx_id = 0} 
+self[19][9] = {solid = false, gfx_id = 0} 
+self[19][10] = {solid = false, gfx_id = 0} 
+self[19][11] = {solid = false, gfx_id = 0} 
+self[19][12] = {solid = false, gfx_id = 0} 
+self[19][13] = {solid = false, gfx_id = 0} 
+self[19][14] = {solid = false, gfx_id = 0} 
+self[19][15] = {solid = false, gfx_id = 0} 
+self[19][16] = {solid = false, gfx_id = 0} 
+self[19][17] = {solid = false, gfx_id = 0} 
+self[19][18] = {solid = false, gfx_id = 0} 
+self[19][19] = {solid = false, gfx_id = 0} 
+self[19][20] = {solid = false, gfx_id = 0} 
+self[19][21] = {solid = false, gfx_id = 0} 
+self[19][22] = {solid = false, gfx_id = 0} 
+self[19][23] = {solid = false, gfx_id = 0} 
+self[19][24] = {solid = false, gfx_id = 0} 
+self[19][25] = {solid = false, gfx_id = 0} 
+self[19][26] = {solid = true, gfx_id = 5} 
+self[19][27] = {solid = true, gfx_id = 37} 
+self[19][28] = {solid = true, gfx_id = 69} 
+self[19][29] = {solid = false, gfx_id = 0} 
+self[19][30] = {solid = false, gfx_id = 0} 
+self[19][31] = {solid = false, gfx_id = 0} 
+self[19][32] = {solid = false, gfx_id = 0} 
+self[19][33] = {solid = false, gfx_id = 0} 
+self[19][34] = {solid = false, gfx_id = 0} 
+self[19][35] = {solid = false, gfx_id = 0} 
+self[19][36] = {solid = false, gfx_id = 0} 
+self[19][37] = {solid = false, gfx_id = 0} 
+self[19][38] = {solid = false, gfx_id = 0} 
+self[19][39] = {solid = false, gfx_id = 0} 
+self[20] = {}
+self[20][0] = {solid = false, gfx_id = 0} 
+self[20][1] = {solid = false, gfx_id = 0} 
+self[20][2] = {solid = false, gfx_id = 0} 
+self[20][3] = {solid = false, gfx_id = 0} 
+self[20][4] = {solid = false, gfx_id = 0} 
+self[20][5] = {solid = false, gfx_id = 0} 
+self[20][6] = {solid = false, gfx_id = 0} 
+self[20][7] = {solid = false, gfx_id = 0} 
+self[20][8] = {solid = false, gfx_id = 0} 
+self[20][9] = {solid = false, gfx_id = 0} 
+self[20][10] = {solid = false, gfx_id = 0} 
+self[20][11] = {solid = false, gfx_id = 0} 
+self[20][12] = {solid = false, gfx_id = 0} 
+self[20][13] = {solid = false, gfx_id = 0} 
+self[20][14] = {solid = false, gfx_id = 0} 
+self[20][15] = {solid = false, gfx_id = 0} 
+self[20][16] = {solid = false, gfx_id = 0} 
+self[20][17] = {solid = false, gfx_id = 0} 
+self[20][18] = {solid = false, gfx_id = 0} 
+self[20][19] = {solid = false, gfx_id = 0} 
+self[20][20] = {solid = false, gfx_id = 0} 
+self[20][21] = {solid = false, gfx_id = 0} 
+self[20][22] = {solid = false, gfx_id = 0} 
+self[20][23] = {solid = false, gfx_id = 0} 
+self[20][24] = {solid = false, gfx_id = 0} 
+self[20][25] = {solid = false, gfx_id = 0} 
+self[20][26] = {solid = true, gfx_id = 5} 
+self[20][27] = {solid = true, gfx_id = 37} 
+self[20][28] = {solid = true, gfx_id = 69} 
+self[20][29] = {solid = false, gfx_id = 0} 
+self[20][30] = {solid = false, gfx_id = 0} 
+self[20][31] = {solid = false, gfx_id = 0} 
+self[20][32] = {solid = false, gfx_id = 0} 
+self[20][33] = {solid = false, gfx_id = 0} 
+self[20][34] = {solid = false, gfx_id = 0} 
+self[20][35] = {solid = false, gfx_id = 0} 
+self[20][36] = {solid = false, gfx_id = 0} 
+self[20][37] = {solid = false, gfx_id = 0} 
+self[20][38] = {solid = false, gfx_id = 0} 
+self[20][39] = {solid = false, gfx_id = 0} 
+self[21] = {}
+self[21][0] = {solid = false, gfx_id = 0} 
+self[21][1] = {solid = false, gfx_id = 0} 
+self[21][2] = {solid = false, gfx_id = 0} 
+self[21][3] = {solid = false, gfx_id = 0} 
+self[21][4] = {solid = false, gfx_id = 0} 
+self[21][5] = {solid = false, gfx_id = 0} 
+self[21][6] = {solid = false, gfx_id = 0} 
+self[21][7] = {solid = false, gfx_id = 0} 
+self[21][8] = {solid = false, gfx_id = 0} 
+self[21][9] = {solid = false, gfx_id = 0} 
+self[21][10] = {solid = false, gfx_id = 0} 
+self[21][11] = {solid = false, gfx_id = 0} 
+self[21][12] = {solid = false, gfx_id = 0} 
+self[21][13] = {solid = false, gfx_id = 0} 
+self[21][14] = {solid = false, gfx_id = 0} 
+self[21][15] = {solid = false, gfx_id = 0} 
+self[21][16] = {solid = false, gfx_id = 0} 
+self[21][17] = {solid = false, gfx_id = 0} 
+self[21][18] = {solid = false, gfx_id = 0} 
+self[21][19] = {solid = false, gfx_id = 0} 
+self[21][20] = {solid = false, gfx_id = 0} 
+self[21][21] = {solid = false, gfx_id = 0} 
+self[21][22] = {solid = false, gfx_id = 0} 
+self[21][23] = {solid = false, gfx_id = 0} 
+self[21][24] = {solid = false, gfx_id = 0} 
+self[21][25] = {solid = false, gfx_id = 0} 
+self[21][26] = {solid = true, gfx_id = 5} 
+self[21][27] = {solid = true, gfx_id = 37} 
+self[21][28] = {solid = true, gfx_id = 69} 
+self[21][29] = {solid = false, gfx_id = 0} 
+self[21][30] = {solid = false, gfx_id = 0} 
+self[21][31] = {solid = false, gfx_id = 0} 
+self[21][32] = {solid = false, gfx_id = 0} 
+self[21][33] = {solid = false, gfx_id = 0} 
+self[21][34] = {solid = false, gfx_id = 0} 
+self[21][35] = {solid = false, gfx_id = 0} 
+self[21][36] = {solid = false, gfx_id = 0} 
+self[21][37] = {solid = false, gfx_id = 0} 
+self[21][38] = {solid = false, gfx_id = 0} 
+self[21][39] = {solid = false, gfx_id = 0} 
+self[22] = {}
+self[22][0] = {solid = false, gfx_id = 0} 
+self[22][1] = {solid = false, gfx_id = 0} 
+self[22][2] = {solid = false, gfx_id = 0} 
+self[22][3] = {solid = false, gfx_id = 0} 
+self[22][4] = {solid = false, gfx_id = 0} 
+self[22][5] = {solid = false, gfx_id = 0} 
+self[22][6] = {solid = false, gfx_id = 0} 
+self[22][7] = {solid = false, gfx_id = 0} 
+self[22][8] = {solid = false, gfx_id = 0} 
+self[22][9] = {solid = false, gfx_id = 0} 
+self[22][10] = {solid = false, gfx_id = 0} 
+self[22][11] = {solid = false, gfx_id = 0} 
+self[22][12] = {solid = false, gfx_id = 0} 
+self[22][13] = {solid = false, gfx_id = 0} 
+self[22][14] = {solid = false, gfx_id = 0} 
+self[22][15] = {solid = false, gfx_id = 0} 
+self[22][16] = {solid = false, gfx_id = 0} 
+self[22][17] = {solid = false, gfx_id = 0} 
+self[22][18] = {solid = false, gfx_id = 0} 
+self[22][19] = {solid = false, gfx_id = 0} 
+self[22][20] = {solid = false, gfx_id = 0} 
+self[22][21] = {solid = false, gfx_id = 0} 
+self[22][22] = {solid = false, gfx_id = 0} 
+self[22][23] = {solid = false, gfx_id = 0} 
+self[22][24] = {solid = false, gfx_id = 0} 
+self[22][25] = {solid = false, gfx_id = 0} 
+self[22][26] = {solid = true, gfx_id = 5} 
+self[22][27] = {solid = true, gfx_id = 37} 
+self[22][28] = {solid = true, gfx_id = 69} 
+self[22][29] = {solid = false, gfx_id = 0} 
+self[22][30] = {solid = false, gfx_id = 0} 
+self[22][31] = {solid = false, gfx_id = 0} 
+self[22][32] = {solid = false, gfx_id = 0} 
+self[22][33] = {solid = false, gfx_id = 0} 
+self[22][34] = {solid = false, gfx_id = 0} 
+self[22][35] = {solid = false, gfx_id = 0} 
+self[22][36] = {solid = false, gfx_id = 0} 
+self[22][37] = {solid = false, gfx_id = 0} 
+self[22][38] = {solid = false, gfx_id = 0} 
+self[22][39] = {solid = false, gfx_id = 0} 
+self[23] = {}
+self[23][0] = {solid = false, gfx_id = 0} 
+self[23][1] = {solid = false, gfx_id = 0} 
+self[23][2] = {solid = false, gfx_id = 0} 
+self[23][3] = {solid = false, gfx_id = 0} 
+self[23][4] = {solid = false, gfx_id = 0} 
+self[23][5] = {solid = false, gfx_id = 0} 
+self[23][6] = {solid = false, gfx_id = 0} 
+self[23][7] = {solid = false, gfx_id = 0} 
+self[23][8] = {solid = false, gfx_id = 0} 
+self[23][9] = {solid = false, gfx_id = 0} 
+self[23][10] = {solid = false, gfx_id = 0} 
+self[23][11] = {solid = false, gfx_id = 0} 
+self[23][12] = {solid = false, gfx_id = 0} 
+self[23][13] = {solid = false, gfx_id = 0} 
+self[23][14] = {solid = false, gfx_id = 0} 
+self[23][15] = {solid = false, gfx_id = 0} 
+self[23][16] = {solid = false, gfx_id = 0} 
+self[23][17] = {solid = false, gfx_id = 0} 
+self[23][18] = {solid = false, gfx_id = 0} 
+self[23][19] = {solid = false, gfx_id = 0} 
+self[23][20] = {solid = false, gfx_id = 0} 
+self[23][21] = {solid = false, gfx_id = 0} 
+self[23][22] = {solid = false, gfx_id = 0} 
+self[23][23] = {solid = false, gfx_id = 0} 
+self[23][24] = {solid = false, gfx_id = 0} 
+self[23][25] = {solid = false, gfx_id = 0} 
+self[23][26] = {solid = true, gfx_id = 5} 
+self[23][27] = {solid = true, gfx_id = 37} 
+self[23][28] = {solid = true, gfx_id = 69} 
+self[23][29] = {solid = false, gfx_id = 0} 
+self[23][30] = {solid = false, gfx_id = 0} 
+self[23][31] = {solid = false, gfx_id = 0} 
+self[23][32] = {solid = false, gfx_id = 0} 
+self[23][33] = {solid = false, gfx_id = 0} 
+self[23][34] = {solid = false, gfx_id = 0} 
+self[23][35] = {solid = false, gfx_id = 0} 
+self[23][36] = {solid = false, gfx_id = 0} 
+self[23][37] = {solid = false, gfx_id = 0} 
+self[23][38] = {solid = false, gfx_id = 0} 
+self[23][39] = {solid = false, gfx_id = 0} 
+self[24] = {}
+self[24][0] = {solid = false, gfx_id = 0} 
+self[24][1] = {solid = false, gfx_id = 0} 
+self[24][2] = {solid = false, gfx_id = 0} 
+self[24][3] = {solid = false, gfx_id = 0} 
+self[24][4] = {solid = false, gfx_id = 0} 
+self[24][5] = {solid = false, gfx_id = 0} 
+self[24][6] = {solid = false, gfx_id = 0} 
+self[24][7] = {solid = false, gfx_id = 0} 
+self[24][8] = {solid = false, gfx_id = 0} 
+self[24][9] = {solid = false, gfx_id = 0} 
+self[24][10] = {solid = false, gfx_id = 0} 
+self[24][11] = {solid = false, gfx_id = 0} 
+self[24][12] = {solid = false, gfx_id = 0} 
+self[24][13] = {solid = false, gfx_id = 0} 
+self[24][14] = {solid = false, gfx_id = 0} 
+self[24][15] = {solid = false, gfx_id = 0} 
+self[24][16] = {solid = false, gfx_id = 0} 
+self[24][17] = {solid = false, gfx_id = 0} 
+self[24][18] = {solid = false, gfx_id = 0} 
+self[24][19] = {solid = false, gfx_id = 0} 
+self[24][20] = {solid = false, gfx_id = 0} 
+self[24][21] = {solid = false, gfx_id = 0} 
+self[24][22] = {solid = false, gfx_id = 0} 
+self[24][23] = {solid = false, gfx_id = 0} 
+self[24][24] = {solid = false, gfx_id = 0} 
+self[24][25] = {solid = false, gfx_id = 0} 
+self[24][26] = {solid = true, gfx_id = 5} 
+self[24][27] = {solid = true, gfx_id = 37} 
+self[24][28] = {solid = true, gfx_id = 69} 
+self[24][29] = {solid = false, gfx_id = 0} 
+self[24][30] = {solid = false, gfx_id = 0} 
+self[24][31] = {solid = false, gfx_id = 0} 
+self[24][32] = {solid = false, gfx_id = 0} 
+self[24][33] = {solid = false, gfx_id = 0} 
+self[24][34] = {solid = false, gfx_id = 0} 
+self[24][35] = {solid = false, gfx_id = 0} 
+self[24][36] = {solid = false, gfx_id = 0} 
+self[24][37] = {solid = false, gfx_id = 0} 
+self[24][38] = {solid = false, gfx_id = 0} 
+self[24][39] = {solid = false, gfx_id = 0} 
+self[25] = {}
+self[25][0] = {solid = false, gfx_id = 0} 
+self[25][1] = {solid = false, gfx_id = 0} 
+self[25][2] = {solid = false, gfx_id = 0} 
+self[25][3] = {solid = false, gfx_id = 0} 
+self[25][4] = {solid = false, gfx_id = 0} 
+self[25][5] = {solid = false, gfx_id = 0} 
+self[25][6] = {solid = false, gfx_id = 0} 
+self[25][7] = {solid = false, gfx_id = 0} 
+self[25][8] = {solid = false, gfx_id = 0} 
+self[25][9] = {solid = false, gfx_id = 0} 
+self[25][10] = {solid = false, gfx_id = 0} 
+self[25][11] = {solid = false, gfx_id = 0} 
+self[25][12] = {solid = false, gfx_id = 0} 
+self[25][13] = {solid = false, gfx_id = 0} 
+self[25][14] = {solid = false, gfx_id = 0} 
+self[25][15] = {solid = false, gfx_id = 0} 
+self[25][16] = {solid = false, gfx_id = 0} 
+self[25][17] = {solid = false, gfx_id = 0} 
+self[25][18] = {solid = false, gfx_id = 0} 
+self[25][19] = {solid = false, gfx_id = 0} 
+self[25][20] = {solid = false, gfx_id = 0} 
+self[25][21] = {solid = false, gfx_id = 0} 
+self[25][22] = {solid = false, gfx_id = 0} 
+self[25][23] = {solid = false, gfx_id = 0} 
+self[25][24] = {solid = false, gfx_id = 0} 
+self[25][25] = {solid = false, gfx_id = 0} 
+self[25][26] = {solid = true, gfx_id = 5} 
+self[25][27] = {solid = true, gfx_id = 37} 
+self[25][28] = {solid = true, gfx_id = 69} 
+self[25][29] = {solid = false, gfx_id = 0} 
+self[25][30] = {solid = false, gfx_id = 0} 
+self[25][31] = {solid = false, gfx_id = 0} 
+self[25][32] = {solid = false, gfx_id = 0} 
+self[25][33] = {solid = false, gfx_id = 0} 
+self[25][34] = {solid = false, gfx_id = 0} 
+self[25][35] = {solid = false, gfx_id = 0} 
+self[25][36] = {solid = false, gfx_id = 0} 
+self[25][37] = {solid = false, gfx_id = 0} 
+self[25][38] = {solid = false, gfx_id = 0} 
+self[25][39] = {solid = false, gfx_id = 0} 
+self[26] = {}
+self[26][0] = {solid = false, gfx_id = 0} 
+self[26][1] = {solid = false, gfx_id = 0} 
+self[26][2] = {solid = false, gfx_id = 0} 
+self[26][3] = {solid = false, gfx_id = 0} 
+self[26][4] = {solid = false, gfx_id = 0} 
+self[26][5] = {solid = false, gfx_id = 0} 
+self[26][6] = {solid = false, gfx_id = 0} 
+self[26][7] = {solid = false, gfx_id = 0} 
+self[26][8] = {solid = false, gfx_id = 0} 
+self[26][9] = {solid = false, gfx_id = 0} 
+self[26][10] = {solid = false, gfx_id = 0} 
+self[26][11] = {solid = false, gfx_id = 0} 
+self[26][12] = {solid = false, gfx_id = 0} 
+self[26][13] = {solid = false, gfx_id = 0} 
+self[26][14] = {solid = false, gfx_id = 0} 
+self[26][15] = {solid = false, gfx_id = 0} 
+self[26][16] = {solid = false, gfx_id = 0} 
+self[26][17] = {solid = false, gfx_id = 0} 
+self[26][18] = {solid = false, gfx_id = 0} 
+self[26][19] = {solid = false, gfx_id = 0} 
+self[26][20] = {solid = false, gfx_id = 0} 
+self[26][21] = {solid = false, gfx_id = 0} 
+self[26][22] = {solid = false, gfx_id = 0} 
+self[26][23] = {solid = false, gfx_id = 0} 
+self[26][24] = {solid = false, gfx_id = 0} 
+self[26][25] = {solid = false, gfx_id = 0} 
+self[26][26] = {solid = true, gfx_id = 5} 
+self[26][27] = {solid = true, gfx_id = 37} 
+self[26][28] = {solid = true, gfx_id = 69} 
+self[26][29] = {solid = false, gfx_id = 0} 
+self[26][30] = {solid = false, gfx_id = 0} 
+self[26][31] = {solid = false, gfx_id = 0} 
+self[26][32] = {solid = false, gfx_id = 0} 
+self[26][33] = {solid = false, gfx_id = 0} 
+self[26][34] = {solid = false, gfx_id = 0} 
+self[26][35] = {solid = false, gfx_id = 0} 
+self[26][36] = {solid = false, gfx_id = 0} 
+self[26][37] = {solid = false, gfx_id = 0} 
+self[26][38] = {solid = false, gfx_id = 0} 
+self[26][39] = {solid = false, gfx_id = 0} 
+self[27] = {}
+self[27][0] = {solid = false, gfx_id = 0} 
+self[27][1] = {solid = false, gfx_id = 0} 
+self[27][2] = {solid = false, gfx_id = 0} 
+self[27][3] = {solid = false, gfx_id = 0} 
+self[27][4] = {solid = false, gfx_id = 0} 
+self[27][5] = {solid = false, gfx_id = 0} 
+self[27][6] = {solid = false, gfx_id = 0} 
+self[27][7] = {solid = false, gfx_id = 0} 
+self[27][8] = {solid = false, gfx_id = 0} 
+self[27][9] = {solid = false, gfx_id = 0} 
+self[27][10] = {solid = false, gfx_id = 0} 
+self[27][11] = {solid = false, gfx_id = 0} 
+self[27][12] = {solid = false, gfx_id = 0} 
+self[27][13] = {solid = false, gfx_id = 0} 
+self[27][14] = {solid = false, gfx_id = 0} 
+self[27][15] = {solid = false, gfx_id = 0} 
+self[27][16] = {solid = false, gfx_id = 0} 
+self[27][17] = {solid = false, gfx_id = 0} 
+self[27][18] = {solid = false, gfx_id = 0} 
+self[27][19] = {solid = false, gfx_id = 0} 
+self[27][20] = {solid = false, gfx_id = 0} 
+self[27][21] = {solid = false, gfx_id = 0} 
+self[27][22] = {solid = false, gfx_id = 0} 
+self[27][23] = {solid = false, gfx_id = 0} 
+self[27][24] = {solid = false, gfx_id = 0} 
+self[27][25] = {solid = false, gfx_id = 0} 
+self[27][26] = {solid = true, gfx_id = 5} 
+self[27][27] = {solid = true, gfx_id = 37} 
+self[27][28] = {solid = true, gfx_id = 69} 
+self[27][29] = {solid = false, gfx_id = 0} 
+self[27][30] = {solid = false, gfx_id = 0} 
+self[27][31] = {solid = false, gfx_id = 0} 
+self[27][32] = {solid = false, gfx_id = 0} 
+self[27][33] = {solid = false, gfx_id = 0} 
+self[27][34] = {solid = false, gfx_id = 0} 
+self[27][35] = {solid = false, gfx_id = 0} 
+self[27][36] = {solid = false, gfx_id = 0} 
+self[27][37] = {solid = false, gfx_id = 0} 
+self[27][38] = {solid = false, gfx_id = 0} 
+self[27][39] = {solid = false, gfx_id = 0} 
+self[28] = {}
+self[28][0] = {solid = false, gfx_id = 0} 
+self[28][1] = {solid = false, gfx_id = 0} 
+self[28][2] = {solid = false, gfx_id = 0} 
+self[28][3] = {solid = false, gfx_id = 0} 
+self[28][4] = {solid = false, gfx_id = 0} 
+self[28][5] = {solid = false, gfx_id = 0} 
+self[28][6] = {solid = false, gfx_id = 0} 
+self[28][7] = {solid = false, gfx_id = 0} 
+self[28][8] = {solid = false, gfx_id = 0} 
+self[28][9] = {solid = false, gfx_id = 0} 
+self[28][10] = {solid = false, gfx_id = 0} 
+self[28][11] = {solid = false, gfx_id = 0} 
+self[28][12] = {solid = false, gfx_id = 0} 
+self[28][13] = {solid = false, gfx_id = 0} 
+self[28][14] = {solid = false, gfx_id = 0} 
+self[28][15] = {solid = false, gfx_id = 0} 
+self[28][16] = {solid = false, gfx_id = 0} 
+self[28][17] = {solid = false, gfx_id = 0} 
+self[28][18] = {solid = false, gfx_id = 0} 
+self[28][19] = {solid = false, gfx_id = 0} 
+self[28][20] = {solid = false, gfx_id = 0} 
+self[28][21] = {solid = false, gfx_id = 0} 
+self[28][22] = {solid = false, gfx_id = 0} 
+self[28][23] = {solid = false, gfx_id = 0} 
+self[28][24] = {solid = false, gfx_id = 0} 
+self[28][25] = {solid = false, gfx_id = 0} 
+self[28][26] = {solid = true, gfx_id = 5} 
+self[28][27] = {solid = true, gfx_id = 37} 
+self[28][28] = {solid = true, gfx_id = 69} 
+self[28][29] = {solid = false, gfx_id = 0} 
+self[28][30] = {solid = false, gfx_id = 0} 
+self[28][31] = {solid = false, gfx_id = 0} 
+self[28][32] = {solid = false, gfx_id = 0} 
+self[28][33] = {solid = false, gfx_id = 0} 
+self[28][34] = {solid = false, gfx_id = 0} 
+self[28][35] = {solid = false, gfx_id = 0} 
+self[28][36] = {solid = false, gfx_id = 0} 
+self[28][37] = {solid = false, gfx_id = 0} 
+self[28][38] = {solid = false, gfx_id = 0} 
+self[28][39] = {solid = false, gfx_id = 0} 
+self[29] = {}
+self[29][0] = {solid = false, gfx_id = 0} 
+self[29][1] = {solid = false, gfx_id = 0} 
+self[29][2] = {solid = false, gfx_id = 0} 
+self[29][3] = {solid = false, gfx_id = 0} 
+self[29][4] = {solid = false, gfx_id = 0} 
+self[29][5] = {solid = false, gfx_id = 0} 
+self[29][6] = {solid = false, gfx_id = 0} 
+self[29][7] = {solid = false, gfx_id = 0} 
+self[29][8] = {solid = false, gfx_id = 0} 
+self[29][9] = {solid = false, gfx_id = 0} 
+self[29][10] = {solid = false, gfx_id = 0} 
+self[29][11] = {solid = false, gfx_id = 0} 
+self[29][12] = {solid = false, gfx_id = 0} 
+self[29][13] = {solid = false, gfx_id = 0} 
+self[29][14] = {solid = false, gfx_id = 0} 
+self[29][15] = {solid = false, gfx_id = 0} 
+self[29][16] = {solid = false, gfx_id = 0} 
+self[29][17] = {solid = false, gfx_id = 0} 
+self[29][18] = {solid = false, gfx_id = 0} 
+self[29][19] = {solid = false, gfx_id = 0} 
+self[29][20] = {solid = false, gfx_id = 0} 
+self[29][21] = {solid = false, gfx_id = 0} 
+self[29][22] = {solid = false, gfx_id = 0} 
+self[29][23] = {solid = false, gfx_id = 0} 
+self[29][24] = {solid = false, gfx_id = 0} 
+self[29][25] = {solid = false, gfx_id = 0} 
+self[29][26] = {solid = true, gfx_id = 5} 
+self[29][27] = {solid = true, gfx_id = 37} 
+self[29][28] = {solid = true, gfx_id = 69} 
+self[29][29] = {solid = false, gfx_id = 0} 
+self[29][30] = {solid = false, gfx_id = 0} 
+self[29][31] = {solid = false, gfx_id = 0} 
+self[29][32] = {solid = false, gfx_id = 0} 
+self[29][33] = {solid = false, gfx_id = 0} 
+self[29][34] = {solid = false, gfx_id = 0} 
+self[29][35] = {solid = false, gfx_id = 0} 
+self[29][36] = {solid = false, gfx_id = 0} 
+self[29][37] = {solid = false, gfx_id = 0} 
+self[29][38] = {solid = false, gfx_id = 0} 
+self[29][39] = {solid = false, gfx_id = 0} 
+self[30] = {}
+self[30][0] = {solid = false, gfx_id = 0} 
+self[30][1] = {solid = false, gfx_id = 0} 
+self[30][2] = {solid = false, gfx_id = 0} 
+self[30][3] = {solid = false, gfx_id = 0} 
+self[30][4] = {solid = false, gfx_id = 0} 
+self[30][5] = {solid = false, gfx_id = 0} 
+self[30][6] = {solid = false, gfx_id = 0} 
+self[30][7] = {solid = false, gfx_id = 0} 
+self[30][8] = {solid = false, gfx_id = 0} 
+self[30][9] = {solid = false, gfx_id = 0} 
+self[30][10] = {solid = false, gfx_id = 0} 
+self[30][11] = {solid = false, gfx_id = 0} 
+self[30][12] = {solid = false, gfx_id = 0} 
+self[30][13] = {solid = false, gfx_id = 0} 
+self[30][14] = {solid = false, gfx_id = 0} 
+self[30][15] = {solid = false, gfx_id = 0} 
+self[30][16] = {solid = false, gfx_id = 0} 
+self[30][17] = {solid = false, gfx_id = 0} 
+self[30][18] = {solid = false, gfx_id = 0} 
+self[30][19] = {solid = false, gfx_id = 0} 
+self[30][20] = {solid = false, gfx_id = 0} 
+self[30][21] = {solid = false, gfx_id = 0} 
+self[30][22] = {solid = false, gfx_id = 0} 
+self[30][23] = {solid = false, gfx_id = 0} 
+self[30][24] = {solid = false, gfx_id = 0} 
+self[30][25] = {solid = false, gfx_id = 0} 
+self[30][26] = {solid = true, gfx_id = 5} 
+self[30][27] = {solid = true, gfx_id = 37} 
+self[30][28] = {solid = true, gfx_id = 69} 
+self[30][29] = {solid = false, gfx_id = 0} 
+self[30][30] = {solid = false, gfx_id = 0} 
+self[30][31] = {solid = false, gfx_id = 0} 
+self[30][32] = {solid = false, gfx_id = 0} 
+self[30][33] = {solid = false, gfx_id = 0} 
+self[30][34] = {solid = false, gfx_id = 0} 
+self[30][35] = {solid = false, gfx_id = 0} 
+self[30][36] = {solid = false, gfx_id = 0} 
+self[30][37] = {solid = false, gfx_id = 0} 
+self[30][38] = {solid = false, gfx_id = 0} 
+self[30][39] = {solid = false, gfx_id = 0} 
+self[31] = {}
+self[31][0] = {solid = false, gfx_id = 0} 
+self[31][1] = {solid = false, gfx_id = 0} 
+self[31][2] = {solid = false, gfx_id = 0} 
+self[31][3] = {solid = false, gfx_id = 0} 
+self[31][4] = {solid = false, gfx_id = 0} 
+self[31][5] = {solid = false, gfx_id = 0} 
+self[31][6] = {solid = false, gfx_id = 0} 
+self[31][7] = {solid = false, gfx_id = 0} 
+self[31][8] = {solid = false, gfx_id = 0} 
+self[31][9] = {solid = false, gfx_id = 0} 
+self[31][10] = {solid = false, gfx_id = 0} 
+self[31][11] = {solid = false, gfx_id = 0} 
+self[31][12] = {solid = false, gfx_id = 0} 
+self[31][13] = {solid = false, gfx_id = 0} 
+self[31][14] = {solid = false, gfx_id = 0} 
+self[31][15] = {solid = false, gfx_id = 0} 
+self[31][16] = {solid = false, gfx_id = 0} 
+self[31][17] = {solid = false, gfx_id = 0} 
+self[31][18] = {solid = false, gfx_id = 0} 
+self[31][19] = {solid = false, gfx_id = 0} 
+self[31][20] = {solid = false, gfx_id = 0} 
+self[31][21] = {solid = false, gfx_id = 0} 
+self[31][22] = {solid = false, gfx_id = 0} 
+self[31][23] = {solid = false, gfx_id = 0} 
+self[31][24] = {solid = false, gfx_id = 0} 
+self[31][25] = {solid = false, gfx_id = 0} 
+self[31][26] = {solid = true, gfx_id = 5} 
+self[31][27] = {solid = true, gfx_id = 37} 
+self[31][28] = {solid = true, gfx_id = 69} 
+self[31][29] = {solid = false, gfx_id = 0} 
+self[31][30] = {solid = false, gfx_id = 0} 
+self[31][31] = {solid = false, gfx_id = 0} 
+self[31][32] = {solid = false, gfx_id = 0} 
+self[31][33] = {solid = false, gfx_id = 0} 
+self[31][34] = {solid = false, gfx_id = 0} 
+self[31][35] = {solid = false, gfx_id = 0} 
+self[31][36] = {solid = false, gfx_id = 0} 
+self[31][37] = {solid = false, gfx_id = 0} 
+self[31][38] = {solid = false, gfx_id = 0} 
+self[31][39] = {solid = false, gfx_id = 0} 
+self[32] = {}
+self[32][0] = {solid = false, gfx_id = 0} 
+self[32][1] = {solid = false, gfx_id = 0} 
+self[32][2] = {solid = false, gfx_id = 0} 
+self[32][3] = {solid = false, gfx_id = 0} 
+self[32][4] = {solid = false, gfx_id = 0} 
+self[32][5] = {solid = false, gfx_id = 0} 
+self[32][6] = {solid = false, gfx_id = 0} 
+self[32][7] = {solid = false, gfx_id = 0} 
+self[32][8] = {solid = false, gfx_id = 0} 
+self[32][9] = {solid = false, gfx_id = 0} 
+self[32][10] = {solid = false, gfx_id = 0} 
+self[32][11] = {solid = false, gfx_id = 0} 
+self[32][12] = {solid = false, gfx_id = 0} 
+self[32][13] = {solid = false, gfx_id = 0} 
+self[32][14] = {solid = false, gfx_id = 0} 
+self[32][15] = {solid = false, gfx_id = 0} 
+self[32][16] = {solid = false, gfx_id = 0} 
+self[32][17] = {solid = false, gfx_id = 0} 
+self[32][18] = {solid = false, gfx_id = 0} 
+self[32][19] = {solid = false, gfx_id = 0} 
+self[32][20] = {solid = false, gfx_id = 0} 
+self[32][21] = {solid = false, gfx_id = 0} 
+self[32][22] = {solid = false, gfx_id = 0} 
+self[32][23] = {solid = false, gfx_id = 0} 
+self[32][24] = {solid = false, gfx_id = 0} 
+self[32][25] = {solid = false, gfx_id = 0} 
+self[32][26] = {solid = true, gfx_id = 5} 
+self[32][27] = {solid = true, gfx_id = 37} 
+self[32][28] = {solid = true, gfx_id = 69} 
+self[32][29] = {solid = false, gfx_id = 0} 
+self[32][30] = {solid = false, gfx_id = 0} 
+self[32][31] = {solid = false, gfx_id = 0} 
+self[32][32] = {solid = false, gfx_id = 0} 
+self[32][33] = {solid = false, gfx_id = 0} 
+self[32][34] = {solid = false, gfx_id = 0} 
+self[32][35] = {solid = false, gfx_id = 0} 
+self[32][36] = {solid = false, gfx_id = 0} 
+self[32][37] = {solid = false, gfx_id = 0} 
+self[32][38] = {solid = false, gfx_id = 0} 
+self[32][39] = {solid = false, gfx_id = 0} 
+self[33] = {}
+self[33][0] = {solid = false, gfx_id = 0} 
+self[33][1] = {solid = false, gfx_id = 0} 
+self[33][2] = {solid = false, gfx_id = 0} 
+self[33][3] = {solid = false, gfx_id = 0} 
+self[33][4] = {solid = false, gfx_id = 0} 
+self[33][5] = {solid = false, gfx_id = 0} 
+self[33][6] = {solid = false, gfx_id = 0} 
+self[33][7] = {solid = false, gfx_id = 0} 
+self[33][8] = {solid = false, gfx_id = 0} 
+self[33][9] = {solid = false, gfx_id = 0} 
+self[33][10] = {solid = false, gfx_id = 0} 
+self[33][11] = {solid = false, gfx_id = 0} 
+self[33][12] = {solid = false, gfx_id = 0} 
+self[33][13] = {solid = false, gfx_id = 0} 
+self[33][14] = {solid = false, gfx_id = 0} 
+self[33][15] = {solid = false, gfx_id = 0} 
+self[33][16] = {solid = false, gfx_id = 0} 
+self[33][17] = {solid = false, gfx_id = 0} 
+self[33][18] = {solid = false, gfx_id = 0} 
+self[33][19] = {solid = false, gfx_id = 0} 
+self[33][20] = {solid = false, gfx_id = 0} 
+self[33][21] = {solid = false, gfx_id = 0} 
+self[33][22] = {solid = false, gfx_id = 0} 
+self[33][23] = {solid = false, gfx_id = 0} 
+self[33][24] = {solid = false, gfx_id = 0} 
+self[33][25] = {solid = false, gfx_id = 0} 
+self[33][26] = {solid = true, gfx_id = 5} 
+self[33][27] = {solid = true, gfx_id = 37} 
+self[33][28] = {solid = true, gfx_id = 69} 
+self[33][29] = {solid = false, gfx_id = 0} 
+self[33][30] = {solid = false, gfx_id = 0} 
+self[33][31] = {solid = false, gfx_id = 0} 
+self[33][32] = {solid = false, gfx_id = 0} 
+self[33][33] = {solid = false, gfx_id = 0} 
+self[33][34] = {solid = false, gfx_id = 0} 
+self[33][35] = {solid = false, gfx_id = 0} 
+self[33][36] = {solid = false, gfx_id = 0} 
+self[33][37] = {solid = false, gfx_id = 0} 
+self[33][38] = {solid = false, gfx_id = 0} 
+self[33][39] = {solid = false, gfx_id = 0} 
+self[34] = {}
+self[34][0] = {solid = false, gfx_id = 0} 
+self[34][1] = {solid = false, gfx_id = 0} 
+self[34][2] = {solid = false, gfx_id = 0} 
+self[34][3] = {solid = false, gfx_id = 0} 
+self[34][4] = {solid = false, gfx_id = 0} 
+self[34][5] = {solid = false, gfx_id = 0} 
+self[34][6] = {solid = false, gfx_id = 0} 
+self[34][7] = {solid = false, gfx_id = 0} 
+self[34][8] = {solid = false, gfx_id = 0} 
+self[34][9] = {solid = false, gfx_id = 0} 
+self[34][10] = {solid = false, gfx_id = 0} 
+self[34][11] = {solid = false, gfx_id = 0} 
+self[34][12] = {solid = false, gfx_id = 0} 
+self[34][13] = {solid = false, gfx_id = 0} 
+self[34][14] = {solid = false, gfx_id = 0} 
+self[34][15] = {solid = false, gfx_id = 0} 
+self[34][16] = {solid = false, gfx_id = 0} 
+self[34][17] = {solid = false, gfx_id = 0} 
+self[34][18] = {solid = false, gfx_id = 0} 
+self[34][19] = {solid = false, gfx_id = 0} 
+self[34][20] = {solid = false, gfx_id = 0} 
+self[34][21] = {solid = false, gfx_id = 0} 
+self[34][22] = {solid = false, gfx_id = 0} 
+self[34][23] = {solid = false, gfx_id = 0} 
+self[34][24] = {solid = false, gfx_id = 0} 
+self[34][25] = {solid = false, gfx_id = 0} 
+self[34][26] = {solid = true, gfx_id = 5} 
+self[34][27] = {solid = true, gfx_id = 37} 
+self[34][28] = {solid = true, gfx_id = 69} 
+self[34][29] = {solid = false, gfx_id = 0} 
+self[34][30] = {solid = false, gfx_id = 0} 
+self[34][31] = {solid = false, gfx_id = 0} 
+self[34][32] = {solid = false, gfx_id = 0} 
+self[34][33] = {solid = false, gfx_id = 0} 
+self[34][34] = {solid = false, gfx_id = 0} 
+self[34][35] = {solid = false, gfx_id = 0} 
+self[34][36] = {solid = false, gfx_id = 0} 
+self[34][37] = {solid = false, gfx_id = 0} 
+self[34][38] = {solid = false, gfx_id = 0} 
+self[34][39] = {solid = false, gfx_id = 0} 
+self[35] = {}
+self[35][0] = {solid = false, gfx_id = 0} 
+self[35][1] = {solid = false, gfx_id = 0} 
+self[35][2] = {solid = false, gfx_id = 0} 
+self[35][3] = {solid = false, gfx_id = 0} 
+self[35][4] = {solid = false, gfx_id = 0} 
+self[35][5] = {solid = false, gfx_id = 0} 
+self[35][6] = {solid = false, gfx_id = 0} 
+self[35][7] = {solid = false, gfx_id = 0} 
+self[35][8] = {solid = false, gfx_id = 0} 
+self[35][9] = {solid = false, gfx_id = 0} 
+self[35][10] = {solid = false, gfx_id = 0} 
+self[35][11] = {solid = false, gfx_id = 0} 
+self[35][12] = {solid = false, gfx_id = 0} 
+self[35][13] = {solid = false, gfx_id = 0} 
+self[35][14] = {solid = false, gfx_id = 0} 
+self[35][15] = {solid = false, gfx_id = 0} 
+self[35][16] = {solid = false, gfx_id = 0} 
+self[35][17] = {solid = false, gfx_id = 0} 
+self[35][18] = {solid = false, gfx_id = 0} 
+self[35][19] = {solid = false, gfx_id = 0} 
+self[35][20] = {solid = false, gfx_id = 0} 
+self[35][21] = {solid = false, gfx_id = 0} 
+self[35][22] = {solid = false, gfx_id = 0} 
+self[35][23] = {solid = false, gfx_id = 0} 
+self[35][24] = {solid = false, gfx_id = 0} 
+self[35][25] = {solid = false, gfx_id = 0} 
+self[35][26] = {solid = true, gfx_id = 5} 
+self[35][27] = {solid = true, gfx_id = 37} 
+self[35][28] = {solid = true, gfx_id = 69} 
+self[35][29] = {solid = false, gfx_id = 0} 
+self[35][30] = {solid = false, gfx_id = 0} 
+self[35][31] = {solid = false, gfx_id = 0} 
+self[35][32] = {solid = false, gfx_id = 0} 
+self[35][33] = {solid = false, gfx_id = 0} 
+self[35][34] = {solid = false, gfx_id = 0} 
+self[35][35] = {solid = false, gfx_id = 0} 
+self[35][36] = {solid = false, gfx_id = 0} 
+self[35][37] = {solid = false, gfx_id = 0} 
+self[35][38] = {solid = false, gfx_id = 0} 
+self[35][39] = {solid = false, gfx_id = 0} 
+self[36] = {}
+self[36][0] = {solid = false, gfx_id = 0} 
+self[36][1] = {solid = false, gfx_id = 0} 
+self[36][2] = {solid = false, gfx_id = 0} 
+self[36][3] = {solid = false, gfx_id = 0} 
+self[36][4] = {solid = false, gfx_id = 0} 
+self[36][5] = {solid = false, gfx_id = 0} 
+self[36][6] = {solid = false, gfx_id = 0} 
+self[36][7] = {solid = false, gfx_id = 0} 
+self[36][8] = {solid = false, gfx_id = 0} 
+self[36][9] = {solid = false, gfx_id = 0} 
+self[36][10] = {solid = false, gfx_id = 0} 
+self[36][11] = {solid = false, gfx_id = 0} 
+self[36][12] = {solid = false, gfx_id = 0} 
+self[36][13] = {solid = false, gfx_id = 0} 
+self[36][14] = {solid = false, gfx_id = 0} 
+self[36][15] = {solid = false, gfx_id = 0} 
+self[36][16] = {solid = false, gfx_id = 0} 
+self[36][17] = {solid = false, gfx_id = 0} 
+self[36][18] = {solid = false, gfx_id = 0} 
+self[36][19] = {solid = false, gfx_id = 0} 
+self[36][20] = {solid = false, gfx_id = 0} 
+self[36][21] = {solid = false, gfx_id = 0} 
+self[36][22] = {solid = false, gfx_id = 0} 
+self[36][23] = {solid = false, gfx_id = 0} 
+self[36][24] = {solid = false, gfx_id = 0} 
+self[36][25] = {solid = false, gfx_id = 0} 
+self[36][26] = {solid = true, gfx_id = 5} 
+self[36][27] = {solid = true, gfx_id = 37} 
+self[36][28] = {solid = true, gfx_id = 69} 
+self[36][29] = {solid = false, gfx_id = 0} 
+self[36][30] = {solid = false, gfx_id = 0} 
+self[36][31] = {solid = false, gfx_id = 0} 
+self[36][32] = {solid = false, gfx_id = 0} 
+self[36][33] = {solid = false, gfx_id = 0} 
+self[36][34] = {solid = false, gfx_id = 0} 
+self[36][35] = {solid = false, gfx_id = 0} 
+self[36][36] = {solid = false, gfx_id = 0} 
+self[36][37] = {solid = false, gfx_id = 0} 
+self[36][38] = {solid = false, gfx_id = 0} 
+self[36][39] = {solid = false, gfx_id = 0} 
+self[37] = {}
+self[37][0] = {solid = false, gfx_id = 0} 
+self[37][1] = {solid = false, gfx_id = 0} 
+self[37][2] = {solid = false, gfx_id = 0} 
+self[37][3] = {solid = false, gfx_id = 0} 
+self[37][4] = {solid = false, gfx_id = 0} 
+self[37][5] = {solid = false, gfx_id = 0} 
+self[37][6] = {solid = false, gfx_id = 0} 
+self[37][7] = {solid = false, gfx_id = 0} 
+self[37][8] = {solid = false, gfx_id = 0} 
+self[37][9] = {solid = false, gfx_id = 0} 
+self[37][10] = {solid = false, gfx_id = 0} 
+self[37][11] = {solid = false, gfx_id = 0} 
+self[37][12] = {solid = false, gfx_id = 0} 
+self[37][13] = {solid = false, gfx_id = 0} 
+self[37][14] = {solid = false, gfx_id = 0} 
+self[37][15] = {solid = false, gfx_id = 0} 
+self[37][16] = {solid = false, gfx_id = 0} 
+self[37][17] = {solid = false, gfx_id = 0} 
+self[37][18] = {solid = false, gfx_id = 0} 
+self[37][19] = {solid = false, gfx_id = 0} 
+self[37][20] = {solid = false, gfx_id = 0} 
+self[37][21] = {solid = false, gfx_id = 0} 
+self[37][22] = {solid = false, gfx_id = 0} 
+self[37][23] = {solid = false, gfx_id = 0} 
+self[37][24] = {solid = false, gfx_id = 0} 
+self[37][25] = {solid = false, gfx_id = 0} 
+self[37][26] = {solid = true, gfx_id = 5} 
+self[37][27] = {solid = true, gfx_id = 37} 
+self[37][28] = {solid = true, gfx_id = 69} 
+self[37][29] = {solid = false, gfx_id = 0} 
+self[37][30] = {solid = false, gfx_id = 0} 
+self[37][31] = {solid = false, gfx_id = 0} 
+self[37][32] = {solid = false, gfx_id = 0} 
+self[37][33] = {solid = false, gfx_id = 0} 
+self[37][34] = {solid = false, gfx_id = 0} 
+self[37][35] = {solid = false, gfx_id = 0} 
+self[37][36] = {solid = false, gfx_id = 0} 
+self[37][37] = {solid = false, gfx_id = 0} 
+self[37][38] = {solid = false, gfx_id = 0} 
+self[37][39] = {solid = false, gfx_id = 0} 
+self[38] = {}
+self[38][0] = {solid = false, gfx_id = 0} 
+self[38][1] = {solid = false, gfx_id = 0} 
+self[38][2] = {solid = false, gfx_id = 0} 
+self[38][3] = {solid = false, gfx_id = 0} 
+self[38][4] = {solid = false, gfx_id = 0} 
+self[38][5] = {solid = false, gfx_id = 0} 
+self[38][6] = {solid = false, gfx_id = 0} 
+self[38][7] = {solid = false, gfx_id = 0} 
+self[38][8] = {solid = false, gfx_id = 0} 
+self[38][9] = {solid = false, gfx_id = 0} 
+self[38][10] = {solid = false, gfx_id = 0} 
+self[38][11] = {solid = false, gfx_id = 0} 
+self[38][12] = {solid = false, gfx_id = 0} 
+self[38][13] = {solid = false, gfx_id = 0} 
+self[38][14] = {solid = false, gfx_id = 0} 
+self[38][15] = {solid = false, gfx_id = 0} 
+self[38][16] = {solid = false, gfx_id = 0} 
+self[38][17] = {solid = false, gfx_id = 0} 
+self[38][18] = {solid = false, gfx_id = 0} 
+self[38][19] = {solid = false, gfx_id = 0} 
+self[38][20] = {solid = false, gfx_id = 0} 
+self[38][21] = {solid = false, gfx_id = 0} 
+self[38][22] = {solid = false, gfx_id = 0} 
+self[38][23] = {solid = false, gfx_id = 0} 
+self[38][24] = {solid = false, gfx_id = 0} 
+self[38][25] = {solid = false, gfx_id = 0} 
+self[38][26] = {solid = true, gfx_id = 6} 
+self[38][27] = {solid = true, gfx_id = 38} 
+self[38][28] = {solid = true, gfx_id = 70} 
+self[38][29] = {solid = false, gfx_id = 0} 
+self[38][30] = {solid = false, gfx_id = 0} 
+self[38][31] = {solid = false, gfx_id = 0} 
+self[38][32] = {solid = false, gfx_id = 0} 
+self[38][33] = {solid = false, gfx_id = 0} 
+self[38][34] = {solid = false, gfx_id = 0} 
+self[38][35] = {solid = false, gfx_id = 0} 
+self[38][36] = {solid = false, gfx_id = 0} 
+self[38][37] = {solid = false, gfx_id = 0} 
+self[38][38] = {solid = false, gfx_id = 0} 
+self[38][39] = {solid = false, gfx_id = 0} 
+self[39] = {}
+self[39][0] = {solid = false, gfx_id = 0} 
+self[39][1] = {solid = false, gfx_id = 0} 
+self[39][2] = {solid = false, gfx_id = 0} 
+self[39][3] = {solid = false, gfx_id = 0} 
+self[39][4] = {solid = false, gfx_id = 0} 
+self[39][5] = {solid = false, gfx_id = 0} 
+self[39][6] = {solid = false, gfx_id = 0} 
+self[39][7] = {solid = false, gfx_id = 0} 
+self[39][8] = {solid = false, gfx_id = 0} 
+self[39][9] = {solid = false, gfx_id = 0} 
+self[39][10] = {solid = false, gfx_id = 0} 
+self[39][11] = {solid = false, gfx_id = 0} 
+self[39][12] = {solid = false, gfx_id = 0} 
+self[39][13] = {solid = false, gfx_id = 0} 
+self[39][14] = {solid = false, gfx_id = 0} 
+self[39][15] = {solid = false, gfx_id = 0} 
+self[39][16] = {solid = false, gfx_id = 0} 
+self[39][17] = {solid = false, gfx_id = 0} 
+self[39][18] = {solid = false, gfx_id = 0} 
+self[39][19] = {solid = false, gfx_id = 0} 
+self[39][20] = {solid = false, gfx_id = 0} 
+self[39][21] = {solid = false, gfx_id = 0} 
+self[39][22] = {solid = false, gfx_id = 0} 
+self[39][23] = {solid = false, gfx_id = 0} 
+self[39][24] = {solid = false, gfx_id = 0} 
+self[39][25] = {solid = false, gfx_id = 0} 
+self[39][26] = {solid = false, gfx_id = 0} 
+self[39][27] = {solid = false, gfx_id = 0} 
+self[39][28] = {solid = false, gfx_id = 0} 
+self[39][29] = {solid = false, gfx_id = 0} 
+self[39][30] = {solid = false, gfx_id = 0} 
+self[39][31] = {solid = false, gfx_id = 0} 
+self[39][32] = {solid = false, gfx_id = 0} 
+self[39][33] = {solid = false, gfx_id = 0} 
+self[39][34] = {solid = false, gfx_id = 0} 
+self[39][35] = {solid = false, gfx_id = 0} 
+self[39][36] = {solid = false, gfx_id = 0} 
+self[39][37] = {solid = false, gfx_id = 0} 
+self[39][38] = {solid = false, gfx_id = 0} 
+self[39][39] = {solid = false, gfx_id = 0} 
+return self
+end
+return Level

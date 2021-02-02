@@ -45,7 +45,10 @@ function World()
 		end
 		if not self.chunks[chunk_x][chunk_y] then
 			self.chunks[chunk_x][chunk_y] = Chunk(self, chunk_x * (TILE_WIDTH * TILES_PER_CHUNK_WIDTH), chunk_y * (TILE_HEIGHT * TILES_PER_CHUNK_HEIGHT))
+			--LevelFeature_Shrine(self, chunk_x * (TILE_WIDTH * TILES_PER_CHUNK_WIDTH), chunk_y * (TILE_HEIGHT * TILES_PER_CHUNK_HEIGHT) + TILE_HEIGHT * 5)
+			self.chunks[chunk_x][chunk_y]:redrawCanvas()
 		end
+		--
 	end
 
 
@@ -119,6 +122,16 @@ function Chunk(world, x, y)
 		self.tiles[inChunk_x][inChunk_y] = tile
 		self.needsRedraw = true
 	end
+
+	--[[for x = 0, TILES_PER_CHUNK_WIDTH -1, 1 do
+		for y = 0, TILES_PER_CHUNK_HEIGHT -1, 1 do
+			if not self:getTile(x*TILE_WIDTH, y*TILE_HEIGHT).solid and self:getTile(x*TILE_WIDTH, (y+1)*TILE_HEIGHT).solid and math.random(0, 100) < 4 then
+				local goblin = Goblin(self.x + x * TILE_WIDTH + 2, self.y + y * TILE_HEIGHT + 2)
+				goblin.world = self.world
+				self:addSprite(goblin)
+			end
+		end
+	end]]
 
 	self:redrawCanvas()
 	return self
@@ -205,9 +218,6 @@ function Camera(world, player)
 		end
 		for x = -1, 1, 1 do
 			for y = -1, 1, 1 do
-				if x ~= 0 and y ~= 0 and math.random(0, 1000) == 1 then
-					self.world:addSprite(Goblin(self.x + math.random(-800, 800), self.y + 0))
-				end
 				local xPos = self.x + x * (TILE_WIDTH * TILES_PER_CHUNK_WIDTH)
 				local yPos = self.y + y * (TILE_HEIGHT * TILES_PER_CHUNK_HEIGHT)
 				local currentChunk = self.world:getChunk(xPos, yPos)

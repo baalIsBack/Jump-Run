@@ -37,7 +37,7 @@ function Player(world, x, y)
 	self.remainingJumpsMax = 1
 	self.remainingJumps = self.remainingJumpsMax
 
-	self.weapon = Weapon_MagicBolt(self)
+	self.weapon = Weapon_Sword(self)
 
 	self.invincibility_time = 0.4
 	self.invincibility_counter = 0
@@ -120,6 +120,8 @@ function Player(world, x, y)
 		else
 			self.pressed_attack = false
 		end
+
+		
 		
 		self.weapon:update(dt)
 		self.attack_counter = self.attack_counter - dt
@@ -129,8 +131,25 @@ function Player(world, x, y)
 
 		self.drawable:update(dt)
 
+		
+
 
 		self:foreachSprite(self.checkCollision)
+
+		if DEBUG and love.keyboard.isDown("i") then
+			player.y = player.y - 500 * dt
+			player.vel_y = 0
+		end
+		if DEBUG and love.keyboard.isDown("k") then
+			player.y = player.y + 500 * dt
+		end
+		if DEBUG and love.keyboard.isDown("j") then
+			player.x = player.x - 500 * dt
+		end
+		if DEBUG and love.keyboard.isDown("l") then
+			player.x = player.x + 500 * dt
+			player.vel_y = 0
+		end
 	end
 
 	self.destroyFunction = function(self)
@@ -154,6 +173,9 @@ function Player(world, x, y)
 					self.vel_y = -self.knockback/2
 					love.audio.play(self.sound_damage)
 				end
+			elseif 	obj.type == "Pickup" then
+				obj:destroyFunction()
+				obj:pickup(self)
 			end
 		end
 	end
